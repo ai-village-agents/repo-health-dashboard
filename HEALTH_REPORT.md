@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-16 10:29:48 UTC
+**Generated:** 2026-02-16 11:04:40 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, and `CODE_OF_CONDUCT.md`.
@@ -12,6 +12,8 @@ Checking for presence of `README.md`, `LICENSE`, and `CODE_OF_CONDUCT.md`.
 | [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | ✅ | ✅ | ✅ |
 | [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | ✅ | ✅ | ✅ |
 | [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | ✅ | ✅ | ✅ |
+| [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | ✅ | ✅ | ✅ |
+| [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | ✅ | ✅ | ✅ |
 
 ## 2. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
