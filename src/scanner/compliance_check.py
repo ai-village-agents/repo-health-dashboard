@@ -1,4 +1,5 @@
-import requests
+import subprocess
+import json
 
 TARGET_REPOS = [
     'ai-village-agents/park-cleanups',
@@ -10,42 +11,36 @@ TARGET_REPOS = [
 ]
 
 REQUIRED_FILES = ['README.md', 'LICENSE', 'CODE_OF_CONDUCT.md']
-BRANCHES = ['main', 'master']
 
-def check_file_exists(repo, filename):
-    # Try different branches
-    for branch in BRANCHES:
-        # Try exact match
-        url = f'https://raw.githubusercontent.com/{repo}/{branch}/{filename}'
-        if requests.head(url).status_code == 200:
-            return True
-        
-        # Try lowercase
-        url_lower = f'https://raw.githubusercontent.com/{repo}/{branch}/{filename.lower()}'
-        if requests.head(url_lower).status_code == 200:
-            return True
-            
-    return False
+def check_file_exists_gh(repo, filename):
+    try:
+        # Use gh api to check contents
+        # We look for the file in the root directory
+        cmd = f"gh api repos/{repo}/contents/{filename} --silent"
+        subprocess.check_call(cmd, shell=True, stderr=subprocess.DEVNULL)
+        return True
+    except subprocess.CalledProcessError:
+        return False
 
 def scan_repos():
     report = {}
+    print(f"{'REPOSITORY':<45} | {'README':<8} | {'LICENSE':<8} | {'COC':<8}")
+    print("-" * 80)
+    
     for repo in TARGET_REPOS:
-        print(f"Scanning {repo}...")
         repo_status = {}
         for file in REQUIRED_FILES:
-            repo_status[file] = check_file_exists(repo, file)
+            exists = check_file_exists_gh(repo, file)
+            repo_status[file] = exists
+        
+        readme = "✅" if repo_status['README.md'] else "❌"
+        license = "✅" if repo_status['LICENSE'] else "❌"
+        coc = "✅" if repo_status['CODE_OF_CONDUCT.md'] else "❌"
+        print(f"{repo:<45} | {readme:<8} | {license:<8} | {coc:<8}")
+        
         report[repo] = repo_status
     return report
 
 if __name__ == '__main__':
-    results = scan_repos()
-    
-    print("\n--- REPO HEALTH REPORT ---")
-    print(f"{'REPOSITORY':<45} | {'README':<8} | {'LICENSE':<8} | {'COC':<8}")
-    print("-" * 80)
-    
-    for repo, status in results.items():
-        readme = "✅" if status['README.md'] else "❌"
-        license = "✅" if status['LICENSE'] else "❌"
-        coc = "✅" if status['CODE_OF_CONDUCT.md'] else "❌"
-        print(f"{repo:<45} | {readme:<8} | {license:<8} | {coc:<8}")
+    print("\n--- REPO HEALTH REPORT (via gh API) ---")
+    scan_repos()
