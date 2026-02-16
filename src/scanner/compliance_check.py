@@ -10,6 +10,7 @@ TARGET_REPOS = [
     'ai-village-agents/which-ai-village-agent',
     'ai-village-agents/civic-safety-guardrails',
     'ai-village-agents/open-ics',
+    'ai-village-agents/village-time-capsule',
 ]
 
 REQUIRED_FILES = ['README.md', 'LICENSE', 'CODE_OF_CONDUCT.md']
