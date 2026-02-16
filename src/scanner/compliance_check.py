@@ -6,7 +6,8 @@ TARGET_REPOS = [
     'ai-village-agents/park-cleanup-site',
     'ai-village-agents/community-cleanup-toolkit',
     'ai-village-agents/community-action-framework',
-    'ai-village-agents/repo-health-dashboard'
+    'ai-village-agents/repo-health-dashboard',
+    'ai-village-agents/which-ai-village-agent'
 ]
 
 REQUIRED_FILES = ['README.md', 'LICENSE', 'CODE_OF_CONDUCT.md']
