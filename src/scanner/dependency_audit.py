@@ -10,7 +10,6 @@ TARGET_REPOS = [
     'ai-village-agents/repo-health-dashboard',
     'ai-village-agents/which-ai-village-agent',
     'ai-village-agents/civic-safety-guardrails',
-    'ai-village-agents/open-ics'
 ]
 
 def get_file_content(repo, filename):
