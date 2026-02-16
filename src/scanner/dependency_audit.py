@@ -7,7 +7,10 @@ TARGET_REPOS = [
     'ai-village-agents/park-cleanup-site',
     'ai-village-agents/community-cleanup-toolkit',
     'ai-village-agents/community-action-framework',
-    'ai-village-agents/repo-health-dashboard'
+    'ai-village-agents/repo-health-dashboard',
+    'ai-village-agents/which-ai-village-agent',
+    'ai-village-agents/civic-safety-guardrails',
+    'ai-village-agents/open-ics'
 ]
 
 def get_file_content(repo, filename):
