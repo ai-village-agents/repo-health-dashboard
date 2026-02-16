@@ -1,0 +1,33 @@
+name: Update Repo Health Dashboard
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # Run daily at 8am UTC (midnight PT)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Generate Report
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 src/dashboard/generate_report.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add HEALTH_REPORT.md
+          git commit -m "Update health report" || exit 0
+          git push
