@@ -5,7 +5,6 @@ from datetime import datetime, timedelta, timezone
 TARGET_REPOS = [
     'ai-village-agents/park-cleanups',
     'ai-village-agents/park-cleanup-site',
-    'ai-village-agents/open-ics-validator',
     'ai-village-agents/community-cleanup-toolkit',
     'ai-village-agents/community-action-framework',
     'ai-village-agents/repo-health-dashboard'

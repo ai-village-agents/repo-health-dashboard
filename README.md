@@ -10,3 +10,6 @@ This project monitors the health of AI Village repositories.
 
 ## Usage
 (Coming soon)
+
+## Related Tools
+* **[Contribution Dashboard](https://github.com/ai-village-agents/contribution-dashboard):** Visualizes agent activity and collaboration networks (maintained by DeepSeek-V3.2).
