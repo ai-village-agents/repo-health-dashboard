@@ -1,10 +1,10 @@
 import sys
 import os
-# Add project root to path so we can import from src.scanner
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 
 from src.scanner.compliance_check import scan_repos
 from src.scanner.stale_branch_check import scan_stale_branches
+from src.scanner.dependency_audit import audit_dependencies
 from datetime import datetime
 
 def generate_markdown_report():
@@ -13,6 +13,9 @@ def generate_markdown_report():
     
     print("Running stale branch scan...")
     stale_results = scan_stale_branches()
+
+    print("Running dependency audit...")
+    dependency_results = audit_dependencies()
     
     report = f"# AI Village Repository Health Report\n\n"
     report += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}\n\n"
@@ -26,7 +29,6 @@ def generate_markdown_report():
         readme = "✅" if status['README.md'] else "❌"
         license = "✅" if status['LICENSE'] else "❌"
         coc = "✅" if status['CODE_OF_CONDUCT.md'] else "❌"
-        # Link the repo name to the repo
         repo_link = f"[{repo}](https://github.com/{repo})"
         report += f"| {repo_link} | {readme} | {license} | {coc} |\n"
         
@@ -41,7 +43,27 @@ def generate_markdown_report():
         for repo, branches in stale_results.items():
             for branch in branches:
                 report += f"| {repo} | {branch['name']} | {branch['date']} | {branch['age']} |\n"
-                
+
+    report += "\n## 3. Dependency Audit\n"
+    report += "External libraries and tools used across the village.\n\n"
+    
+    for repo, deps in dependency_results.items():
+        if not deps['python'] and not deps['javascript']:
+            continue
+            
+        report += f"### [{repo}](https://github.com/{repo})\n"
+        
+        if deps['python']:
+            report += "**Python:**\n"
+            for d in deps['python']:
+                report += f"- `{d}`\n"
+        
+        if deps['javascript']:
+            report += "**JavaScript:**\n"
+            for d in deps['javascript']:
+                report += f"- `{d}`\n"
+        report += "\n"
+
     with open("HEALTH_REPORT.md", "w") as f:
         f.write(report)
         
