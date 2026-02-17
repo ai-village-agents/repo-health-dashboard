@@ -21,17 +21,27 @@ def generate_markdown_report():
     report += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}\n\n"
     
     report += "## 1. Compliance Audit\n"
-    report += "Checking for presence of `README.md`, `LICENSE`, and `CODE_OF_CONDUCT.md`.\n\n"
-    report += "| Repository | README | LICENSE | CODE_OF_CONDUCT |\n"
-    report += "|------------|--------|---------|-----------------|\n"
+    report += "Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.\n\n"
+    report += "| Repository | README | LICENSE | CODE_OF_CONDUCT | CONTRIBUTING |\n"
+    report += "|------------|--------|---------|-----------------|--------------|\n"
     
     for repo, status in compliance_results.items():
         readme = "✅" if status['README.md'] else "❌"
         license = "✅" if status['LICENSE'] else "❌"
         coc = "✅" if status['CODE_OF_CONDUCT.md'] else "❌"
+        contributing = "✅" if status['CONTRIBUTING.md'] else "❌"
         repo_link = f"[{repo}](https://github.com/{repo})"
-        report += f"| {repo_link} | {readme} | {license} | {coc} |\n"
-        
+        report += f"| {repo_link} | {readme} | {license} | {coc} | {contributing} |\n"
+
+    total_repos = len(compliance_results)
+    fully_compliant = sum(
+        1 for status in compliance_results.values()
+        if status.get('README.md') and status.get('LICENSE') and status.get('CODE_OF_CONDUCT.md') and status.get('CONTRIBUTING.md')
+    )
+    missing_any = total_repos - fully_compliant
+    report += "\n### Summary\n"
+    report += f"Scanned {total_repos} repositories. {fully_compliant} are fully compliant with all four required files, and {missing_any} are missing one or more files.\n"
+
     report += "\n## 2. Stale Branch Detector\n"
     report += "Branches older than 30 days (excluding main/master).\n\n"
     

@@ -13,7 +13,7 @@ except ImportError:
     else:
         raise
 
-REQUIRED_FILES = ['README.md', 'LICENSE', 'CODE_OF_CONDUCT.md']
+REQUIRED_FILES = ['README.md', 'LICENSE', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md']
 
 def check_file_exists_gh(repo, filename):
     try:
@@ -28,8 +28,8 @@ def scan_repos():
     print(f"Scanning {len(repos)} repositories...\n")
     
     report = {}
-    print(f"{'REPOSITORY':<45} | {'README':<8} | {'LICENSE':<8} | {'COC':<8}")
-    print("-" * 80)
+    print(f"{'REPOSITORY':<45} | {'README':<8} | {'LICENSE':<8} | {'COC':<8} | {'CONTRIBUTING':<12}")
+    print("-" * 98)
     
     for repo in repos:
         repo_status = {}
@@ -40,7 +40,8 @@ def scan_repos():
         readme = "✅" if repo_status['README.md'] else "❌"
         license_ok = "✅" if repo_status['LICENSE'] else "❌"
         coc = "✅" if repo_status['CODE_OF_CONDUCT.md'] else "❌"
-        print(f"{repo:<45} | {readme:<8} | {license_ok:<8} | {coc:<8}")
+        contributing = "✅" if repo_status['CONTRIBUTING.md'] else "❌"
+        print(f"{repo:<45} | {readme:<8} | {license_ok:<8} | {coc:<8} | {contributing:<12}")
         
         report[repo] = repo_status
     return report
