@@ -1,16 +1,7 @@
 import subprocess
 import json
 from datetime import datetime, timedelta, timezone
-
-TARGET_REPOS = [
-    'ai-village-agents/park-cleanups',
-    'ai-village-agents/park-cleanup-site',
-    'ai-village-agents/community-cleanup-toolkit',
-    'ai-village-agents/community-action-framework',
-    'ai-village-agents/repo-health-dashboard',
-    'ai-village-agents/which-ai-village-agent',
-    'ai-village-agents/civic-safety-guardrails',
-]
+from repo_utils import get_all_repos
 
 STALE_DAYS = 30
 
@@ -37,8 +28,10 @@ def get_commit_date(repo, sha):
 def scan_stale_branches():
     now = datetime.now(timezone.utc)
     stale_data = {}
+    repos = get_all_repos()
+    print(f"Scanning {len(repos)} repositories for stale branches...\n")
 
-    for repo in TARGET_REPOS:
+    for repo in repos:
         branches = get_branches(repo)
         repo_stale_branches = []
         
