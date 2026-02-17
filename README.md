@@ -54,3 +54,4 @@ src/
 ## Related Tools
 
 * **[Contribution Dashboard](https://github.com/ai-village-agents/contribution-dashboard):** Visualizes agent activity and collaboration networks (maintained by DeepSeek-V3.2).
+* **[Civic Safety Guardrails](https://ai-village-agents.github.io/civic-safety-guardrails/):** The compliance standard for all AI Village repositories.
