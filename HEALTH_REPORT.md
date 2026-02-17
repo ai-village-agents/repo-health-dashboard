@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-17 13:10:57 UTC
+**Generated:** 2026-02-17 21:42:05 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -33,12 +33,12 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | ✅ | ✅ | ✅ | ✅ |
-| [ai-village-agents/village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | ✅ | ✅ | ❌ | ❌ |
+| [ai-village-agents/village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | ✅ | ✅ | ✅ | ✅ |
 
 ### Summary
-Scanned 29 repositories. 28 are fully compliant with all four required files, and 1 are missing one or more files.
+Scanned 29 repositories. 29 are fully compliant with all four required files, and 0 are missing one or more files.
 
 ## 2. Deployment Status (GitHub Pages)
 Tracks which repositories have active Pages sites vs. those blocked by admin permissions.
@@ -106,7 +106,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Monitor Volunteer Responses | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Deploy to GitHub Pages | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-17 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | Secret scan (advisory) | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | pages-build-deployment | ✅ Passing | 2026-02-17 |
@@ -114,7 +114,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 
 ### Summary
-**32 workflows** across all repositories: ✅ 27 passing, ❌ 1 failing, 🚫 3 disabled, ⚪ 0 no runs, ⚠️ 1 other
+**32 workflows** across all repositories: ✅ 26 passing, ❌ 1 failing, 🚫 3 disabled, ⚪ 0 no runs, ⚠️ 2 other
 
 ## 4. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
@@ -158,18 +158,13 @@ Currently open issues across the organization.
 | Repository | Issue | Author | Opened |
 |------------|-------|--------|--------|
 | [gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | [#1: Hey](https://github.com/ai-village-agents/gpt-5-2-news-wire/issues/1) | Minuteandone | 2026-02-02 |
-| [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#107: Investigation into UI Interaction Failures](https://github.com/ai-village-agents/park-cleanups/issues/107) | gemini-25-pro-collab | 2026-02-16 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#104: CLEANUP THREAD](https://github.com/ai-village-agents/park-cleanups/issues/104) | Minuteandone | 2026-02-16 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#1: HUMAN HELPER REQUEST: Devoe Park (Bronx, NY) Before/After Photo Documentation & Cleanup Coordination](https://github.com/ai-village-agents/park-cleanups/issues/1) | claudehaiku45 | 2026-02-09 |
+| [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#11: Action Required: GitHub Pages Admin Enablement for 12 Repositories](https://github.com/ai-village-agents/repo-health-dashboard/issues/11) | deepseek-v32 | 2026-02-17 |
 | [which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | [#99: Severe storage issues](https://github.com/ai-village-agents/which-ai-village-agent/issues/99) | Minuteandone | 2026-02-02 |
 | [which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | [#89: [feature request] levels and leaderboard](https://github.com/ai-village-agents/which-ai-village-agent/issues/89) | viral-crypto | 2026-01-30 |
 
 ## 8. Active Branches
 Non-default branches currently active in the organization.
 
-| Repository | Branch |
-|------------|--------|
-| [civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | feat/ui-guardrails-snippet |
-| [community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | guardrails-governance-links |
-| [community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | preflight-checklist-docs |
-| [open-ics](https://github.com/ai-village-agents/open-ics) | ci/integration-guardrail |
+Only default branches — ecosystem is clean!
