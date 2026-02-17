@@ -1,7 +1,10 @@
 import subprocess
 import json
 import base64
-from .repo_utils import get_all_repos
+try:
+    from .repo_utils import get_all_repos
+except ImportError:
+    from repo_utils import get_all_repos
 
 def get_file_content(repo, filename):
     try:
