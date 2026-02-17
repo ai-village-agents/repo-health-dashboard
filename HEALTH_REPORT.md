@@ -1,7 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-17 12:24:00 UTC  
-**Last Updated By:** Claude Opus 4.6 (Day 322)
+**Generated:** 2026-02-17 12:40:26 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -74,53 +73,74 @@ Tracks which repositories have active Pages sites vs. those blocked by admin per
 | [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | ✅ Live (https://ai-village-agents.github.io/village-time-capsule/) |
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | ✅ Live (https://ai-village-agents.github.io/which-ai-village-agent/) |
 
-## 3. Stale Branch Detector
+## 3. Workflow Health
+GitHub Actions workflow status across all repositories.
+
+| Repository | Workflow | Status | Last Run |
+|------------|----------|--------|----------|
+| [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | Deploy to GitHub Pages | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/claude-3-7-news-monitor](https://github.com/ai-village-agents/claude-3-7-news-monitor) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | PII scan | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | Deploy to GitHub Pages | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | pages-build-deployment | 🔄 In Progress | 2026-02-17 |
+| [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | 🔄 In Progress | 2026-02-17 |
+| [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | pages-build-deployment | ✅ Passing | 2026-02-02 |
+| [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/gpt-5-1-news-wire](https://github.com/ai-village-agents/gpt-5-1-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | Deploy GitHub Pages | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | pages-build-deployment | ❌ Failing | 2026-02-06 |
+| [ai-village-agents/haiku-news-wire](https://github.com/ai-village-agents/haiku-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | CI | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | Advisory ICS privacy & safety lint | ✅ Passing | 2026-02-16 |
+| [ai-village-agents/opus-breaking-news](https://github.com/ai-village-agents/opus-breaking-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/opus46-breaking-news](https://github.com/ai-village-agents/opus46-breaking-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ICS Lint | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Monitor Google Sheet Responses | 🚫 Disabled | N/A |
+| [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Monitor Volunteer Responses | 🚫 Disabled | N/A |
+| [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Deploy to GitHub Pages | 🚫 Disabled | N/A |
+| [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | Secret scan (advisory) | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | Quiz Health and Technical Audit | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+
+### Summary
+**32 workflows** across all repositories: ✅ 26 passing, ❌ 1 failing, 🚫 3 disabled, ⚪ 0 no runs, ⚠️ 2 other
+
+## 4. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
 
 ✅ **No stale branches found!** The ecosystem is clean.
 
-### Branch Cleanup Summary (Day 322)
+## 5. Dependency Audit
+External libraries and tools used across the village.
 
-On Day 322, Claude Opus 4.6 conducted an org-wide stale branch cleanup, reducing non-default branches from **~25 to 1** across all 28 repositories.
+### [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard)
+**Python:**
+- `requests`
+- `beautifulsoup4`
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `plotly`
+- `networkx`
 
-**Branches deleted (24 total):**
+### [ai-village-agents/juice-shop-automation-suite](https://github.com/ai-village-agents/juice-shop-automation-suite)
+**Python:**
+- `PyJWT`
+- `pyotp`
+- `requests`
+**JavaScript:**
+- `socket.io-client: ^4.7.0`
 
-| Repository | Branches Deleted | Details |
-|------------|-----------------|---------|
-| which-ai-village-agent | 19 | 5 from merged PRs, 3 from closed PRs, 11 orphaned |
-| village-time-capsule | 2 | `feature/cicd-case-study-2`, `fix/archive-statistics-about` |
-| repo-health-dashboard | 3 | PR #10 merged branch + 2 direct-merged |
-| guardrails-adoption-guide | 1 | `add-compliance-files` |
-| community-cleanup-toolkit | 1 | `add-compliance-files` |
-| park-cleanup-site | 1 | `add-compliance-files` |
-| park-cleanups | 1 | `add-compliance-files` |
-| gemini-3-pro-news-wire | 1 | `add-compliance-files` (merged to master first) |
-| deepseek-news | 1 | `add-compliance-files` |
-| Various other repos | 6 | `add-compliance-files` branches |
+### [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups)
+**Python:**
+- `beautifulsoup4>=4.11,<5`
 
-**Remaining non-default branches (1):**
-- `civic-safety-guardrails/feat/ui-guardrails-snippet` — GPT-5.2's active work (retained)
-
-**Lesson learned:** One branch (`feature/cicd-case-study-2` in village-time-capsule) was being reused by Gemini 2.5 Pro for an open PR (#19). Deleting it auto-closed their unmerged work. **Always check `gh pr list --head <branch> --state open` before deleting.**
-
-## 4. Workflow Health (Day 322)
-
-Three failing CI/CD workflows were identified and fixed on Day 322:
-
-| Repository | Workflow | Issue | Resolution |
-|------------|----------|-------|------------|
-| community-action-framework | pii-scan | Missing `actions/checkout` step | PR #9 (merged), workflow re-enabled ✅ |
-| gpt5-breaking-news | pages build | Pages source branch deleted | Fixed by Opus 4.5; needs admin to re-enable on `main` |
-| park-cleanup-site | ICS Lint | Stuck queued (no `workflow_dispatch`) | Added `workflow_dispatch` trigger, now passing ✅ |
-
-## 5. Overall Ecosystem Health
-
-| Metric | Status |
-|--------|--------|
-| **Compliance** | 28/28 repos (100%) ✅ |
-| **GitHub Pages** | 17/28 live, 11 admin-blocked |
-| **Stale Branches** | 1 remaining (active work) ✅ |
-| **Open PRs** | 0 org-wide ✅ |
-| **Failing Workflows** | 0 (all 3 fixed) ✅ |
-
-> **Admin Action Needed:** 11 repositories need GitHub Pages enabled in Settings. This requires admin/owner permissions (adam-binks, Shoshannah-Tekofsky, or zjmiller).
