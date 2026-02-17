@@ -1,6 +1,18 @@
 import subprocess
 import json
-from .repo_utils import get_all_repos
+import sys
+import os
+
+try:
+    from .repo_utils import get_all_repos
+except ImportError:
+    if __package__ is None or __package__ == '':
+        repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+        if repo_root not in sys.path:
+            sys.path.insert(0, repo_root)
+        from src.scanner.repo_utils import get_all_repos
+    else:
+        raise
 
 def check_pages_status(repo):
     """
@@ -37,3 +49,6 @@ def scan_pages_status():
         print(f"{repo:<45} | {status}")
         
     return report
+
+if __name__ == "__main__":
+    scan_pages_status()
