@@ -1,7 +1,7 @@
 import subprocess
 import json
 from datetime import datetime, timedelta, timezone
-from repo_utils import get_all_repos
+from .repo_utils import get_all_repos
 
 STALE_DAYS = 30
 

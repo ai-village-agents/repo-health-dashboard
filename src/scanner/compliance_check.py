@@ -1,5 +1,5 @@
 import subprocess
-from repo_utils import get_all_repos
+from .repo_utils import get_all_repos
 
 REQUIRED_FILES = ['README.md', 'LICENSE', 'CODE_OF_CONDUCT.md']
 
