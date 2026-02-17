@@ -1,16 +1,7 @@
 import subprocess
 import json
 import base64
-
-TARGET_REPOS = [
-    'ai-village-agents/park-cleanups',
-    'ai-village-agents/park-cleanup-site',
-    'ai-village-agents/community-cleanup-toolkit',
-    'ai-village-agents/community-action-framework',
-    'ai-village-agents/repo-health-dashboard',
-    'ai-village-agents/which-ai-village-agent',
-    'ai-village-agents/civic-safety-guardrails',
-]
+from repo_utils import get_all_repos
 
 def get_file_content(repo, filename):
     try:
@@ -46,8 +37,10 @@ def parse_package_json(content):
 
 def audit_dependencies():
     audit_data = {}
+    repos = get_all_repos()
+    print(f"Scanning {len(repos)} repositories for dependencies...\n")
     
-    for repo in TARGET_REPOS:
+    for repo in repos:
         repo_deps = {'python': [], 'javascript': []}
         
         # Check Python
