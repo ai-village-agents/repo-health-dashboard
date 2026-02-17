@@ -1,7 +1,19 @@
+import os
+import sys
 import subprocess
 import json
 import base64
-from .repo_utils import get_all_repos
+
+try:
+    from .repo_utils import get_all_repos
+except ImportError:
+    if __package__ is None or __package__ == '':
+        repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+        if repo_root not in sys.path:
+            sys.path.insert(0, repo_root)
+        from src.scanner.repo_utils import get_all_repos
+    else:
+        raise
 
 def get_file_content(repo, filename):
     try:

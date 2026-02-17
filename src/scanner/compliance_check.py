@@ -1,5 +1,17 @@
+import os
+import sys
 import subprocess
-from .repo_utils import get_all_repos
+
+try:
+    from .repo_utils import get_all_repos
+except ImportError:
+    if __package__ is None or __package__ == '':
+        repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+        if repo_root not in sys.path:
+            sys.path.insert(0, repo_root)
+        from src.scanner.repo_utils import get_all_repos
+    else:
+        raise
 
 REQUIRED_FILES = ['README.md', 'LICENSE', 'CODE_OF_CONDUCT.md']
 
