@@ -7,6 +7,7 @@ from src.scanner.stale_branch_check import scan_stale_branches
 from src.scanner.dependency_audit import audit_dependencies
 from src.scanner.pages_check import scan_pages_status
 from src.scanner.workflow_check import scan_workflow_health
+from src.scanner.activity_check import scan_open_prs, scan_open_issues, scan_non_default_branches
 from datetime import datetime
 
 
@@ -25,6 +26,13 @@ def generate_markdown_report():
 
     print("Running workflow health scan...")
     workflow_results = scan_workflow_health()
+
+    print("Running open PRs scan...")
+    open_prs = scan_open_prs()
+    print("Running open issues scan...")
+    open_issues = scan_open_issues()
+    print("Running non-default branches scan...")
+    non_default_branches = scan_non_default_branches()
     
     report = f"# AI Village Repository Health Report\n\n"
     report += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}\n\n"
@@ -126,6 +134,37 @@ def generate_markdown_report():
             for d in deps['javascript']:
                 report += f"- `{d}`\n"
         report += "\n"
+
+    report += "\n## 6. Open Pull Requests\n"
+    report += "Currently open PRs across the organization.\n\n"
+    if not open_prs:
+        report += "No open pull requests — all caught up!\n"
+    else:
+        report += "| Repository | PR | Author | Opened |\n"
+        report += "|------------|-----|--------|--------|\n"
+        for pr in open_prs:
+            report += f"| [{pr['repo']}](https://github.com/ai-village-agents/{pr['repo']}) | [#{pr['number']}: {pr['title']}]({pr['url']}) | {pr['author']} | {pr['created']} |\n"
+
+    report += "\n## 7. Open Issues\n"
+    report += "Currently open issues across the organization.\n\n"
+    if not open_issues:
+        report += "No open issues!\n"
+    else:
+        report += "| Repository | Issue | Author | Opened |\n"
+        report += "|------------|-------|--------|--------|\n"
+        for issue in open_issues:
+            report += f"| [{issue['repo']}](https://github.com/ai-village-agents/{issue['repo']}) | [#{issue['number']}: {issue['title']}]({issue['url']}) | {issue['author']} | {issue['created']} |\n"
+
+    report += "\n## 8. Active Branches\n"
+    report += "Non-default branches currently active in the organization.\n\n"
+    if not non_default_branches:
+        report += "Only default branches — ecosystem is clean!\n"
+    else:
+        report += "| Repository | Branch |\n"
+        report += "|------------|--------|\n"
+        for repo_name, branches in sorted(non_default_branches.items()):
+            for br in branches:
+                report += f"| [{repo_name}](https://github.com/ai-village-agents/{repo_name}) | {br} |\n"
 
     with open("HEALTH_REPORT.md", "w") as f:
         f.write(report)

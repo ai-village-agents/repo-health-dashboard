@@ -13,6 +13,7 @@ from src.scanner.stale_branch_check import scan_stale_branches
 from src.scanner.dependency_audit import audit_dependencies
 from src.scanner.pages_check import scan_pages_status
 from src.scanner.workflow_check import scan_workflow_health
+from src.scanner.activity_check import scan_open_prs, scan_open_issues, scan_non_default_branches
 from datetime import datetime
 import html as html_mod
 
@@ -38,6 +39,13 @@ def generate_html_report():
     print("Running workflow health scan...")
     workflow_results = scan_workflow_health()
 
+    print('Running open PRs scan...')
+    open_prs = scan_open_prs()
+    print('Running open issues scan...')
+    open_issues = scan_open_issues()
+    print('Running non-default branches scan...')
+    non_default_branches = scan_non_default_branches()
+
     now = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
 
     total_repos = len(compliance_results)
@@ -59,6 +67,8 @@ def generate_html_report():
             elif st == "Disabled": wf_dis += 1
 
     stale_count = sum(len(branches) for branches in stale_results.values())
+    pr_count = len(open_prs)
+    issue_count = len(open_issues)
 
     # --- Build HTML ---
     compliance_rows = []
@@ -108,6 +118,32 @@ def generate_html_report():
             stale_rows.append(
                 f'<tr><td>{_esc(short)}</td><td>{_esc(b["name"])}</td>'
                 f'<td>{_esc(b["date"])}</td><td>{_esc(b["age"])} days</td></tr>'
+            )
+
+    pr_rows = []
+    for pr in open_prs:
+        pr_rows.append(
+            f'<tr><td><a href="https://github.com/ai-village-agents/{_esc(pr["repo"])}" target="_blank">{_esc(pr["repo"])}</a></td>'
+            f'<td><a href="{_esc(pr["url"])}" target="_blank">#{pr["number"]}: {_esc(pr["title"])}</a></td>'
+            f'<td>{_esc(pr["author"])}</td>'
+            f'<td>{_esc(pr["created"])}</td></tr>'
+        )
+
+    issue_rows = []
+    for issue in open_issues:
+        issue_rows.append(
+            f'<tr><td><a href="https://github.com/ai-village-agents/{_esc(issue["repo"])}" target="_blank">{_esc(issue["repo"])}</a></td>'
+            f'<td><a href="{_esc(issue["url"])}" target="_blank">#{issue["number"]}: {_esc(issue["title"])}</a></td>'
+            f'<td>{_esc(issue["author"])}</td>'
+            f'<td>{_esc(issue["created"])}</td></tr>'
+        )
+
+    branch_info_rows = []
+    for repo_name, branches in sorted(non_default_branches.items()):
+        for br in branches:
+            branch_info_rows.append(
+                f'<tr><td><a href="https://github.com/ai-village-agents/{_esc(repo_name)}" target="_blank">{_esc(repo_name)}</a></td>'
+                f'<td>{_esc(br)}</td></tr>'
             )
 
     dep_sections = []
@@ -222,6 +258,14 @@ td a:hover {{ text-decoration: underline; }}
     <div class="number">{stale_count}</div>
     <div class="label">Stale Branches</div>
   </div>
+  <div class="card {"green" if pr_count == 0 else "blue"}">
+    <div class="number">{pr_count}</div>
+    <div class="label">Open PRs</div>
+  </div>
+  <div class="card blue">
+    <div class="number">{issue_count}</div>
+    <div class="label">Open Issues</div>
+  </div>
 </div>
 
 <div class="container">
@@ -265,6 +309,24 @@ td a:hover {{ text-decoration: underline; }}
 <div class="section">
 <h2>5. Dependencies</h2>
 {''.join(dep_sections) if dep_sections else '<div class="empty">No external dependencies detected.</div>'}
+</div>
+
+<div class="section">
+<h2>6. Open Pull Requests</h2>
+{'<div class="empty">&#10003; No open pull requests &mdash; all caught up!</div>' if not pr_rows else
+'<table><tr><th>Repository</th><th>Pull Request</th><th>Author</th><th>Opened</th></tr>' + ''.join(pr_rows) + '</table>'}
+</div>
+
+<div class="section">
+<h2>7. Open Issues</h2>
+{'<div class="empty">No open issues!</div>' if not issue_rows else
+'<table><tr><th>Repository</th><th>Issue</th><th>Author</th><th>Opened</th></tr>' + ''.join(issue_rows) + '</table>'}
+</div>
+
+<div class="section">
+<h2>8. Active Branches</h2>
+{'<div class="empty">&#10003; Only default branches &mdash; ecosystem is clean!</div>' if not branch_info_rows else
+'<table><tr><th>Repository</th><th>Branch</th></tr>' + ''.join(branch_info_rows) + '</table>'}
 </div>
 
 </div>
