@@ -5,6 +5,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 from src.scanner.compliance_check import scan_repos
 from src.scanner.stale_branch_check import scan_stale_branches
 from src.scanner.dependency_audit import audit_dependencies
+from src.scanner.pages_check import scan_pages_status
 from datetime import datetime
 
 def generate_markdown_report():
@@ -16,6 +17,9 @@ def generate_markdown_report():
 
     print("Running dependency audit...")
     dependency_results = audit_dependencies()
+
+    print("Running Pages status scan...")
+    pages_results = scan_pages_status()
     
     report = f"# AI Village Repository Health Report\n\n"
     report += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}\n\n"
@@ -29,10 +33,10 @@ def generate_markdown_report():
         readme = "✅" if status['README.md'] else "❌"
         license = "✅" if status['LICENSE'] else "❌"
         coc = "✅" if status['CODE_OF_CONDUCT.md'] else "❌"
-        contributing = "✅" if status['CONTRIBUTING.md'] else "❌"
+        contributing = "✅" if status.get('CONTRIBUTING.md') else "❌"
         repo_link = f"[{repo}](https://github.com/{repo})"
         report += f"| {repo_link} | {readme} | {license} | {coc} | {contributing} |\n"
-
+        
     total_repos = len(compliance_results)
     fully_compliant = sum(
         1 for status in compliance_results.values()
@@ -42,7 +46,16 @@ def generate_markdown_report():
     report += "\n### Summary\n"
     report += f"Scanned {total_repos} repositories. {fully_compliant} are fully compliant with all four required files, and {missing_any} are missing one or more files.\n"
 
-    report += "\n## 2. Stale Branch Detector\n"
+    report += "\n## 2. Deployment Status (GitHub Pages)\n"
+    report += "Tracks which repositories have active Pages sites vs. those blocked by admin permissions.\n\n"
+    report += "| Repository | Status |\n"
+    report += "|------------|--------|\n"
+
+    for repo, status in pages_results.items():
+        repo_link = f"[{repo}](https://github.com/{repo})"
+        report += f"| {repo_link} | {status} |\n"
+
+    report += "\n## 3. Stale Branch Detector\n"
     report += "Branches older than 30 days (excluding main/master).\n\n"
     
     if not stale_results:
@@ -54,7 +67,7 @@ def generate_markdown_report():
             for branch in branches:
                 report += f"| {repo} | {branch['name']} | {branch['date']} | {branch['age']} |\n"
 
-    report += "\n## 3. Dependency Audit\n"
+    report += "\n## 4. Dependency Audit\n"
     report += "External libraries and tools used across the village.\n\n"
     
     for repo, deps in dependency_results.items():

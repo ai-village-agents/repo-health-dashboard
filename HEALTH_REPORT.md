@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-17 11:31:36 UTC
+**Generated:** 2026-02-17 11:58:34 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -39,12 +39,46 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 ### Summary
 Scanned 28 repositories. 28 are fully compliant with all four required files, and 0 are missing one or more files.
 
-## 2. Stale Branch Detector
+## 2. Deployment Status (GitHub Pages)
+Tracks which repositories have active Pages sites vs. those blocked by admin permissions.
+
+| Repository | Status |
+|------------|--------|
+| [ai-village-agents/breaking-news-monitor](https://github.com/ai-village-agents/breaking-news-monitor) | 🚫 Admin Blocked |
+| [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | ✅ Live (https://ai-village-agents.github.io/civic-safety-guardrails/) |
+| [ai-village-agents/claude-3-7-news-monitor](https://github.com/ai-village-agents/claude-3-7-news-monitor) | ✅ Live (https://ai-village-agents.github.io/claude-3-7-news-monitor/) |
+| [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | 🚫 Admin Blocked |
+| [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | ✅ Live (https://ai-village-agents.github.io/community-cleanup-toolkit/) |
+| [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | ✅ Live (https://ai-village-agents.github.io/contribution-dashboard/) |
+| [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | ✅ Live (https://ai-village-agents.github.io/deepseek-news/) |
+| [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | ✅ Live (https://ai-village-agents.github.io/gemini-2-5-pro-news/) |
+| [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | ✅ Live (https://ai-village-agents.github.io/gemini-3-pro-news-wire/) |
+| [ai-village-agents/gpt-5-1-news-wire](https://github.com/ai-village-agents/gpt-5-1-news-wire) | ✅ Live (https://ai-village-agents.github.io/gpt-5-1-news-wire/) |
+| [ai-village-agents/gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | ✅ Live (https://ai-village-agents.github.io/gpt-5-2-news-wire/) |
+| [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | 🚫 Admin Blocked |
+| [ai-village-agents/guardrails-adoption-guide](https://github.com/ai-village-agents/guardrails-adoption-guide) | 🚫 Admin Blocked |
+| [ai-village-agents/haiku-news-wire](https://github.com/ai-village-agents/haiku-news-wire) | ✅ Live (https://ai-village-agents.github.io/haiku-news-wire/) |
+| [ai-village-agents/juice-shop-automation-suite](https://github.com/ai-village-agents/juice-shop-automation-suite) | 🚫 Admin Blocked |
+| [ai-village-agents/juice-shop-exploitation-protocols](https://github.com/ai-village-agents/juice-shop-exploitation-protocols) | 🚫 Admin Blocked |
+| [ai-village-agents/juice-shop-quickwins](https://github.com/ai-village-agents/juice-shop-quickwins) | 🚫 Admin Blocked |
+| [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | 🚫 Admin Blocked |
+| [ai-village-agents/opus-breaking-news](https://github.com/ai-village-agents/opus-breaking-news) | ✅ Live (https://ai-village-agents.github.io/opus-breaking-news/) |
+| [ai-village-agents/opus-claude-code-news](https://github.com/ai-village-agents/opus-claude-code-news) | ✅ Live (https://ai-village-agents.github.io/opus-claude-code-news/) |
+| [ai-village-agents/opus46-breaking-news](https://github.com/ai-village-agents/opus46-breaking-news) | ✅ Live (https://ai-village-agents.github.io/opus46-breaking-news/) |
+| [ai-village-agents/owasp-juice-shop-kb](https://github.com/ai-village-agents/owasp-juice-shop-kb) | 🚫 Admin Blocked |
+| [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ✅ Live (https://ai-village-agents.github.io/park-cleanup-site/) |
+| [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | 🚫 Admin Blocked |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | 🚫 Admin Blocked |
+| [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | ✅ Live (https://ai-village-agents.github.io/sonnet-news/) |
+| [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | ✅ Live (https://ai-village-agents.github.io/village-time-capsule/) |
+| [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | ✅ Live (https://ai-village-agents.github.io/which-ai-village-agent/) |
+
+## 3. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
 
 ✅ **No stale branches found!** The ecosystem is clean.
 
-## 3. Dependency Audit
+## 4. Dependency Audit
 External libraries and tools used across the village.
 
 ### [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard)
