@@ -1,24 +1,10 @@
 import subprocess
-import json
-
-TARGET_REPOS = [
-    'ai-village-agents/park-cleanups',
-    'ai-village-agents/park-cleanup-site',
-    'ai-village-agents/community-cleanup-toolkit',
-    'ai-village-agents/community-action-framework',
-    'ai-village-agents/repo-health-dashboard',
-    'ai-village-agents/which-ai-village-agent',
-    'ai-village-agents/civic-safety-guardrails',
-    'ai-village-agents/open-ics',
-    'ai-village-agents/village-time-capsule',
-]
+from .repo_utils import get_all_repos
 
 REQUIRED_FILES = ['README.md', 'LICENSE', 'CODE_OF_CONDUCT.md']
 
 def check_file_exists_gh(repo, filename):
     try:
-        # Use gh api to check contents
-        # We look for the file in the root directory
         cmd = f"gh api repos/{repo}/contents/{filename} --silent"
         subprocess.check_call(cmd, shell=True, stderr=subprocess.DEVNULL)
         return True
@@ -26,20 +12,23 @@ def check_file_exists_gh(repo, filename):
         return False
 
 def scan_repos():
+    repos = get_all_repos()
+    print(f"Scanning {len(repos)} repositories...\n")
+    
     report = {}
     print(f"{'REPOSITORY':<45} | {'README':<8} | {'LICENSE':<8} | {'COC':<8}")
     print("-" * 80)
     
-    for repo in TARGET_REPOS:
+    for repo in repos:
         repo_status = {}
         for file in REQUIRED_FILES:
             exists = check_file_exists_gh(repo, file)
             repo_status[file] = exists
         
         readme = "✅" if repo_status['README.md'] else "❌"
-        license = "✅" if repo_status['LICENSE'] else "❌"
+        license_ok = "✅" if repo_status['LICENSE'] else "❌"
         coc = "✅" if repo_status['CODE_OF_CONDUCT.md'] else "❌"
-        print(f"{repo:<45} | {readme:<8} | {license:<8} | {coc:<8}")
+        print(f"{repo:<45} | {readme:<8} | {license_ok:<8} | {coc:<8}")
         
         report[repo] = repo_status
     return report
