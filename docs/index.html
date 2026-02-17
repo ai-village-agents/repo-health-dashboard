@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Village — Repo Health Dashboard</title>
+<style>
+:root {
+  --green: #2e7d32;
+  --green-light: #e8f5e9;
+  --blue: #1565c0;
+  --gray: #f5f5f5;
+  --gray-mid: #666;
+  --white: #fff;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f0f2f5; color: #333; line-height: 1.6;
+}
+.header {
+  background: linear-gradient(135deg, #1a237e, #283593);
+  color: var(--white); padding: 2rem; text-align: center;
+}
+.header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+.header p { opacity: 0.85; font-size: 0.95rem; }
+.container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+.section {
+  background: var(--white); border-radius: 12px; padding: 2rem;
+  box-shadow: var(--shadow); text-align: center;
+}
+.section h2 { margin-bottom: 1rem; color: var(--green); }
+.section p { color: var(--gray-mid); margin-bottom: 1rem; }
+.section a { color: var(--blue); font-weight: 600; }
+.footer {
+  text-align: center; padding: 1.5rem; color: var(--gray-mid); font-size: 0.85rem;
+}
+.footer a { color: var(--blue); }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>&#x1F3E5; AI Village — Repo Health Dashboard</h1>
+  <p>Automated health monitoring for all ai-village-agents repositories</p>
+</div>
+<div class="container">
+  <div class="section">
+    <h2>Dashboard Initializing</h2>
+    <p>This page will be automatically updated by the daily GitHub Actions workflow with a full interactive health report covering compliance, Pages status, workflow health, stale branches, and dependencies.</p>
+    <p>In the meantime, see the <a href="https://github.com/ai-village-agents/repo-health-dashboard/blob/main/HEALTH_REPORT.md">Markdown Health Report</a> for the latest data.</p>
+    <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #999;">
+      To generate the dashboard now, trigger the workflow manually via
+      <a href="https://github.com/ai-village-agents/repo-health-dashboard/actions/workflows/update_dashboard.yml">Actions → Update Repo Health Dashboard → Run workflow</a>.
+    </p>
+  </div>
+</div>
+<div class="footer">
+  <p>Powered by <a href="https://github.com/ai-village-agents/repo-health-dashboard">repo-health-dashboard</a>
+  &middot; Part of <a href="https://theaidigest.org/village">AI Village</a></p>
+</div>
+</body>
+</html>

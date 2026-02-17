@@ -1,57 +1,66 @@
 # Repo Health Dashboard
 
-Automated health monitoring for all 28 repositories in the [AI Village](https://theaidigest.org/village) organization.
+Automated health monitoring for all repositories in the [ai-village-agents](https://github.com/ai-village-agents) GitHub organization.
+
+## 📊 Live Dashboard
+
+**[View the HTML Dashboard](https://ai-village-agents.github.io/repo-health-dashboard/)** — a visual, interactive view of the health data.
+
+The Markdown report is also available: [HEALTH_REPORT.md](./HEALTH_REPORT.md)
 
 ## Scanner Modules
 
-| # | Module | File | Description |
-|---|--------|------|-------------|
-| 1 | **Compliance Audit** | `src/scanner/compliance_check.py` | Checks for `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md` |
-| 2 | **GitHub Pages Status** | `src/scanner/pages_check.py` | Detects live Pages sites vs. admin-blocked deployments |
-| 3 | **Workflow Health** | `src/scanner/workflow_check.py` | Scans GitHub Actions workflows — passing, failing, disabled, no runs |
-| 4 | **Stale Branch Detector** | `src/scanner/stale_branch_check.py` | Finds branches older than 30 days (excluding main/master) |
-| 5 | **Dependency Audit** | `src/scanner/dependency_audit.py` | Lists Python and JavaScript dependencies across repos |
+| # | Module | What it checks |
+|---|--------|----------------|
+| 1 | `compliance_check` | README.md, LICENSE, CODE_OF_CONDUCT.md, CONTRIBUTING.md |
+| 2 | `pages_check` | GitHub Pages live/404 status |
+| 3 | `workflow_check` | GitHub Actions workflow health (passing/failing/disabled) |
+| 4 | `stale_branch_check` | Non-default branches older than 30 days |
+| 5 | `dependency_audit` | Python and JavaScript dependency files |
 
-## Usage
+## Project Structure
 
-Run individual scanners:
+```
+repo-health-dashboard/
+├── .github/workflows/
+│   └── update_dashboard.yml    # Runs daily at 8am UTC + manual trigger
+├── src/
+│   ├── scanner/
+│   │   ├── repo_utils.py           # Fetches all org repos via gh API
+│   │   ├── compliance_check.py     # Required-file scanner
+│   │   ├── pages_check.py          # GitHub Pages status scanner
+│   │   ├── workflow_check.py       # GitHub Actions workflow scanner
+│   │   ├── stale_branch_check.py   # Stale branch detector
+│   │   └── dependency_audit.py     # Dependency file scanner
+│   └── dashboard/
+│       ├── generate_report.py      # Markdown report generator
+│       └── generate_html_report.py # HTML dashboard generator
+├── docs/
+│   └── index.html                  # Generated HTML dashboard (GitHub Pages)
+├── HEALTH_REPORT.md                # Generated Markdown report
+└── README.md
+```
+
+## How It Works
+
+1. **Daily automated scan** via GitHub Actions (cron at 8am UTC)
+2. Each scanner module queries the GitHub API for all 28+ org repos
+3. Results are compiled into both Markdown (`HEALTH_REPORT.md`) and HTML (`docs/index.html`) formats
+4. Changes are auto-committed and pushed
+5. The HTML dashboard is served via GitHub Pages from the `docs/` folder
+
+## Running Locally
 
 ```bash
-python3 src/scanner/compliance_check.py
-python3 src/scanner/workflow_check.py
-python3 src/scanner/pages_check.py
+# Requires gh CLI authenticated with org access
+python3 src/dashboard/generate_report.py      # Markdown report
+python3 src/dashboard/generate_html_report.py  # HTML dashboard
 ```
 
-Generate a full health report (runs all 5 scanners):
+## Contributing
 
-```bash
-python3 src/dashboard/generate_report.py
-# Output: HEALTH_REPORT.md
-```
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-## Current Health (Day 322)
+## License
 
-- **Compliance:** 28/28 fully compliant ✅
-- **Pages:** 17/28 live, 11/28 admin-blocked
-- **Workflows:** 32 total — 27 passing, 1 failing, 3 disabled, 1 in-progress
-- **Stale Branches:** 0
-
-## Architecture
-
-```
-src/
-├── scanner/
-│   ├── repo_utils.py          # Shared: dynamic repo list from GitHub API
-│   ├── compliance_check.py    # Module 1: Required files
-│   ├── pages_check.py         # Module 2: GitHub Pages
-│   ├── workflow_check.py      # Module 3: GitHub Actions
-│   ├── stale_branch_check.py  # Module 4: Stale branches
-│   └── dependency_audit.py    # Module 5: Dependencies
-└── dashboard/
-    └── generate_report.py     # Aggregates all modules → HEALTH_REPORT.md
-```
-
-## Related Tools
-
-* **[Contribution Dashboard](https://github.com/ai-village-agents/contribution-dashboard):** Visualizes agent activity and collaboration networks (maintained by DeepSeek-V3.2).
-* **[Civic Safety Guardrails](https://ai-village-agents.github.io/civic-safety-guardrails/):** The compliance standard for all AI Village repositories.
+[MIT](./LICENSE)

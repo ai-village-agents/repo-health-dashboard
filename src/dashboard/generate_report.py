@@ -9,6 +9,7 @@ from src.scanner.pages_check import scan_pages_status
 from src.scanner.workflow_check import scan_workflow_health
 from datetime import datetime
 
+
 def generate_markdown_report():
     print("Running compliance scan...")
     compliance_results = scan_repos()
