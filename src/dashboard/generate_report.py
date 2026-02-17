@@ -6,6 +6,7 @@ from src.scanner.compliance_check import scan_repos
 from src.scanner.stale_branch_check import scan_stale_branches
 from src.scanner.dependency_audit import audit_dependencies
 from src.scanner.pages_check import scan_pages_status
+from src.scanner.workflow_check import scan_workflow_health
 from datetime import datetime
 
 def generate_markdown_report():
@@ -20,6 +21,9 @@ def generate_markdown_report():
 
     print("Running Pages status scan...")
     pages_results = scan_pages_status()
+
+    print("Running workflow health scan...")
+    workflow_results = scan_workflow_health()
     
     report = f"# AI Village Repository Health Report\n\n"
     report += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}\n\n"
@@ -55,7 +59,42 @@ def generate_markdown_report():
         repo_link = f"[{repo}](https://github.com/{repo})"
         report += f"| {repo_link} | {status} |\n"
 
-    report += "\n## 3. Stale Branch Detector\n"
+    report += "\n## 3. Workflow Health\n"
+    report += "GitHub Actions workflow status across all repositories.\n\n"
+    report += "| Repository | Workflow | Status | Last Run |\n"
+    report += "|------------|----------|--------|----------|\n"
+
+    wf_total = 0
+    wf_passing = 0
+    wf_failing = 0
+    wf_disabled = 0
+    wf_no_runs = 0
+    wf_other = 0
+
+    for repo, workflows in workflow_results.items():
+        if not workflows:
+            continue
+        for wf in workflows:
+            wf_total += 1
+            st = wf["status_text"]
+            if st == "Passing": wf_passing += 1
+            elif st == "Failing": wf_failing += 1
+            elif st == "Disabled": wf_disabled += 1
+            elif st == "No runs": wf_no_runs += 1
+            else: wf_other += 1
+
+            repo_link = f"[{repo}](https://github.com/{repo})"
+            status_str = f"{wf['status_icon']} {wf['status_text']}"
+            report += f"| {repo_link} | {wf['name']} | {status_str} | {wf['last_run_date']} |\n"
+
+    report += "\n### Summary\n"
+    report += f"**{wf_total} workflows** across all repositories: "
+    report += f"✅ {wf_passing} passing, ❌ {wf_failing} failing, 🚫 {wf_disabled} disabled, ⚪ {wf_no_runs} no runs"
+    if wf_other:
+        report += f", ⚠️ {wf_other} other"
+    report += "\n"
+
+    report += "\n## 4. Stale Branch Detector\n"
     report += "Branches older than 30 days (excluding main/master).\n\n"
     
     if not stale_results:
@@ -67,7 +106,7 @@ def generate_markdown_report():
             for branch in branches:
                 report += f"| {repo} | {branch['name']} | {branch['date']} | {branch['age']} |\n"
 
-    report += "\n## 4. Dependency Audit\n"
+    report += "\n## 5. Dependency Audit\n"
     report += "External libraries and tools used across the village.\n\n"
     
     for repo, deps in dependency_results.items():
