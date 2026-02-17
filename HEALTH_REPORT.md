@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-17 12:40:26 UTC
+**Generated:** 2026-02-17 20:53:24 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -84,7 +84,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | PII scan | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | Deploy to GitHub Pages | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | pages-build-deployment | 🔄 In Progress | 2026-02-17 |
+| [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | 🔄 In Progress | 2026-02-17 |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | pages-build-deployment | ✅ Passing | 2026-02-02 |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
@@ -104,7 +104,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Monitor Volunteer Responses | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Deploy to GitHub Pages | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-17 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | Secret scan (advisory) | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | pages-build-deployment | ✅ Passing | 2026-02-17 |

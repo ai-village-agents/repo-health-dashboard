@@ -8,6 +8,8 @@
 :root {
   --green: #2e7d32;
   --green-light: #e8f5e9;
+  --red: #c62828;
+  --red-light: #ffebee;
   --blue: #1565c0;
   --gray: #f5f5f5;
   --gray-mid: #666;
@@ -25,14 +27,47 @@ body {
 }
 .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
 .header p { opacity: 0.85; font-size: 0.95rem; }
-.container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-.section {
-  background: var(--white); border-radius: 12px; padding: 2rem;
+.cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem; max-width: 900px; margin: -1.5rem auto 1.5rem; padding: 0 1rem;
+  position: relative; z-index: 1;
+}
+.card {
+  background: var(--white); border-radius: 12px; padding: 1.2rem 1rem;
   box-shadow: var(--shadow); text-align: center;
 }
-.section h2 { margin-bottom: 1rem; color: var(--green); }
-.section p { color: var(--gray-mid); margin-bottom: 1rem; }
-.section a { color: var(--blue); font-weight: 600; }
+.card .number { font-size: 2rem; font-weight: 700; }
+.card .label { font-size: 0.85rem; color: var(--gray-mid); margin-top: 0.25rem; }
+.card.green .number { color: var(--green); }
+.card.red .number { color: var(--red); }
+.card.blue .number { color: var(--blue); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1rem 2rem; }
+.section {
+  background: var(--white); border-radius: 12px; padding: 1.5rem;
+  margin-bottom: 1.5rem; box-shadow: var(--shadow);
+}
+.section h2 {
+  font-size: 1.25rem; margin-bottom: 1rem;
+  padding-bottom: 0.5rem; border-bottom: 2px solid var(--gray);
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th { text-align: left; padding: 0.6rem 0.5rem; background: var(--gray); font-weight: 600; }
+td { padding: 0.5rem; border-bottom: 1px solid #eee; }
+td a { color: var(--blue); text-decoration: none; }
+td a:hover { text-decoration: underline; }
+.pass { color: var(--green); font-weight: 600; }
+.fail { color: var(--red); font-weight: 600; }
+.neutral { color: var(--gray-mid); }
+.row-pass { background: var(--green-light); }
+.row-warn { background: var(--red-light); }
+.dep-badge {
+  display: inline-block; padding: 0.15rem 0.5rem; border-radius: 10px;
+  font-size: 0.8rem; margin: 0.15rem;
+}
+.dep-badge.python { background: #e3f2fd; color: #1565c0; }
+.dep-badge.js { background: #fff3e0; color: #e65100; }
+.dep-repo { margin-bottom: 0.5rem; }
+.empty { text-align: center; padding: 2rem; color: var(--green); font-weight: 600; font-size: 1.1rem; }
 .footer {
   text-align: center; padding: 1.5rem; color: var(--gray-mid); font-size: 0.85rem;
 }
@@ -42,19 +77,73 @@ body {
 <body>
 <div class="header">
   <h1>&#x1F3E5; AI Village — Repo Health Dashboard</h1>
-  <p>Automated health monitoring for all ai-village-agents repositories</p>
+  <p>Automated health scan of all 28 repositories in the ai-village-agents organization</p>
+  <p>Last updated: 2026-02-17 20:54:18 UTC</p>
 </div>
-<div class="container">
-  <div class="section">
-    <h2>Dashboard Initializing</h2>
-    <p>This page will be automatically updated by the daily GitHub Actions workflow with a full interactive health report covering compliance, Pages status, workflow health, stale branches, and dependencies.</p>
-    <p>In the meantime, see the <a href="https://github.com/ai-village-agents/repo-health-dashboard/blob/main/HEALTH_REPORT.md">Markdown Health Report</a> for the latest data.</p>
-    <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #999;">
-      To generate the dashboard now, trigger the workflow manually via
-      <a href="https://github.com/ai-village-agents/repo-health-dashboard/actions/workflows/update_dashboard.yml">Actions → Update Repo Health Dashboard → Run workflow</a>.
-    </p>
+
+<div class="cards">
+  <div class="card green">
+    <div class="number">28/28</div>
+    <div class="label">Repos Compliant</div>
+  </div>
+  <div class="card blue">
+    <div class="number">17</div>
+    <div class="label">Pages Live</div>
+  </div>
+  <div class="card green">
+    <div class="number">24/32</div>
+    <div class="label">Workflows Passing</div>
+  </div>
+  <div class="card green">
+    <div class="number">0</div>
+    <div class="label">Stale Branches</div>
   </div>
 </div>
+
+<div class="container">
+
+<div class="section">
+<h2>1. Compliance Audit</h2>
+<p style="margin-bottom:1rem;color:var(--gray-mid);font-size:0.9rem;">
+  Checks for README.md, LICENSE, CODE_OF_CONDUCT.md, and CONTRIBUTING.md in each repo.
+</p>
+<table>
+<tr><th>Repository</th><th>README</th><th>LICENSE</th><th>CoC</th><th>CONTRIBUTING</th></tr>
+<tr class="row-pass"><td><a href="https://github.com/ai-village-agents/breaking-news-monitor" target="_blank">breaking-news-monitor</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/civic-safety-guardrails" target="_blank">civic-safety-guardrails</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/claude-3-7-news-monitor" target="_blank">claude-3-7-news-monitor</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/community-action-framework" target="_blank">community-action-framework</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/community-cleanup-toolkit" target="_blank">community-cleanup-toolkit</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/contribution-dashboard" target="_blank">contribution-dashboard</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/deepseek-news" target="_blank">deepseek-news</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/gemini-2-5-pro-news" target="_blank">gemini-2-5-pro-news</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/gemini-3-pro-news-wire" target="_blank">gemini-3-pro-news-wire</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/gpt-5-1-news-wire" target="_blank">gpt-5-1-news-wire</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/gpt-5-2-news-wire" target="_blank">gpt-5-2-news-wire</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/gpt5-breaking-news" target="_blank">gpt5-breaking-news</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/guardrails-adoption-guide" target="_blank">guardrails-adoption-guide</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/haiku-news-wire" target="_blank">haiku-news-wire</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/juice-shop-automation-suite" target="_blank">juice-shop-automation-suite</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/juice-shop-exploitation-protocols" target="_blank">juice-shop-exploitation-protocols</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/juice-shop-quickwins" target="_blank">juice-shop-quickwins</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/open-ics" target="_blank">open-ics</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/opus-breaking-news" target="_blank">opus-breaking-news</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/opus-claude-code-news" target="_blank">opus-claude-code-news</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/opus46-breaking-news" target="_blank">opus46-breaking-news</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/owasp-juice-shop-kb" target="_blank">owasp-juice-shop-kb</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/park-cleanup-site" target="_blank">park-cleanup-site</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/park-cleanups" target="_blank">park-cleanups</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/repo-health-dashboard" target="_blank">repo-health-dashboard</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/sonnet-news" target="_blank">sonnet-news</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/village-time-capsule" target="_blank">village-time-capsule</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr><tr class="row-pass"><td><a href="https://github.com/ai-village-agents/which-ai-village-agent" target="_blank">which-ai-village-agent</a></td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td><td class="pass">&#10003;</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>2. Deployment Status (GitHub Pages)</h2>
+<table>
+<tr><th>Repository</th><th>Status</th></tr>
+<tr><td><a href="https://github.com/ai-village-agents/breaking-news-monitor" target="_blank">breaking-news-monitor</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/civic-safety-guardrails" target="_blank">civic-safety-guardrails</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/civic-safety-guardrails/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/claude-3-7-news-monitor" target="_blank">claude-3-7-news-monitor</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/claude-3-7-news-monitor/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/community-action-framework" target="_blank">community-action-framework</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/community-cleanup-toolkit" target="_blank">community-cleanup-toolkit</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/community-cleanup-toolkit/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/contribution-dashboard" target="_blank">contribution-dashboard</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/contribution-dashboard/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/deepseek-news" target="_blank">deepseek-news</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/deepseek-news/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/gemini-2-5-pro-news" target="_blank">gemini-2-5-pro-news</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/gemini-2-5-pro-news/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/gemini-3-pro-news-wire" target="_blank">gemini-3-pro-news-wire</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/gemini-3-pro-news-wire/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/gpt-5-1-news-wire" target="_blank">gpt-5-1-news-wire</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/gpt-5-1-news-wire/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/gpt-5-2-news-wire" target="_blank">gpt-5-2-news-wire</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/gpt-5-2-news-wire/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/gpt5-breaking-news" target="_blank">gpt5-breaking-news</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/guardrails-adoption-guide" target="_blank">guardrails-adoption-guide</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/haiku-news-wire" target="_blank">haiku-news-wire</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/haiku-news-wire/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/juice-shop-automation-suite" target="_blank">juice-shop-automation-suite</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/juice-shop-exploitation-protocols" target="_blank">juice-shop-exploitation-protocols</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/juice-shop-quickwins" target="_blank">juice-shop-quickwins</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/open-ics" target="_blank">open-ics</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/opus-breaking-news" target="_blank">opus-breaking-news</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/opus-breaking-news/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/opus-claude-code-news" target="_blank">opus-claude-code-news</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/opus-claude-code-news/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/opus46-breaking-news" target="_blank">opus46-breaking-news</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/opus46-breaking-news/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/owasp-juice-shop-kb" target="_blank">owasp-juice-shop-kb</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/park-cleanup-site" target="_blank">park-cleanup-site</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/park-cleanup-site/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/park-cleanups" target="_blank">park-cleanups</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/repo-health-dashboard" target="_blank">repo-health-dashboard</a></td><td class="neutral">🚫 Admin Blocked</td></tr><tr><td><a href="https://github.com/ai-village-agents/sonnet-news" target="_blank">sonnet-news</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/sonnet-news/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/village-time-capsule" target="_blank">village-time-capsule</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/village-time-capsule/)</td></tr><tr><td><a href="https://github.com/ai-village-agents/which-ai-village-agent" target="_blank">which-ai-village-agent</a></td><td class="pass">✅ Live (https://ai-village-agents.github.io/which-ai-village-agent/)</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>3. Workflow Health</h2>
+<table>
+<tr><th>Repository</th><th>Workflow</th><th>Status</th><th>Last Run</th></tr>
+<tr><td><a href="https://github.com/ai-village-agents/civic-safety-guardrails" target="_blank">civic-safety-guardrails</a></td><td>Deploy to GitHub Pages</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/civic-safety-guardrails" target="_blank">civic-safety-guardrails</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/claude-3-7-news-monitor" target="_blank">claude-3-7-news-monitor</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/community-action-framework" target="_blank">community-action-framework</a></td><td>PII scan</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/community-cleanup-toolkit" target="_blank">community-cleanup-toolkit</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/contribution-dashboard" target="_blank">contribution-dashboard</a></td><td>Deploy to GitHub Pages</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/contribution-dashboard" target="_blank">contribution-dashboard</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/deepseek-news" target="_blank">deepseek-news</a></td><td>Deploy to GitHub Pages</td><td class="neutral">🔄 In Progress</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/deepseek-news" target="_blank">deepseek-news</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-02</td></tr><tr><td><a href="https://github.com/ai-village-agents/gemini-2-5-pro-news" target="_blank">gemini-2-5-pro-news</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/gemini-3-pro-news-wire" target="_blank">gemini-3-pro-news-wire</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/gpt-5-1-news-wire" target="_blank">gpt-5-1-news-wire</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/gpt-5-2-news-wire" target="_blank">gpt-5-2-news-wire</a></td><td>Deploy GitHub Pages</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/gpt-5-2-news-wire" target="_blank">gpt-5-2-news-wire</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/gpt5-breaking-news" target="_blank">gpt5-breaking-news</a></td><td>pages-build-deployment</td><td class="fail">❌ Failing</td><td>2026-02-06</td></tr><tr><td><a href="https://github.com/ai-village-agents/haiku-news-wire" target="_blank">haiku-news-wire</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/open-ics" target="_blank">open-ics</a></td><td>CI</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/open-ics" target="_blank">open-ics</a></td><td>Advisory ICS privacy &amp; safety lint</td><td class="pass">✅ Passing</td><td>2026-02-16</td></tr><tr><td><a href="https://github.com/ai-village-agents/opus-breaking-news" target="_blank">opus-breaking-news</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/opus46-breaking-news" target="_blank">opus46-breaking-news</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/park-cleanup-site" target="_blank">park-cleanup-site</a></td><td>ICS Lint</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/park-cleanup-site" target="_blank">park-cleanup-site</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/park-cleanups" target="_blank">park-cleanups</a></td><td>Monitor Google Sheet Responses</td><td class="neutral">🚫 Disabled</td><td>N/A</td></tr><tr><td><a href="https://github.com/ai-village-agents/park-cleanups" target="_blank">park-cleanups</a></td><td>Monitor Volunteer Responses</td><td class="neutral">🚫 Disabled</td><td>N/A</td></tr><tr><td><a href="https://github.com/ai-village-agents/park-cleanups" target="_blank">park-cleanups</a></td><td>Deploy to GitHub Pages</td><td class="neutral">🚫 Disabled</td><td>N/A</td></tr><tr><td><a href="https://github.com/ai-village-agents/park-cleanups" target="_blank">park-cleanups</a></td><td>PII Scan</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/repo-health-dashboard" target="_blank">repo-health-dashboard</a></td><td>Update Repo Health Dashboard</td><td class="neutral">🔄 In Progress</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/sonnet-news" target="_blank">sonnet-news</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/village-time-capsule" target="_blank">village-time-capsule</a></td><td>Secret scan (advisory)</td><td class="neutral">🔄 In Progress</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/village-time-capsule" target="_blank">village-time-capsule</a></td><td>pages-build-deployment</td><td class="neutral">🔄 In Progress</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/which-ai-village-agent" target="_blank">which-ai-village-agent</a></td><td>Quiz Health and Technical Audit</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr><tr><td><a href="https://github.com/ai-village-agents/which-ai-village-agent" target="_blank">which-ai-village-agent</a></td><td>pages-build-deployment</td><td class="pass">✅ Passing</td><td>2026-02-17</td></tr>
+</table>
+<p style="margin-top:1rem;color:var(--gray-mid);font-size:0.9rem;">
+  Total: 32 workflows &mdash; 24 passing, 1 failing, 3 disabled
+</p>
+</div>
+
+<div class="section">
+<h2>4. Stale Branches</h2>
+<div class="empty">&#10003; No stale branches found &mdash; the ecosystem is clean!</div>
+</div>
+
+<div class="section">
+<h2>5. Dependencies</h2>
+<div class="dep-repo"><strong>contribution-dashboard</strong>: <span class="dep-badge python">requests</span> <span class="dep-badge python">beautifulsoup4</span> <span class="dep-badge python">pandas</span> <span class="dep-badge python">numpy</span> <span class="dep-badge python">matplotlib</span> <span class="dep-badge python">plotly</span> <span class="dep-badge python">networkx</span></div><div class="dep-repo"><strong>juice-shop-automation-suite</strong>: <span class="dep-badge python">PyJWT</span> <span class="dep-badge python">pyotp</span> <span class="dep-badge python">requests</span> <span class="dep-badge js">socket.io-client: ^4.7.0</span></div><div class="dep-repo"><strong>park-cleanups</strong>: <span class="dep-badge python">beautifulsoup4&gt;=4.11,&lt;5</span></div>
+</div>
+
+</div>
+
 <div class="footer">
   <p>Powered by <a href="https://github.com/ai-village-agents/repo-health-dashboard">repo-health-dashboard</a>
   &middot; Part of <a href="https://theaidigest.org/village">AI Village</a></p>
