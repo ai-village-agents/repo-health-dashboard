@@ -8,6 +8,7 @@ from src.scanner.dependency_audit import audit_dependencies
 from src.scanner.pages_check import scan_pages_status
 from src.scanner.workflow_check import scan_workflow_health
 from src.scanner.activity_check import scan_open_prs, scan_open_issues, scan_non_default_branches
+from src.scanner.shadowban_check import check_shadowbans
 from datetime import datetime
 
 
@@ -33,6 +34,9 @@ def generate_markdown_report():
     open_issues = scan_open_issues()
     print("Running non-default branches scan...")
     non_default_branches = scan_non_default_branches()
+    
+    print("Running shadowban check...")
+    shadowban_results = check_shadowbans()
     
     report = f"# AI Village Repository Health Report\n\n"
     report += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}\n\n"
@@ -68,7 +72,30 @@ def generate_markdown_report():
         repo_link = f"[{repo}](https://github.com/{repo})"
         report += f"| {repo_link} | {status} |\n"
 
-    report += "\n## 3. Workflow Health\n"
+    report += "\n## 3. Infrastructure Visibility (Shadowban Check)\n"
+    report += "Audit of agent GitHub profiles for public visibility (404 = Shadowbanned/Ghost PR risk).\n\n"
+    report += "| Agent Username | Status | Profile URL |\n"
+    report += "|----------------|--------|-------------|\n"
+    
+    shadowbanned_count = 0
+    for agent, data in shadowban_results.items():
+        status_code = data['status']
+        if status_code == 200:
+            status_icon = "✅ Visible"
+        elif status_code == 404:
+            status_icon = "👻 SHADOWBANNED (404)"
+            shadowbanned_count += 1
+        else:
+            status_icon = f"⚠️ {status_code}"
+            
+        report += f"| `{agent}` | {status_icon} | [Link]({data['url']}) |\n"
+        
+    if shadowbanned_count > 0:
+        report += f"\n**WARNING:** {shadowbanned_count} agents are currently shadowbanned. Their PRs may be invisible to unauthenticated users.\n"
+    else:
+        report += "\n✅ All agents are visible to the public.\n"
+
+    report += "\n## 4. Workflow Health\n"
     report += "GitHub Actions workflow status across all repositories.\n\n"
     report += "| Repository | Workflow | Status | Last Run |\n"
     report += "|------------|----------|--------|----------|\n"
@@ -103,7 +130,7 @@ def generate_markdown_report():
         report += f", ⚠️ {wf_other} other"
     report += "\n"
 
-    report += "\n## 4. Stale Branch Detector\n"
+    report += "\n## 5. Stale Branch Detector\n"
     report += "Branches older than 30 days (excluding main/master).\n\n"
     
     if not stale_results:
@@ -115,7 +142,7 @@ def generate_markdown_report():
             for branch in branches:
                 report += f"| {repo} | {branch['name']} | {branch['date']} | {branch['age']} |\n"
 
-    report += "\n## 5. Dependency Audit\n"
+    report += "\n## 6. Dependency Audit\n"
     report += "External libraries and tools used across the village.\n\n"
     
     for repo, deps in dependency_results.items():
@@ -135,7 +162,7 @@ def generate_markdown_report():
                 report += f"- `{d}`\n"
         report += "\n"
 
-    report += "\n## 6. Open Pull Requests\n"
+    report += "\n## 7. Open Pull Requests\n"
     report += "Currently open PRs across the organization.\n\n"
     if not open_prs:
         report += "No open pull requests — all caught up!\n"
@@ -145,7 +172,7 @@ def generate_markdown_report():
         for pr in open_prs:
             report += f"| [{pr['repo']}](https://github.com/ai-village-agents/{pr['repo']}) | [#{pr['number']}: {pr['title']}]({pr['url']}) | {pr['author']} | {pr['created']} |\n"
 
-    report += "\n## 7. Open Issues\n"
+    report += "\n## 8. Open Issues\n"
     report += "Currently open issues across the organization.\n\n"
     if not open_issues:
         report += "No open issues!\n"
@@ -155,7 +182,7 @@ def generate_markdown_report():
         for issue in open_issues:
             report += f"| [{issue['repo']}](https://github.com/ai-village-agents/{issue['repo']}) | [#{issue['number']}: {issue['title']}]({issue['url']}) | {issue['author']} | {issue['created']} |\n"
 
-    report += "\n## 8. Active Branches\n"
+    report += "\n## 9. Active Branches\n"
     report += "Non-default branches currently active in the organization.\n\n"
     if not non_default_branches:
         report += "Only default branches — ecosystem is clean!\n"
