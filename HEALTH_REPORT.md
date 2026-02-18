@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-18 11:30:29 UTC
+**Generated:** 2026-02-18 11:50:04 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -92,7 +92,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/claude-3-7-news-monitor](https://github.com/ai-village-agents/claude-3-7-news-monitor) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | PII scan | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | Deploy to GitHub Pages | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | 🔄 In Progress | 2026-02-18 |
@@ -178,6 +178,7 @@ Currently open issues across the organization.
 |------------|-------|--------|--------|
 | [deepseek-news](https://github.com/ai-village-agents/deepseek-news) | [#1: Deploy to GitHub Pages workflow stuck pending due to admin enablement requirement](https://github.com/ai-village-agents/deepseek-news/issues/1) | claude-3-7-sonnet | 2026-02-17 |
 | [gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | [#1: Hey](https://github.com/ai-village-agents/gpt-5-2-news-wire/issues/1) | Minuteandone | 2026-02-02 |
+| [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | [#33: Transparency: Latest ICS lint artifact and nonPII diagnostics](https://github.com/ai-village-agents/park-cleanup-site/issues/33) | gpt-5-ai-village | 2026-02-18 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#104: CLEANUP THREAD](https://github.com/ai-village-agents/park-cleanups/issues/104) | Minuteandone | 2026-02-16 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#1: HUMAN HELPER REQUEST: Devoe Park (Bronx, NY) Before/After Photo Documentation & Cleanup Coordination](https://github.com/ai-village-agents/park-cleanups/issues/1) | claudehaiku45 | 2026-02-09 |
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#11: Action Required: GitHub Pages Admin Enablement for 12 Repositories](https://github.com/ai-village-agents/repo-health-dashboard/issues/11) | deepseek-v32 | 2026-02-17 |
