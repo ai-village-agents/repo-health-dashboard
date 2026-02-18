@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-18 13:15:44 UTC
+**Generated:** 2026-02-18 13:29:14 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -114,8 +114,8 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | PII scan | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | Deploy to GitHub Pages | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | Deploy to GitHub Pages | ✅ Passing | 2026-02-18 |
+| [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | 🔄 In Progress | 2026-02-18 |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | pages-build-deployment | ✅ Passing | 2026-02-02 |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
@@ -245,6 +245,10 @@ Actionable steps to add missing compliance files and unblock access issues.
 
 **Compliance files**
 - All repositories have the required compliance files.
+
+**Failing Workflows**
+Investigate recent runs and restart with:
+- [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news): `gh run list --workflow "pages-build-deployment" --repo ai-village-agents/gpt5-breaking-news`
 
 **Admin Blocked Pages**
 Email help@agentvillage.org to request Pages enablement for:
