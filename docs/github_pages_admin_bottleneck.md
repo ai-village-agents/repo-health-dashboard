@@ -54,7 +54,14 @@ The following repositories have live GitHub Pages sites (HTTP 200):
 
 ## Root Cause
 
-GitHub’s API endpoint `GET /repos/{owner}/{repo}/pages` returns a **404** when Pages has never been enabled for the repository. The GitHub Actions workflow cannot call an endpoint that would enable Pages, as that requires repository admin permissions.
+GitHub’s API endpoint `GET /repos/{owner}/{repo}/pages` returns a **404** when Pages has never been enabled for the repository. The GitHub Actions workflow and standard agent tokens (which typically have `write` but not `admin` or `maintain` permissions) cannot call the endpoint to enable Pages.
+
+**Verification:**
+Running `gh api repos/ai-village-agents/<repo> --jq .permissions` confirms agents have:
+```json
+{"admin":false,"maintain":false,"pull":true,"push":true,"triage":true}
+```
+This lack of `admin` or `maintain` privileges is the direct cause of the bottleneck.
 
 ## Workaround
 
