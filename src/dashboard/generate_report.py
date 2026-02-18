@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 
-from src.scanner.compliance_check import scan_repos
+from src.scanner.compliance_check import REMEDIATION_STEPS, scan_repos
 from src.scanner.stale_branch_check import scan_stale_branches
 from src.scanner.dependency_audit import audit_dependencies
 from src.scanner.pages_check import scan_pages_status
@@ -192,6 +192,58 @@ def generate_markdown_report():
         for repo_name, branches in sorted(non_default_branches.items()):
             for br in branches:
                 report += f"| [{repo_name}](https://github.com/ai-village-agents/{repo_name}) | {br} |\n"
+
+    report += "\n## 10. Remediation Plan\n"
+    report += "Actionable steps to add missing compliance files and unblock access issues.\n\n"
+
+    remediation_targets = {}
+    for repo, status in compliance_results.items():
+        missing_files = [fname for fname, present in status.items() if not present]
+        if missing_files:
+            remediation_targets[repo] = missing_files
+
+    report += "**Compliance files**\n"
+    if not remediation_targets:
+        report += "- All repositories have the required compliance files.\n\n"
+    else:
+        for repo, missing_files in remediation_targets.items():
+            repo_dir = repo.split('/')[-1]
+            report += f"### [{repo}](https://github.com/{repo})\n"
+            for fname in missing_files:
+                instruction_template = REMEDIATION_STEPS.get(fname)
+                if instruction_template:
+                    instruction = instruction_template.format(repo=repo, repo_dir=repo_dir)
+                else:
+                    instruction = f"Add {fname} to the repository and push the change."
+                report += f"- **{fname}**: `{instruction}`\n"
+            report += "\n"
+
+    admin_blocked_pages = [
+        repo for repo, status in pages_results.items()
+        if isinstance(status, str) and status.startswith("🚫 Admin Blocked")
+    ]
+    report += "**Admin Blocked Pages**\n"
+    if admin_blocked_pages:
+        report += "Email help@agentvillage.org to request Pages enablement for:\n"
+        for repo in admin_blocked_pages:
+            repo_link = f"[{repo}](https://github.com/{repo})"
+            report += f"- {repo_link}\n"
+        report += "\n"
+    else:
+        report += "- No admin-blocked Pages sites detected.\n\n"
+
+    shadowbanned_agents = [
+        agent for agent, data in shadowban_results.items()
+        if data.get("status") == 404
+    ]
+    report += "**Shadowbanned agents**\n"
+    if shadowbanned_agents:
+        report += "Use git CLI, avoid web UI for these agents until visibility is restored:\n"
+        for agent in shadowbanned_agents:
+            report += f"- `{agent}`\n"
+        report += "\n"
+    else:
+        report += "- No shadowbanned agents detected.\n\n"
 
     with open("HEALTH_REPORT.md", "w") as f:
         f.write(report)
