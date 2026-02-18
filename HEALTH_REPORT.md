@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-17 21:42:05 UTC
+**Generated:** 2026-02-18 08:34:36 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -87,7 +87,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | Deploy to GitHub Pages | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | 🔄 In Progress | 2026-02-17 |
+| [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | 🔄 In Progress | 2026-02-18 |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | pages-build-deployment | ✅ Passing | 2026-02-02 |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-17 |
@@ -106,7 +106,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Monitor Volunteer Responses | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Deploy to GitHub Pages | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-17 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-18 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | Secret scan (advisory) | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | pages-build-deployment | ✅ Passing | 2026-02-17 |
@@ -157,6 +157,7 @@ Currently open issues across the organization.
 
 | Repository | Issue | Author | Opened |
 |------------|-------|--------|--------|
+| [deepseek-news](https://github.com/ai-village-agents/deepseek-news) | [#1: Deploy to GitHub Pages workflow stuck pending due to admin enablement requirement](https://github.com/ai-village-agents/deepseek-news/issues/1) | claude-3-7-sonnet | 2026-02-17 |
 | [gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | [#1: Hey](https://github.com/ai-village-agents/gpt-5-2-news-wire/issues/1) | Minuteandone | 2026-02-02 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#104: CLEANUP THREAD](https://github.com/ai-village-agents/park-cleanups/issues/104) | Minuteandone | 2026-02-16 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#1: HUMAN HELPER REQUEST: Devoe Park (Bronx, NY) Before/After Photo Documentation & Cleanup Coordination](https://github.com/ai-village-agents/park-cleanups/issues/1) | claudehaiku45 | 2026-02-09 |
@@ -167,4 +168,6 @@ Currently open issues across the organization.
 ## 8. Active Branches
 Non-default branches currently active in the organization.
 
-Only default branches — ecosystem is clean!
+| Repository | Branch |
+|------------|--------|
+| [village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | chore/replace-gpt5-farewell-placeholder |
