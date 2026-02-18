@@ -8,12 +8,13 @@ import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 
-from src.scanner.compliance_check import scan_repos
+from src.scanner.compliance_check import REMEDIATION_STEPS, scan_repos
 from src.scanner.stale_branch_check import scan_stale_branches
 from src.scanner.dependency_audit import audit_dependencies
 from src.scanner.pages_check import scan_pages_status
 from src.scanner.workflow_check import scan_workflow_health
 from src.scanner.activity_check import scan_open_prs, scan_open_issues, scan_non_default_branches
+from src.scanner.shadowban_check import check_shadowbans
 from datetime import datetime
 import html as html_mod
 
@@ -45,6 +46,8 @@ def generate_html_report():
     open_issues = scan_open_issues()
     print('Running non-default branches scan...')
     non_default_branches = scan_non_default_branches()
+    print('Running shadowban check...')
+    shadowban_results = check_shadowbans()
 
     now = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
 
@@ -158,6 +161,47 @@ def generate_html_report():
             items.append(f'<span class="dep-badge js">{_esc(d)}</span>')
         dep_sections.append(f'<div class="dep-repo"><strong>{_esc(short)}</strong>: {" ".join(items)}</div>')
 
+    remediation_targets = {}
+    for repo, status in compliance_results.items():
+        missing_files = [fname for fname, present in status.items() if not present]
+        if missing_files:
+            remediation_targets[repo] = missing_files
+
+    compliance_remediation_html = '<div class="empty">All repositories have the required compliance files.</div>'
+    if remediation_targets:
+        remediation_blocks = []
+        for repo, missing_files in sorted(remediation_targets.items()):
+            repo_dir = repo.split('/')[-1]
+            repo_link = f'<a href="https://github.com/{_esc(repo)}" target="_blank">{_esc(repo)}</a>'
+            steps = []
+            for fname in missing_files:
+                template = REMEDIATION_STEPS.get(fname)
+                instruction = template.format(repo=repo, repo_dir=repo_dir) if template else f"Add {fname} to the repository and push the change."
+                steps.append(f'<li><strong>{_esc(fname)}</strong>: <code>{_esc(instruction)}</code></li>')
+            remediation_blocks.append(f'<div class="remediation-repo"><div class="repo-name">{repo_link}</div><ul>' + ''.join(steps) + '</ul></div>')
+        compliance_remediation_html = ''.join(remediation_blocks)
+
+    admin_blocked_pages = [
+        repo for repo, status in pages_results.items()
+        if isinstance(status, str) and status.startswith("🚫 Admin Blocked")
+    ]
+    admin_blocked_html = '<div class="empty">No admin-blocked Pages sites detected.</div>'
+    if admin_blocked_pages:
+        admin_list = ''.join(
+            f'<li><a href="https://github.com/{_esc(repo)}" target="_blank">{_esc(repo)}</a></li>'
+            for repo in sorted(admin_blocked_pages)
+        )
+        admin_blocked_html = '<p>Email <code>help@agentvillage.org</code> to request Pages enablement for:</p><ul>' + admin_list + '</ul>'
+
+    shadowbanned_agents = [
+        agent for agent, data in shadowban_results.items()
+        if data.get("status") == 404
+    ]
+    shadowban_html = '<div class="empty">No shadowbanned agents detected.</div>'
+    if shadowbanned_agents:
+        shadowban_list = ''.join(f'<li><code>{_esc(agent)}</code></li>' for agent in sorted(shadowbanned_agents))
+        shadowban_html = '<p>Use git CLI, avoid web UI for these agents until visibility is restored:</p><ul>' + shadowban_list + '</ul>'
+
     page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -228,6 +272,10 @@ td a:hover {{ text-decoration: underline; }}
 .dep-badge.js {{ background: #fff3e0; color: #e65100; }}
 .dep-repo {{ margin-bottom: 0.5rem; }}
 .empty {{ text-align: center; padding: 2rem; color: var(--green); font-weight: 600; font-size: 1.1rem; }}
+.section h3 {{ margin: 0.5rem 0 0.35rem; font-size: 1rem; }}
+ul {{ margin: 0.25rem 0 0.75rem 1.25rem; }}
+.remediation-repo {{ margin-bottom: 1rem; }}
+.remediation-repo .repo-name {{ font-weight: 600; margin-bottom: 0.25rem; }}
 .footer {{
   text-align: center; padding: 1.5rem; color: var(--gray-mid); font-size: 0.85rem;
 }}
@@ -327,6 +375,21 @@ td a:hover {{ text-decoration: underline; }}
 <h2>8. Active Branches</h2>
 {'<div class="empty">&#10003; Only default branches &mdash; ecosystem is clean!</div>' if not branch_info_rows else
 '<table><tr><th>Repository</th><th>Branch</th></tr>' + ''.join(branch_info_rows) + '</table>'}
+</div>
+
+<div class="section">
+<h2>10. Remediation Plan</h2>
+<p style="margin-bottom:1rem;color:var(--gray-mid);font-size:0.9rem;">
+  Actionable steps to add missing compliance files and unblock access issues.
+</p>
+<h3>Compliance files</h3>
+{compliance_remediation_html}
+
+<h3>Admin Blocked Pages</h3>
+{admin_blocked_html}
+
+<h3>Shadowbanned agents</h3>
+{shadowban_html}
 </div>
 
 </div>
