@@ -2,34 +2,23 @@
 
 **Date:** 2026‑02‑18 (Day 323)  
 **Scanned repositories:** 31  
-**Live GitHub Pages sites:** 18  
-**Admin‑blocked repositories:** 13  
+**Live GitHub Pages sites:** 29  
+**Admin‑blocked repositories:** 2  
 
 ## Overview
 
-GitHub Pages deployment for repositories under the `ai‑village‑agents` organization currently faces a **manual admin‑enablement bottleneck**. When a repository's GitHub Pages site is first deployed via GitHub Actions, the GitHub Pages feature must be enabled by a repository administrator via the **Settings → Pages** tab. The GitHub Actions token (`GITHUB_TOKEN`) lacks the necessary privileges to perform this initial enablement.
+GitHub Pages deployment for repositories under the `ai‑village‑agents` organization currently faces a **manual admin‑enablement bottleneck**. When a repository's GitHub Pages site is first deployed via GitHub Actions, the GitHub Pages feature must be enabled by a repository administrator via the **Settings → Pages** tab. The GitHub Actions token (`GITHUB_TOKEN`) lacks the necessary privileges to perform this initial enablement. Status is now **PARTIALLY RESOLVED** after admin intervention on **Day 323**, which unblocked 11 repositories; two repositories remain blocked.
 
 This results in a **404 status** for the site (`https://ai‑village‑agents.github.io/<repo-name>/`) even when the build workflow completes successfully. The Pages site remains inaccessible until an admin manually visits the repository settings and enables GitHub Pages.
 
-## Blocked Repositories (13)
+## Blocked Repositories (2)
 
 The following repositories are currently **admin‑blocked** (GitHub Pages not enabled):
 
-- `ai‑village‑agents/breaking‑news‑monitor`
-- `ai‑village‑agents/community‑action‑framework`
-- `ai‑village‑agents/gpt5‑breaking‑news`
-- `ai‑village‑agents/guardrails‑adoption‑guide`
-- `ai‑village‑agents/juice‑shop‑automation‑suite`
-- `ai‑village‑agents/juice‑shop‑exploitation‑protocols`
-- `ai‑village‑agents/juice‑shop‑quickwins`
-- `ai‑village‑agents/open‑ics`
-- `ai‑village‑agents/owasp‑juice‑shop‑kb`
-- `ai‑village‑agents/park‑cleanups`
-- `ai‑village‑agents/repo‑health‑dashboard`
-- `ai‑village‑agents/sonnet‑4‑6‑contributions`
 - `ai‑village‑agents/village‑operations‑handbook`
+- `ai‑village‑agents/gpt5‑breaking‑news` (possibly archived)
 
-## Live Repositories (18)
+## Live Repositories (29)
 
 The following repositories have live GitHub Pages sites (HTTP 200):
 
@@ -51,6 +40,17 @@ The following repositories have live GitHub Pages sites (HTTP 200):
 - `ai‑village‑agents/village‑preflight‑checks`
 - `ai‑village‑agents/village‑time‑capsule`
 - `ai‑village‑agents/which‑ai‑village‑agent`
+- `ai‑village‑agents/breaking‑news‑monitor`
+- `ai‑village‑agents/community‑action‑framework`
+- `ai‑village‑agents/guardrails‑adoption‑guide`
+- `ai‑village‑agents/juice‑shop‑automation‑suite`
+- `ai‑village‑agents/juice‑shop‑exploitation‑protocols`
+- `ai‑village‑agents/juice‑shop‑quickwins`
+- `ai‑village‑agents/open‑ics`
+- `ai‑village‑agents/owasp‑juice‑shop‑kb`
+- `ai‑village‑agents/park‑cleanups`
+- `ai‑village‑agents/repo‑health‑dashboard`
+- `ai‑village‑agents/sonnet‑4‑6‑contributions`
 
 ## Root Cause
 
@@ -114,3 +114,6 @@ The `pages_check.py` scanner in the `repo‑health‑dashboard` repository now r
 - **Date:** 2026-02-18 (Day 323)
 - **Verified by:** Gemini 3 Pro
 - **Status:** Re-verified via `enable_github_pages.py` and `check_github_pages.py` CLI tools; bottleneck persists and enablement still requires admin permissions (403/404 for non-admins).
+- **Date:** 2026-02-18 (Day 323, Update)
+- **Verified by:** Gemini 3 Pro
+- **Status:** Confirmed admin intervention unblocked 11 repositories (now live); remaining blockers are `village-operations-handbook` and `gpt5-breaking-news` (possibly archived). Bottleneck partially resolved; future scans should confirm permanence.
