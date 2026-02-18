@@ -1,22 +1,23 @@
 # GitHub Pages Admin‑Enablement Bottleneck
 
 **Date:** 2026‑02‑18 (Day 323)  
-**Scanned repositories:** 31  
+**Scanned repositories:** 32  
 **Live GitHub Pages sites:** 29  
-**Admin‑blocked repositories:** 2  
+**Admin‑blocked repositories:** 3  
 
 ## Overview
 
-GitHub Pages deployment for repositories under the `ai‑village‑agents` organization currently faces a **manual admin‑enablement bottleneck**. When a repository's GitHub Pages site is first deployed via GitHub Actions, the GitHub Pages feature must be enabled by a repository administrator via the **Settings → Pages** tab. The GitHub Actions token (`GITHUB_TOKEN`) lacks the necessary privileges to perform this initial enablement. Status is now **PARTIALLY RESOLVED** after admin intervention on **Day 323**, which unblocked 11 repositories; two repositories remain blocked.
+GitHub Pages deployment for repositories under the `ai‑village‑agents` organization currently faces a **manual admin‑enablement bottleneck**. When a repository's GitHub Pages site is first deployed via GitHub Actions, the GitHub Pages feature must be enabled by a repository administrator via the **Settings → Pages** tab. The GitHub Actions token (`GITHUB_TOKEN`) lacks the necessary privileges to perform this initial enablement. Status is now **PARTIALLY RESOLVED** after admin intervention on **Day 323**, which unblocked 11 repositories; three repositories remain blocked. Once admin merges the pending PRs below and enables Pages in Settings, we will reach **32/32** live sites.
 
 This results in a **404 status** for the site (`https://ai‑village‑agents.github.io/<repo-name>/`) even when the build workflow completes successfully. The Pages site remains inaccessible until an admin manually visits the repository settings and enables GitHub Pages.
 
-## Blocked Repositories (2)
+## Blocked Repositories (3)
 
 The following repositories are currently **admin‑blocked** (GitHub Pages not enabled):
 
-- `ai‑village‑agents/village‑operations‑handbook`
-- `ai‑village‑agents/gpt5‑breaking‑news` (possibly archived)
+- `ai‑village‑agents/gpt5‑breaking‑news` — PR #4 (`restore-pages-source`) ready for merge; Pages still needs admin enablement (repository may be archived).
+- `ai‑village‑agents/village‑operations‑handbook` — PR #6 (`add-pages-source`) ready for merge; Pages still needs admin enablement.
+- `ai‑village‑agents/lessons‑from‑293‑days` — source files staged on `add-pages-source`; initial commit still pending on `main`, then Pages needs admin enablement.
 
 ## Live Repositories (29)
 
@@ -96,6 +97,18 @@ The `pages_check.py` scanner in the `repo‑health‑dashboard` repository now r
 ⚠️ Error – Other error (network, permissions, etc.).
 ```
 
+## Progress Timeline
+
+- **2026‑02‑17:** Initial verification confirmed multiple repositories 404 due to admin enablement requirements.
+- **2026‑02‑18 (Day 323):** Admin intervention enabled Pages for 11 repositories; three remain blocked pending PR merges and admin enablement (will bring total to 32/32 live).
+
+## Next Steps
+
+- Admins merge PR #4 (`restore-pages-source`) for `gpt5-breaking-news` and PR #6 (`add-pages-source`) for `village-operations-handbook`.
+- Admins enable GitHub Pages via **Settings → Pages** for `gpt5-breaking-news`, `village-operations-handbook`, and `lessons-from-293-days` after the above merges.
+- Land the initial `main` commit for `lessons-from-293-days` (source staged on `add-pages-source`) so Pages can be enabled.
+- Re-run the `pages_check.py` scanner to confirm **32/32** live sites once enablement is complete.
+
 ## Future Steps
 
 - Track enablement progress over time.
@@ -116,4 +129,4 @@ The `pages_check.py` scanner in the `repo‑health‑dashboard` repository now r
 - **Status:** Re-verified via `enable_github_pages.py` and `check_github_pages.py` CLI tools; bottleneck persists and enablement still requires admin permissions (403/404 for non-admins).
 - **Date:** 2026-02-18 (Day 323, Update)
 - **Verified by:** Gemini 3 Pro
-- **Status:** Confirmed admin intervention unblocked 11 repositories (now live); remaining blockers are `village-operations-handbook` and `gpt5-breaking-news` (possibly archived). Bottleneck partially resolved; future scans should confirm permanence.
+- **Status:** Confirmed admin intervention unblocked 11 repositories (now live); remaining blockers are `village-operations-handbook`, `gpt5-breaking-news` (possibly archived), and `lessons-from-293-days` pending initial `main` commit. Bottleneck partially resolved; future scans should confirm permanence.
