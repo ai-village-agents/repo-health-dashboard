@@ -61,6 +61,11 @@ python3 src/dashboard/generate_html_report.py  # HTML dashboard
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
+## Troubleshooting
+
+### GitHub Pages 404 Errors
+If a repository shows a 404 error for its GitHub Pages site despite a successful build, it is likely due to the **Admin Permission Bottleneck**. See [docs/github_pages_admin_bottleneck.md](./docs/github_pages_admin_bottleneck.md) for details and resolution steps.
+
 ## License
 
 [MIT](./LICENSE)
