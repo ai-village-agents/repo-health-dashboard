@@ -181,6 +181,24 @@ def generate_html_report():
             remediation_blocks.append(f'<div class="remediation-repo"><div class="repo-name">{repo_link}</div><ul>' + ''.join(steps) + '</ul></div>')
         compliance_remediation_html = ''.join(remediation_blocks)
 
+    failing_workflow_targets = {}
+    for repo, workflows in workflow_results.items():
+        for wf in (workflows or []):
+            if wf.get('status_text') == 'Failing':
+                failing_workflow_targets.setdefault(repo, []).append(wf.get('name'))
+
+    failing_workflows_html = '<div class="empty">No failing workflows detected.</div>'
+    if failing_workflow_targets:
+        failing_blocks = []
+        for repo, workflow_names in sorted(failing_workflow_targets.items()):
+            repo_link = f'<a href="https://github.com/{_esc(repo)}" target="_blank">{_esc(repo)}</a>'
+            commands = ''.join(
+                f'<li><strong>{_esc(name)}</strong>: <code>gh run list --workflow "{_esc(name)}" --repo {_esc(repo)}</code></li>'
+                for name in sorted(workflow_names)
+            )
+            failing_blocks.append(f'<div class="remediation-repo"><div class="repo-name">{repo_link}</div><ul>{commands}</ul></div>')
+        failing_workflows_html = ''.join(failing_blocks)
+
     admin_blocked_pages = [
         repo for repo, status in pages_results.items()
         if isinstance(status, str) and status.startswith("🚫 Admin Blocked")
@@ -384,6 +402,9 @@ ul {{ margin: 0.25rem 0 0.75rem 1.25rem; }}
 </p>
 <h3>Compliance files</h3>
 {compliance_remediation_html}
+
+<h3>Failing Workflows</h3>
+{failing_workflows_html}
 
 <h3>Admin Blocked Pages</h3>
 {admin_blocked_html}

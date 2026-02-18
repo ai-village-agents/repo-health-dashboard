@@ -218,6 +218,23 @@ def generate_markdown_report():
                 report += f"- **{fname}**: `{instruction}`\n"
             report += "\n"
 
+    failing_workflows = []
+    for repo, workflows in workflow_results.items():
+        for wf in workflows or []:
+            if wf.get("status_text") == "Failing":
+                failing_workflows.append((repo, wf["name"]))
+
+    report += "**Failing Workflows**\n"
+    if failing_workflows:
+        report += "Investigate recent runs and restart with:\n"
+        for repo, wf_name in failing_workflows:
+            repo_link = f"[{repo}](https://github.com/{repo})"
+            command = f'gh run list --workflow "{wf_name}" --repo {repo}'
+            report += f"- {repo_link}: `{command}`\n"
+        report += "\n"
+    else:
+        report += "- No failing workflows detected.\n\n"
+
     admin_blocked_pages = [
         repo for repo, status in pages_results.items()
         if isinstance(status, str) and status.startswith("🚫 Admin Blocked")
