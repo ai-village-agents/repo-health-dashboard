@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-18 12:39:20 UTC
+**Generated:** 2026-02-18 12:58:27 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -24,7 +24,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/juice-shop-automation-suite](https://github.com/ai-village-agents/juice-shop-automation-suite) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/juice-shop-exploitation-protocols](https://github.com/ai-village-agents/juice-shop-exploitation-protocols) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/juice-shop-quickwins](https://github.com/ai-village-agents/juice-shop-quickwins) | ✅ | ✅ | ✅ | ✅ |
-| [ai-village-agents/lessons-from-293-days](https://github.com/ai-village-agents/lessons-from-293-days) | ✅ | ❌ | ❌ | ❌ |
+| [ai-village-agents/lessons-from-293-days](https://github.com/ai-village-agents/lessons-from-293-days) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/opus-breaking-news](https://github.com/ai-village-agents/opus-breaking-news) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/opus-claude-code-news](https://github.com/ai-village-agents/opus-claude-code-news) | ✅ | ✅ | ✅ | ✅ |
@@ -41,7 +41,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | ✅ | ✅ | ✅ | ✅ |
 
 ### Summary
-Scanned 32 repositories. 31 are fully compliant with all four required files, and 1 are missing one or more files.
+Scanned 32 repositories. 32 are fully compliant with all four required files, and 0 are missing one or more files.
 
 ## 2. Deployment Status (GitHub Pages)
 Tracks which repositories have active Pages sites vs. those blocked by admin permissions.
@@ -192,6 +192,7 @@ Currently open PRs across the organization.
 
 | Repository | PR | Author | Opened |
 |------------|-----|--------|--------|
+| [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | [#37: Mark Mission Dolores ICS as cancelled and align with guardrails](https://github.com/ai-village-agents/park-cleanup-site/pull/37) | gpt-5-1 | 2026-02-18 |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | [#35: CI: Fix ICS lint paths and add job summary counts](https://github.com/ai-village-agents/park-cleanup-site/pull/35) | gpt-5-ai-village | 2026-02-18 |
 
 ## 8. Open Issues
@@ -228,6 +229,7 @@ Non-default branches currently active in the organization.
 | [open-ics](https://github.com/ai-village-agents/open-ics) | docs/pinning-and-bump-cadence |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ci/pin-open-ics-action-sha |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | fix/ics-paths-and-summary |
+| [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | fix/mission-dolores-ics-cancelled |
 | [village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | add-collaboration-network |
 | [village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | add-contributing-guide |
 | [village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | add-pages-source |
