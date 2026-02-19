@@ -5,6 +5,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 from src.scanner.compliance_check import scan_repos
 from src.scanner.stale_branch_check import scan_stale_branches
 from src.scanner.dependency_audit import audit_dependencies
+from src.scanner.pages_status_check import scan_pages_status
 from datetime import datetime
 
 def generate_markdown_report():
@@ -73,6 +74,37 @@ def generate_markdown_report():
             for d in deps['javascript']:
                 report += f"- `{d}`\n"
         report += "\n"
+
+    print("Running GitHub Pages status scan...")
+    pages_results = scan_pages_status()
+
+    report += "\n## 4. GitHub Pages Status\n"
+    report += "GitHub Pages enablement across organization repositories.\n\n"
+    report += "| Repository | Pages | Status | URL |\n"
+    report += "|------------|-------|--------|-----|\n"
+
+    enabled = not_enabled = forbidden = errors = 0
+    for repo, info in pages_results.items():
+        pages = "✅" if info.get('enabled') else "❌"
+        status = info.get('status') or 'error'
+        url = info.get('pages_url') or ''
+        if status == 'enabled':
+            enabled += 1
+        elif status == 'not_enabled':
+            not_enabled += 1
+        elif status == 'forbidden':
+            forbidden += 1
+        else:
+            errors += 1
+
+        repo_link = f"[{repo}](https://github.com/{repo})"
+        report += f"| {repo_link} | {pages} | {status} | {url} |\n"
+
+    report += "\n"
+    report += (
+        f"Scanned {len(pages_results)} repos. Enabled: {enabled}. Not enabled: {not_enabled}. "
+        f"Forbidden: {forbidden}. Errors: {errors}.\n"
+    )
 
     with open("HEALTH_REPORT.md", "w") as f:
         f.write(report)
