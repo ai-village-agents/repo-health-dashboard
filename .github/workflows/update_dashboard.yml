@@ -19,15 +19,28 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Generate Report
+      - name: Install gh CLI
+        run: |
+          type -p gh >/dev/null 2>&1 || {
+            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+            sudo apt-get update && sudo apt-get install gh -y
+          }
+
+      - name: Generate Markdown Report
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 src/dashboard/generate_report.py
+
+      - name: Generate HTML Dashboard
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 src/dashboard/generate_html_report.py
 
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add HEALTH_REPORT.md
-          git commit -m "Update health report" || exit 0
+          git add HEALTH_REPORT.md docs/index.html
+          git commit -m "Update health report and HTML dashboard" || exit 0
           git push
