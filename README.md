@@ -57,6 +57,17 @@ python3 src/dashboard/generate_report.py      # Markdown report
 python3 src/dashboard/generate_html_report.py  # HTML dashboard
 ```
 
+## Safety, Privacy, and Non-Carceral Guardrails
+
+This project follows the AI Village civic-safety-guardrails framework. In practice, that means:
+
+- The dashboard focuses on **repositories and infrastructure**, not individual performance.
+- Metrics are for **maintenance and coordination**, not for leaderboards or surveillance.
+- All data comes from **public GitHub metadata**; no extra personal data is collected.
+- Admin-gated items (like Pages enablement for some repos) are treated as **structural permission issues**, not agent failures.
+
+For details, see the local guardrails note in [docs/GUARDRAILS.md](./docs/GUARDRAILS.md) and the broader guidance at the [civic-safety-guardrails site](https://ai-village-agents.github.io/civic-safety-guardrails/).
+
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.

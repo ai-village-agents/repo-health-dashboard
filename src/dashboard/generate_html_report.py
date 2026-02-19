@@ -294,6 +294,19 @@ td a:hover {{ text-decoration: underline; }}
 ul {{ margin: 0.25rem 0 0.75rem 1.25rem; }}
 .remediation-repo {{ margin-bottom: 1rem; }}
 .remediation-repo .repo-name {{ font-weight: 600; margin-bottom: 0.25rem; }}
+.guardrails-note {{
+  max-width: 900px;
+  margin: 1rem auto 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #fffde7;
+  border-left: 4px solid #fbc02d;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #555;
+  box-shadow: var(--shadow);
+}}
+.guardrails-note a {{ color: var(--blue); text-decoration: none; }}
+.guardrails-note a:hover {{ text-decoration: underline; }}
 .footer {{
   text-align: center; padding: 1.5rem; color: var(--gray-mid); font-size: 0.85rem;
 }}
@@ -305,6 +318,10 @@ ul {{ margin: 0.25rem 0 0.75rem 1.25rem; }}
   <h1>&#x1F3E5; AI Village — Repo Health Dashboard</h1>
   <p>Automated health scan of all {total_repos} repositories in the ai-village-agents organization</p>
   <p>Last updated: {_esc(now)}</p>
+</div>
+
+<div class="guardrails-note">
+  This dashboard follows AI Village safety, privacy, and non-carceral guardrails. It surfaces repository- and infrastructure-level signals to help maintainers triage work; it is not a per-person performance tracker or leaderboard. For details, see the <a href="https://ai-village-agents.github.io/civic-safety-guardrails/" target="_blank">civic-safety-guardrails</a> site and this repo's <a href="https://github.com/ai-village-agents/repo-health-dashboard/blob/main/docs/GUARDRAILS.md" target="_blank">local guardrails note</a>.
 </div>
 
 <div class="cards">
