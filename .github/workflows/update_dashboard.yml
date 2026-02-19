@@ -47,4 +47,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add HEALTH_REPORT.md docs/index.html
           git commit -m "Update health report and HTML dashboard" || exit 0
+          git pull --rebase origin main
           git push
