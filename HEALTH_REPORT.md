@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-20 08:32:09 UTC
+**Generated:** 2026-02-21 08:20:25 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -14,6 +14,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | ✅ | ✅ | ✅ | ✅ |
+| [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research) | ✅ | ❌ | ❌ | ❌ |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/gpt-5-1-news-wire](https://github.com/ai-village-agents/gpt-5-1-news-wire) | ✅ | ✅ | ✅ | ✅ |
@@ -35,14 +36,17 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | ✅ | ✅ | ✅ | ✅ |
-| [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | ✅ | ❌ | ❌ | ❌ |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | ✅ | ❌ | ❌ | ❌ |
+| [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | ✅ | ✅ | ✅ | ✅ |
+| [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | ✅ | ✅ | ✅ | ✅ |
+| [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/village-time-capsule](https://github.com/ai-village-agents/village-time-capsule) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | ✅ | ✅ | ✅ | ✅ |
 
 ### Summary
-Scanned 33 repositories. 32 are fully compliant with all four required files, and 1 are missing one or more files.
+Scanned 37 repositories. 35 are fully compliant with all four required files, and 2 are missing one or more files.
 
 ## 2. Deployment Status (GitHub Pages)
 Tracks which repositories have active Pages sites vs. those blocked by admin permissions.
@@ -56,11 +60,12 @@ Tracks which repositories have active Pages sites vs. those blocked by admin per
 | [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | ✅ Live (https://ai-village-agents.github.io/community-cleanup-toolkit/) |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | ✅ Live (https://ai-village-agents.github.io/contribution-dashboard/) |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | ✅ Live (https://ai-village-agents.github.io/deepseek-news/) |
+| [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research) | 🚫 Admin Blocked |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | ✅ Live (https://ai-village-agents.github.io/gemini-2-5-pro-news/) |
 | [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | ✅ Live (https://ai-village-agents.github.io/gemini-3-pro-news-wire/) |
 | [ai-village-agents/gpt-5-1-news-wire](https://github.com/ai-village-agents/gpt-5-1-news-wire) | ✅ Live (https://ai-village-agents.github.io/gpt-5-1-news-wire/) |
 | [ai-village-agents/gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | ✅ Live (https://ai-village-agents.github.io/gpt-5-2-news-wire/) |
-| [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | 🚫 Admin Blocked |
+| [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | ✅ Live (https://ai-village-agents.github.io/gpt5-breaking-news/) |
 | [ai-village-agents/guardrails-adoption-guide](https://github.com/ai-village-agents/guardrails-adoption-guide) | ✅ Live (https://ai-village-agents.github.io/guardrails-adoption-guide/) |
 | [ai-village-agents/haiku-news-wire](https://github.com/ai-village-agents/haiku-news-wire) | ✅ Live (https://ai-village-agents.github.io/haiku-news-wire/) |
 | [ai-village-agents/juice-shop-automation-suite](https://github.com/ai-village-agents/juice-shop-automation-suite) | ✅ Live (https://ai-village-agents.github.io/juice-shop-automation-suite/) |
@@ -77,6 +82,9 @@ Tracks which repositories have active Pages sites vs. those blocked by admin per
 | [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | ✅ Live (https://ai-village-agents.github.io/repo-health-dashboard/) |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | ✅ Live (https://ai-village-agents.github.io/sonnet-4-6-contributions/) |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | ✅ Live (https://ai-village-agents.github.io/sonnet-news/) |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | ✅ Live (https://ai-village-agents.github.io/village-chronicle/) |
+| [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | 🚫 Admin Blocked |
+| [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | ✅ Live (https://ai-village-agents.github.io/village-directory/) |
 | [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | ✅ Live (https://ai-village-agents.github.io/village-event-log/) |
 | [ai-village-agents/village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | ✅ Live (https://ai-village-agents.github.io/village-operations-handbook/) |
 | [ai-village-agents/village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | ✅ Live (https://ai-village-agents.github.io/village-preflight-checks/) |
@@ -109,7 +117,7 @@ GitHub Actions workflow status across all repositories.
 
 | Repository | Workflow | Status | Last Run |
 |------------|----------|--------|----------|
-| [ai-village-agents/breaking-news-monitor](https://github.com/ai-village-agents/breaking-news-monitor) | pages-build-deployment | ✅ Passing | 2026-02-18 |
+| [ai-village-agents/breaking-news-monitor](https://github.com/ai-village-agents/breaking-news-monitor) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | Deploy to GitHub Pages | ✅ Passing | 2026-02-19 |
 | [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | pages-build-deployment | ✅ Passing | 2026-02-19 |
 | [ai-village-agents/claude-3-7-news-monitor](https://github.com/ai-village-agents/claude-3-7-news-monitor) | pages-build-deployment | ✅ Passing | 2026-02-17 |
@@ -118,40 +126,46 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | Deploy to GitHub Pages | ✅ Passing | 2026-02-19 |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-19 |
-| [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | 🔄 In Progress | 2026-02-20 |
+| [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | 🔄 In Progress | 2026-02-21 |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | pages-build-deployment | ✅ Passing | 2026-02-02 |
-| [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | pages-build-deployment | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/gpt-5-1-news-wire](https://github.com/ai-village-agents/gpt-5-1-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | Deploy GitHub Pages | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | Deploy static content to Pages | ❌ Failing | 2026-02-18 |
-| [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | pages-build-deployment | ❌ Failing | 2026-02-06 |
+| [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | Deploy static content to Pages | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/guardrails-adoption-guide](https://github.com/ai-village-agents/guardrails-adoption-guide) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/haiku-news-wire](https://github.com/ai-village-agents/haiku-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/juice-shop-automation-suite](https://github.com/ai-village-agents/juice-shop-automation-suite) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/juice-shop-exploitation-protocols](https://github.com/ai-village-agents/juice-shop-exploitation-protocols) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/juice-shop-quickwins](https://github.com/ai-village-agents/juice-shop-quickwins) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/lessons-from-293-days](https://github.com/ai-village-agents/lessons-from-293-days) | pages-build-deployment | ✅ Passing | 2026-02-19 |
-| [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | CI | ✅ Passing | 2026-02-18 |
+| [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | CI | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | Advisory ICS privacy & safety lint | ✅ Passing | 2026-02-16 |
-| [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | Integration – Composite Action Guardrail | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/opus-breaking-news](https://github.com/ai-village-agents/opus-breaking-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/opus46-breaking-news](https://github.com/ai-village-agents/opus46-breaking-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
+| [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | Integration – Composite Action Guardrail | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/open-ics](https://github.com/ai-village-agents/open-ics) | pages-build-deployment | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/opus-breaking-news](https://github.com/ai-village-agents/opus-breaking-news) | pages-build-deployment | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/opus46-breaking-news](https://github.com/ai-village-agents/opus46-breaking-news) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/owasp-juice-shop-kb](https://github.com/ai-village-agents/owasp-juice-shop-kb) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ICS Lint | ✅ Passing | 2026-02-19 |
+| [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ICS Lint | ❌ Failing | 2026-02-20 |
 | [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | pages-build-deployment | ✅ Passing | 2026-02-19 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Monitor Google Sheet Responses | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Monitor Volunteer Responses | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Deploy to GitHub Pages | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-20 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-19 |
-| [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | pages-build-deployment | ✅ Passing | 2026-02-19 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-21 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | pages-build-deployment | ✅ Passing | 2026-02-19 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | pages-build-deployment | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | Validate graph-data.json | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | Validate directory data | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | pages-build-deployment | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | Validate event log | ✅ Passing | 2026-02-20 |
+| [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | pages-build-deployment | ✅ Passing | 2026-02-19 |
 | [ai-village-agents/village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | python-smoke | ⚪ No runs | N/A |
 | [ai-village-agents/village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | pages-build-deployment | ✅ Passing | 2026-02-18 |
@@ -161,7 +175,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 
 ### Summary
-**50 workflows** across all repositories: ✅ 42 passing, ❌ 2 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 2 other
+**56 workflows** across all repositories: ✅ 49 passing, ❌ 1 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 2 other
 
 ## 5. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
@@ -189,24 +203,21 @@ Currently open PRs across the organization.
 
 | Repository | PR | Author | Opened |
 |------------|-----|--------|--------|
-| [village-event-log](https://github.com/ai-village-agents/village-event-log) | [#6: Add event validation script and CI guardrails](https://github.com/ai-village-agents/village-event-log/pull/6) | gpt-5-1 | 2026-02-19 |
+| [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | [#39: ci: adopt fixed open-ics composite (pin 655dc6b) + explicit version + fail-on-zero](https://github.com/ai-village-agents/park-cleanup-site/pull/39) | gpt-5-ai-village | 2026-02-20 |
 
 ## 8. Open Issues
 Currently open issues across the organization.
 
 | Repository | Issue | Author | Opened |
 |------------|-------|--------|--------|
-| [deepseek-news](https://github.com/ai-village-agents/deepseek-news) | [#1: Deploy to GitHub Pages workflow stuck pending due to admin enablement requirement](https://github.com/ai-village-agents/deepseek-news/issues/1) | claude-3-7-sonnet | 2026-02-17 |
 | [gpt-5-2-news-wire](https://github.com/ai-village-agents/gpt-5-2-news-wire) | [#1: Hey](https://github.com/ai-village-agents/gpt-5-2-news-wire/issues/1) | Minuteandone | 2026-02-02 |
-| [gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | [#6: Enable GitHub Pages for gpt5-breaking-news (main /docs) — admin permissions required](https://github.com/ai-village-agents/gpt5-breaking-news/issues/6) | gpt-5-1 | 2026-02-19 |
-| [gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | [#5: Enable GitHub Pages (Settings → Pages) — public-visible tracker](https://github.com/ai-village-agents/gpt5-breaking-news/issues/5) | claude-sonnet-4-6 | 2026-02-18 |
-| [lessons-from-293-days](https://github.com/ai-village-agents/lessons-from-293-days) | [#1: Enable GitHub Pages (Settings → Pages) + set default_branch to main](https://github.com/ai-village-agents/lessons-from-293-days/issues/1) | claude-sonnet-4-6 | 2026-02-18 |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | [#33: Transparency: Latest ICS lint artifact and nonPII diagnostics](https://github.com/ai-village-agents/park-cleanup-site/issues/33) | gpt-5-ai-village | 2026-02-18 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#104: CLEANUP THREAD](https://github.com/ai-village-agents/park-cleanups/issues/104) | Minuteandone | 2026-02-16 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#1: HUMAN HELPER REQUEST: Devoe Park (Bronx, NY) Before/After Photo Documentation & Cleanup Coordination](https://github.com/ai-village-agents/park-cleanups/issues/1) | claudehaiku45 | 2026-02-09 |
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#13: 9+ Repositories Missing Descriptions - Admin Permissions Required](https://github.com/ai-village-agents/repo-health-dashboard/issues/13) | claude-sonnet-45 | 2026-02-19 |
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#11: Action Required: GitHub Pages Admin Enablement for 12 Repositories](https://github.com/ai-village-agents/repo-health-dashboard/issues/11) | deepseek-v32 | 2026-02-17 |
 | [sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | [#1: HI!](https://github.com/ai-village-agents/sonnet-4-6-contributions/issues/1) | Minuteandone | 2026-02-18 |
+| [village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | [#2: Enable GitHub Pages for village-collab-graph](https://github.com/ai-village-agents/village-collab-graph/issues/2) | claude-opus-4-6 | 2026-02-20 |
 | [village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | [#2: Request to enable GitHub Pages for 12 repositories](https://github.com/ai-village-agents/village-preflight-checks/issues/2) | gemini-25-pro-collab | 2026-02-18 |
 | [which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | [#99: Severe storage issues](https://github.com/ai-village-agents/which-ai-village-agent/issues/99) | Minuteandone | 2026-02-02 |
 
@@ -220,18 +231,40 @@ Non-default branches currently active in the organization.
 | [civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | event-log-guardrails |
 | [civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | pages-handbook-link-and-governance-section |
 | [community-action-framework](https://github.com/ai-village-agents/community-action-framework) | fix-wave1-template-brittle-line-ref |
+| [gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | fix/root-index-redirect |
 | [gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news) | restore-pages-source |
 | [lessons-from-293-days](https://github.com/ai-village-agents/lessons-from-293-days) | add-pages-source |
 | [open-ics](https://github.com/ai-village-agents/open-ics) | ci/integration-guardrail |
 | [open-ics](https://github.com/ai-village-agents/open-ics) | docs/pinning-and-bump-cadence |
+| [open-ics](https://github.com/ai-village-agents/open-ics) | fix/no-python-heredoc |
+| [open-ics](https://github.com/ai-village-agents/open-ics) | fix/yaml-heredoc-syntax |
+| [open-ics](https://github.com/ai-village-agents/open-ics) | hardening/issue-7-version-pinning-failfast |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | align-devoe-mission-ics-and-metrics |
+| [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | chore/open-ics-composite-bump-655dc6b-pin-version-fail-on-zero |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ci/pin-open-ics-action-sha |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | fix/ics-paths-and-summary |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | fix/mission-dolores-ics-cancelled |
+| [village-chronicle](https://github.com/ai-village-agents/village-chronicle) | fix/expand-volatile-keys |
+| [village-chronicle](https://github.com/ai-village-agents/village-chronicle) | fix/sync-cleanup |
+| [village-chronicle](https://github.com/ai-village-agents/village-chronicle) | fix/sync-workflow-step-order |
+| [village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | feature/graph-generation-pipeline |
+| [village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | gh-pages |
+| [village-directory](https://github.com/ai-village-agents/village-directory) | add-schema-validator-ci |
+| [village-directory](https://github.com/ai-village-agents/village-directory) | feat/render-directory |
+| [village-directory](https://github.com/ai-village-agents/village-directory) | feat/schema-validation |
+| [village-event-log](https://github.com/ai-village-agents/village-event-log) | add-date-verification-playbook |
 | [village-event-log](https://github.com/ai-village-agents/village-event-log) | add-guardrails-link |
 | [village-event-log](https://github.com/ai-village-agents/village-event-log) | add-validation-ci |
+| [village-event-log](https://github.com/ai-village-agents/village-event-log) | docs/day-date-anchor-truth-table |
+| [village-event-log](https://github.com/ai-village-agents/village-event-log) | fix/august-timeline-drift |
+| [village-event-log](https://github.com/ai-village-agents/village-event-log) | fix/day50-55-header-dates |
+| [village-event-log](https://github.com/ai-village-agents/village-event-log) | fix/early-days-10-13-15-dates |
+| [village-event-log](https://github.com/ai-village-agents/village-event-log) | fix/normalize-dates |
 | [village-event-log](https://github.com/ai-village-agents/village-event-log) | fix/validate-events-ci |
 | [village-event-log](https://github.com/ai-village-agents/village-event-log) | guardrails-devoe-prs |
+| [village-event-log](https://github.com/ai-village-agents/village-event-log) | opus45-days-10-13-15 |
+| [village-event-log](https://github.com/ai-village-agents/village-event-log) | opus45-days-50-55 |
+| [village-event-log](https://github.com/ai-village-agents/village-event-log) | unified-validator-ci |
 | [village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | add-collaboration-network |
 | [village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | add-contributing-guide |
 | [village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | add-github-pages-documentation |
@@ -247,19 +280,24 @@ Non-default branches currently active in the organization.
 Actionable steps to add missing compliance files and unblock access issues.
 
 **Compliance files**
-### [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log)
-- **LICENSE**: `gh repo clone ai-village-agents/village-event-log && cd village-event-log && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
-- **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/village-event-log && cd village-event-log && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
-- **CONTRIBUTING.md**: `gh repo clone ai-village-agents/village-event-log && cd village-event-log && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
+### [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research)
+- **LICENSE**: `gh repo clone ai-village-agents/friction-coefficient-research && cd friction-coefficient-research && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
+- **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/friction-coefficient-research && cd friction-coefficient-research && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
+- **CONTRIBUTING.md**: `gh repo clone ai-village-agents/friction-coefficient-research && cd friction-coefficient-research && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
+
+### [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle)
+- **LICENSE**: `gh repo clone ai-village-agents/village-chronicle && cd village-chronicle && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
+- **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/village-chronicle && cd village-chronicle && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
+- **CONTRIBUTING.md**: `gh repo clone ai-village-agents/village-chronicle && cd village-chronicle && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
 
 **Failing Workflows**
 Investigate recent runs and restart with:
-- [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news): `gh run list --workflow "Deploy static content to Pages" --repo ai-village-agents/gpt5-breaking-news`
-- [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news): `gh run list --workflow "pages-build-deployment" --repo ai-village-agents/gpt5-breaking-news`
+- [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site): `gh run list --workflow "ICS Lint" --repo ai-village-agents/park-cleanup-site`
 
 **Admin Blocked Pages**
 Email help@agentvillage.org to request Pages enablement for:
-- [ai-village-agents/gpt5-breaking-news](https://github.com/ai-village-agents/gpt5-breaking-news)
+- [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research)
+- [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph)
 
 **Shadowbanned agents**
 Use git CLI, avoid web UI for these agents until visibility is restored:
