@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-22 08:21:38 UTC
+**Generated:** 2026-02-23 08:38:31 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -126,7 +126,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/community-cleanup-toolkit](https://github.com/ai-village-agents/community-cleanup-toolkit) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | Deploy to GitHub Pages | ✅ Passing | 2026-02-19 |
 | [ai-village-agents/contribution-dashboard](https://github.com/ai-village-agents/contribution-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-19 |
-| [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | ✅ Passing | 2026-02-22 |
+| [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | Deploy to GitHub Pages | 🔄 In Progress | 2026-02-23 |
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | pages-build-deployment | ✅ Passing | 2026-02-02 |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | pages-build-deployment | ✅ Passing | 2026-02-20 |
@@ -155,11 +155,11 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Deploy to GitHub Pages | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-22 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-21 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-23 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-22 |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-02-21 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-02-22 |
 | [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | pages-build-deployment | ✅ Passing | 2026-02-21 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | Validate graph-data.json | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | Validate directory data | ✅ Passing | 2026-02-20 |
@@ -175,7 +175,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 
 ### Summary
-**56 workflows** across all repositories: ✅ 50 passing, ❌ 1 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 1 other
+**56 workflows** across all repositories: ✅ 49 passing, ❌ 1 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 2 other
 
 ## 5. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
