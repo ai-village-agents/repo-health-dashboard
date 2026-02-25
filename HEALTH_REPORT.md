@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-24 08:36:56 UTC
+**Generated:** 2026-02-25 08:38:46 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -8,6 +8,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | Repository | README | LICENSE | CODE_OF_CONDUCT | CONTRIBUTING |
 |------------|--------|---------|-----------------|--------------|
 | [ai-village-agents/breaking-news-monitor](https://github.com/ai-village-agents/breaking-news-monitor) | ✅ | ✅ | ✅ | ✅ |
+| [ai-village-agents/c12-head-helper](https://github.com/ai-village-agents/c12-head-helper) | ✅ | ✅ | ❌ | ❌ |
 | [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/claude-3-7-news-monitor](https://github.com/ai-village-agents/claude-3-7-news-monitor) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | ✅ | ✅ | ✅ | ✅ |
@@ -47,7 +48,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | ✅ | ✅ | ✅ | ✅ |
 
 ### Summary
-Scanned 38 repositories. 35 are fully compliant with all four required files, and 3 are missing one or more files.
+Scanned 39 repositories. 35 are fully compliant with all four required files, and 4 are missing one or more files.
 
 ## 2. Deployment Status (GitHub Pages)
 Tracks which repositories have active Pages sites vs. those blocked by admin permissions.
@@ -55,6 +56,7 @@ Tracks which repositories have active Pages sites vs. those blocked by admin per
 | Repository | Status |
 |------------|--------|
 | [ai-village-agents/breaking-news-monitor](https://github.com/ai-village-agents/breaking-news-monitor) | ✅ Live (https://ai-village-agents.github.io/breaking-news-monitor/) |
+| [ai-village-agents/c12-head-helper](https://github.com/ai-village-agents/c12-head-helper) | 🚫 Admin Blocked |
 | [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | ✅ Live (https://ai-village-agents.github.io/civic-safety-guardrails/) |
 | [ai-village-agents/claude-3-7-news-monitor](https://github.com/ai-village-agents/claude-3-7-news-monitor) | ✅ Live (https://ai-village-agents.github.io/claude-3-7-news-monitor/) |
 | [ai-village-agents/community-action-framework](https://github.com/ai-village-agents/community-action-framework) | ✅ Live (https://ai-village-agents.github.io/community-action-framework/) |
@@ -85,7 +87,7 @@ Tracks which repositories have active Pages sites vs. those blocked by admin per
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | ✅ Live (https://ai-village-agents.github.io/sonnet-news/) |
 | [ai-village-agents/village-challenges](https://github.com/ai-village-agents/village-challenges) | 🚫 Admin Blocked |
 | [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | ✅ Live (https://ai-village-agents.github.io/village-chronicle/) |
-| [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | 🚫 Admin Blocked |
+| [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | ✅ Live (https://ai-village-agents.github.io/village-collab-graph/) |
 | [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | ✅ Live (https://ai-village-agents.github.io/village-directory/) |
 | [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | ✅ Live (https://ai-village-agents.github.io/village-event-log/) |
 | [ai-village-agents/village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | ✅ Live (https://ai-village-agents.github.io/village-operations-handbook/) |
@@ -150,24 +152,25 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/opus-breaking-news](https://github.com/ai-village-agents/opus-breaking-news) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/opus46-breaking-news](https://github.com/ai-village-agents/opus46-breaking-news) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/owasp-juice-shop-kb](https://github.com/ai-village-agents/owasp-juice-shop-kb) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ICS Lint | ✅ Passing | 2026-02-23 |
-| [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | pages-build-deployment | ✅ Passing | 2026-02-19 |
+| [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ICS Lint | ✅ Passing | 2026-02-24 |
+| [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | pages-build-deployment | ✅ Passing | 2026-02-24 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Monitor Google Sheet Responses | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Monitor Volunteer Responses | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Deploy to GitHub Pages | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-24 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-23 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-25 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-24 |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-02-23 |
-| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | pages-build-deployment | ✅ Passing | 2026-02-23 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-02-24 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | pages-build-deployment | ✅ Passing | 2026-02-24 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | Validate graph-data.json | ✅ Passing | 2026-02-20 |
-| [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | Validate directory data | ✅ Passing | 2026-02-20 |
-| [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | pages-build-deployment | ✅ Passing | 2026-02-20 |
-| [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | Validate event log | ✅ Passing | 2026-02-23 |
-| [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | pages-build-deployment | ✅ Passing | 2026-02-23 |
+| [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | pages-build-deployment | ✅ Passing | 2026-02-24 |
+| [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | Validate directory data | ❌ Failing | 2026-02-24 |
+| [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory) | pages-build-deployment | ✅ Passing | 2026-02-24 |
+| [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | Validate event log | ❌ Failing | 2026-02-24 |
+| [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log) | pages-build-deployment | ✅ Passing | 2026-02-24 |
 | [ai-village-agents/village-operations-handbook](https://github.com/ai-village-agents/village-operations-handbook) | pages-build-deployment | ✅ Passing | 2026-02-19 |
 | [ai-village-agents/village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | python-smoke | ⚪ No runs | N/A |
 | [ai-village-agents/village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | pages-build-deployment | ✅ Passing | 2026-02-18 |
@@ -177,7 +180,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 
 ### Summary
-**56 workflows** across all repositories: ✅ 51 passing, ❌ 0 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 1 other
+**57 workflows** across all repositories: ✅ 50 passing, ❌ 2 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 1 other
 
 ## 5. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
@@ -205,9 +208,38 @@ Currently open PRs across the organization.
 
 | Repository | PR | Author | Opened |
 |------------|-----|--------|--------|
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#86: (mirror) Challenge 13 proposal: deterministic redaction (gpt-5.2)](https://github.com/ai-village-agents/village-challenges/pull/86) | claude-opus-4-5 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#84: Challenge Proposal: Logical Consistency Audit - Claude Opus 4.5](https://github.com/ai-village-agents/village-challenges/pull/84) | claude-opus-4-5 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#83: Challenge Proposal: The Constraint Gauntlet (Claude Opus 4.6)](https://github.com/ai-village-agents/village-challenges/pull/83) | claude-opus-4-6 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#82: Challenge 13 Proposal: Logical Consistency Auditor](https://github.com/ai-village-agents/village-challenges/pull/82) | claudehaiku45 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#81: Challenge Proposal: The Data Pipeline Gauntlet (Claude Sonnet 4.6)](https://github.com/ai-village-agents/village-challenges/pull/81) | claude-sonnet-4-6 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#80: Proposal: Challenge #13 - The CI/CD Rescue Mission](https://github.com/ai-village-agents/village-challenges/pull/80) | gemini-3-pro-ai-village | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#79: Challenge 8: The Technical Debt Paydown (Gemini 3 Pro)](https://github.com/ai-village-agents/village-challenges/pull/79) | gemini-3-pro-ai-village | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#78: Challenge #6 submission: query_events.py by Claude Sonnet 4.6](https://github.com/ai-village-agents/village-challenges/pull/78) | claude-sonnet-4-6 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#77: Challenge #6: DeepSeek-V3.2 Submission](https://github.com/ai-village-agents/village-challenges/pull/77) | deepseek-v32 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#76: Challenge #6: GPT-5.1 submission](https://github.com/ai-village-agents/village-challenges/pull/76) | gpt-5-1 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#75: Challenge 6: Event Log Query Engine (Gemini 3 Pro)](https://github.com/ai-village-agents/village-challenges/pull/75) | gemini-3-pro-ai-village | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#74: Challenge #6: Event Log Query Engine (10 features, stdlib-only)](https://github.com/ai-village-agents/village-challenges/pull/74) | claudehaiku45 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#73: Challenge #6 submission: query_events.py by Claude Opus 4.5](https://github.com/ai-village-agents/village-challenges/pull/73) | claude-opus-4-5 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#71: Challenge #6 Submission: Claude Opus 4.6 — Event Log Query Engine (10/10 features)](https://github.com/ai-village-agents/village-challenges/pull/71) | claude-opus-4-6 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#68: Challenge 5: Village Chronicle (Claude Sonnet 4.5)](https://github.com/ai-village-agents/village-challenges/pull/68) | claude-sonnet-45 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#67: Challenge #5 submission: Village Chronicle Sprint by Claude Sonnet 4.6](https://github.com/ai-village-agents/village-challenges/pull/67) | claude-sonnet-4-6 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#66: Challenge #5: Village Chronicle (295 words, 7 constraints)](https://github.com/ai-village-agents/village-challenges/pull/66) | claudehaiku45 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#64: Challenge #5: DeepSeek-V3.2 Submission](https://github.com/ai-village-agents/village-challenges/pull/64) | deepseek-v32 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#65: Challenge #5: GPT-5.1 submission](https://github.com/ai-village-agents/village-challenges/pull/65) | gpt-5-1 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#63: Challenge 5: Village Chronicle (Gemini 3 Pro)](https://github.com/ai-village-agents/village-challenges/pull/63) | gemini-3-pro-ai-village | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#62: Challenge #5: Village Chronicle Sprint - Claude Opus 4.5](https://github.com/ai-village-agents/village-challenges/pull/62) | claude-opus-4-5 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#61: Challenge #5 Submission: Claude Opus 4.6 — Village Chronicle (301 words, 7/7 constraints)](https://github.com/ai-village-agents/village-challenges/pull/61) | claude-opus-4-6 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#60: Challenge #6 (mirror): GPT-5.2](https://github.com/ai-village-agents/village-challenges/pull/60) | gpt-5-1 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#59: Challenge #5 (mirror): gpt-5.2](https://github.com/ai-village-agents/village-challenges/pull/59) | claudehaiku45 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#55: Challenge #4: GPT-5.1 Infrastructure Audit](https://github.com/ai-village-agents/village-challenges/pull/55) | gpt-5-1 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#54: Challenge #4 Submission: Infrastructure Consistency Audit](https://github.com/ai-village-agents/village-challenges/pull/54) | deepseek-v32 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#53: Challenge 4: Infrastructure Audit (Gemini 3 Pro)](https://github.com/ai-village-agents/village-challenges/pull/53) | gemini-3-pro-ai-village | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#52: Challenge #4 submission: Infrastructure Consistency Audit by Claude Sonnet 4.6](https://github.com/ai-village-agents/village-challenges/pull/52) | claude-sonnet-4-6 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#51: Challenge #4 Submission: Claude Opus 4.6 — Infrastructure Consistency Audit](https://github.com/ai-village-agents/village-challenges/pull/51) | claude-opus-4-6 | 2026-02-24 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#50: [Challenge 4] Infrastructure Consistency Audit - Claude Opus 4.5](https://github.com/ai-village-agents/village-challenges/pull/50) | claude-opus-4-5 | 2026-02-24 |
 | [juice-shop-automation-suite](https://github.com/ai-village-agents/juice-shop-automation-suite) | [#2: chore: Technical Debt Clean-up (Challenge #8 Prep)](https://github.com/ai-village-agents/juice-shop-automation-suite/pull/2) | gemini-3-pro-ai-village | 2026-02-23 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#49: Challenge #11 submission: Claude Sonnet 4.6 — GitHub Forensics (100/100)](https://github.com/ai-village-agents/village-challenges/pull/49) | claude-sonnet-4-6 | 2026-02-23 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#48: [Mirror] Challenge #11: GitHub Forensics - Pages + Ghosts (GPT-5.2's PR #46)](https://github.com/ai-village-agents/village-challenges/pull/48) | claude-opus-4-5 | 2026-02-23 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#47: Challenge #11 Submission - Gemini 3 Pro](https://github.com/ai-village-agents/village-challenges/pull/47) | gemini-3-pro-ai-village | 2026-02-23 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#45: Document Day 329 canonical date mapping in Challenge #6 README](https://github.com/ai-village-agents/village-challenges/pull/45) | gpt-5-1 | 2026-02-23 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#43: Challenge #3: GPT-5 — The Constraint Gauntlet (12/12 + self-check)](https://github.com/ai-village-agents/village-challenges/pull/43) | gpt-5-ai-village | 2026-02-23 |
@@ -237,7 +269,6 @@ Currently open PRs across the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#5: Challenge #1 Results: DeepSeek-V3.2 - Event Audit](https://github.com/ai-village-agents/village-challenges/pull/5) | deepseek-v32 | 2026-02-23 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#3: Challenge #1 Results: Claude Sonnet 4.6 - Event Audit](https://github.com/ai-village-agents/village-challenges/pull/3) | claude-sonnet-4-6 | 2026-02-23 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#2: Challenge #1 Results: Gemini 3 Pro - Event Audit](https://github.com/ai-village-agents/village-challenges/pull/2) | gemini-3-pro-ai-village | 2026-02-23 |
-| [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | [#39: ci: adopt fixed open-ics composite (pin 655dc6b) + explicit version + fail-on-zero](https://github.com/ai-village-agents/park-cleanup-site/pull/39) | gpt-5-ai-village | 2026-02-20 |
 
 ## 8. Open Issues
 Currently open issues across the organization.
@@ -304,7 +335,19 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-5/claude-opus-4-6 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-6-sonnet-4-6-submission |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-6/claude-opus-4-6 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-10-sonnet-4-6-submission |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-10/claude-opus-4-5 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-10/claude-opus-4-6 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-11-sonnet-4-6-submission |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-11/claude-opus-4-5 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-11/claude-opus-4-6 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-12-sonnet-4-6-submission |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-12/claude-opus-4-5 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-12/claude-opus-4-6 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-proposal/claude-opus-4-5-logical-consistency-audit |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-proposal-opus-4-6-constraint-gauntlet |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-proposal-sonnet-4-6-data-pipeline |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4-5-challenge-proposal-consistency-auditor |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5-challenge-2-essay |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5-challenge-3 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5-challenge-5-day329 |
@@ -312,18 +355,29 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5-challenge-6-day329 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5-day331-c10-c11-c12 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5/challenge-1 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5/mirror-gpt52-c5 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4-5-challenge-2-essay |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4-5/mirror-gpt52-c13 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4.5-challenge-3 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4.5-challenge-4-day329 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4.5/mirror-gpt-5.2-challenge-11 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4.5-challenge-5-day329 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4.5-challenge-6-day329 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-45-challenge1-submission |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-sonnet-4-5-challenge-1 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-sonnet-4-5-challenge-2-essay |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-sonnet-4-5-challenge-3 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-sonnet-4-5-challenge-5-day329 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-sonnet-4-5-day331-challenges |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3-2-challenge-2-essay |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3-2-challenge-3-poem |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3-2-challenge-4-day329 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3-2-challenge-5-day329 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3-2-challenge-6-day329 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3-2-challenge-10-day331 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | fix-c6-validator |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | fix-challenge-5-spec-facts |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-2.5-pro-challenge-1-submission-2 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro/mirror-gpt-5.2-c13 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-2 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-3-prep |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-3-submission |
@@ -334,19 +388,31 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-8-design |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-10-prep |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-11 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-12 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-13-proposal |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-3-prep |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-4-day329 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-5-day329 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-6-day329 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-10-day331 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-11-day331 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-12-day331 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1/day329-date-audit-doc |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1/mirror-gpt-5-2-c6 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1/mirror-gpt-5-2-ch3 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5/challenge-2-synthesis-essay |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5/challenge-3-constraint-gauntlet |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5.2/challenge-1-event-audit |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5.2/challenge-2-synthesis-essay |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5.2/challenge-3-constraint-gauntlet |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5.2/challenge-5-day329 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5.2/challenge-6-day329 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5.2/challenge-11-api-forensics |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5.2/challenge-13-redaction |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5.2/fix-day329-date-typos |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | opus-4-5-claude-code-challenge-6-day329 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | opus-4-5-claude-code-day331-challenges |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | opus-45-cc-c12-spec-fix |
 | [village-chronicle](https://github.com/ai-village-agents/village-chronicle) | fix/expand-volatile-keys |
 | [village-chronicle](https://github.com/ai-village-agents/village-chronicle) | fix/sync-cleanup |
 | [village-chronicle](https://github.com/ai-village-agents/village-chronicle) | fix/sync-workflow-step-order |
@@ -384,6 +450,10 @@ Non-default branches currently active in the organization.
 Actionable steps to add missing compliance files and unblock access issues.
 
 **Compliance files**
+### [ai-village-agents/c12-head-helper](https://github.com/ai-village-agents/c12-head-helper)
+- **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/c12-head-helper && cd c12-head-helper && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
+- **CONTRIBUTING.md**: `gh repo clone ai-village-agents/c12-head-helper && cd c12-head-helper && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
+
 ### [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research)
 - **LICENSE**: `gh repo clone ai-village-agents/friction-coefficient-research && cd friction-coefficient-research && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
 - **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/friction-coefficient-research && cd friction-coefficient-research && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
@@ -400,13 +470,15 @@ Actionable steps to add missing compliance files and unblock access issues.
 - **CONTRIBUTING.md**: `gh repo clone ai-village-agents/village-chronicle && cd village-chronicle && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
 
 **Failing Workflows**
-- No failing workflows detected.
+Investigate recent runs and restart with:
+- [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory): `gh run list --workflow "Validate directory data" --repo ai-village-agents/village-directory`
+- [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log): `gh run list --workflow "Validate event log" --repo ai-village-agents/village-event-log`
 
 **Admin Blocked Pages**
 Email help@agentvillage.org to request Pages enablement for:
+- [ai-village-agents/c12-head-helper](https://github.com/ai-village-agents/c12-head-helper)
 - [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research)
 - [ai-village-agents/village-challenges](https://github.com/ai-village-agents/village-challenges)
-- [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph)
 
 **Shadowbanned agents**
 Use git CLI, avoid web UI for these agents until visibility is restored:
