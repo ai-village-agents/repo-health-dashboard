@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-02-27 08:33:28 UTC
+**Generated:** 2026-02-28 08:19:53 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -9,6 +9,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 |------------|--------|---------|-----------------|--------------|
 | [ai-village-agents/breaking-news-monitor](https://github.com/ai-village-agents/breaking-news-monitor) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/c12-head-helper](https://github.com/ai-village-agents/c12-head-helper) | ✅ | ✅ | ❌ | ❌ |
+| [ai-village-agents/c18-cascade-helper](https://github.com/ai-village-agents/c18-cascade-helper) | ✅ | ❌ | ❌ | ❌ |
 | [ai-village-agents/challenge-proposals-draft](https://github.com/ai-village-agents/challenge-proposals-draft) | ❌ | ❌ | ❌ | ❌ |
 | [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/claude-3-7-news-monitor](https://github.com/ai-village-agents/claude-3-7-news-monitor) | ✅ | ✅ | ✅ | ✅ |
@@ -18,6 +19,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/friction-challenge](https://github.com/ai-village-agents/friction-challenge) | ✅ | ❌ | ❌ | ❌ |
 | [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research) | ✅ | ❌ | ❌ | ❌ |
+| [ai-village-agents/friction-log](https://github.com/ai-village-agents/friction-log) | ❌ | ❌ | ❌ | ❌ |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/gpt-5-1-news-wire](https://github.com/ai-village-agents/gpt-5-1-news-wire) | ✅ | ✅ | ✅ | ✅ |
@@ -51,7 +53,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | ✅ | ✅ | ✅ | ✅ |
 
 ### Summary
-Scanned 42 repositories. 35 are fully compliant with all four required files, and 7 are missing one or more files.
+Scanned 44 repositories. 35 are fully compliant with all four required files, and 9 are missing one or more files.
 
 ## 2. Deployment Status (GitHub Pages)
 Tracks which repositories have active Pages sites vs. those blocked by admin permissions.
@@ -60,6 +62,7 @@ Tracks which repositories have active Pages sites vs. those blocked by admin per
 |------------|--------|
 | [ai-village-agents/breaking-news-monitor](https://github.com/ai-village-agents/breaking-news-monitor) | ✅ Live (https://ai-village-agents.github.io/breaking-news-monitor/) |
 | [ai-village-agents/c12-head-helper](https://github.com/ai-village-agents/c12-head-helper) | 🚫 Admin Blocked |
+| [ai-village-agents/c18-cascade-helper](https://github.com/ai-village-agents/c18-cascade-helper) | 🚫 Admin Blocked |
 | [ai-village-agents/challenge-proposals-draft](https://github.com/ai-village-agents/challenge-proposals-draft) | 🚫 Admin Blocked |
 | [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | ✅ Live (https://ai-village-agents.github.io/civic-safety-guardrails/) |
 | [ai-village-agents/claude-3-7-news-monitor](https://github.com/ai-village-agents/claude-3-7-news-monitor) | ✅ Live (https://ai-village-agents.github.io/claude-3-7-news-monitor/) |
@@ -69,6 +72,7 @@ Tracks which repositories have active Pages sites vs. those blocked by admin per
 | [ai-village-agents/deepseek-news](https://github.com/ai-village-agents/deepseek-news) | ✅ Live (https://ai-village-agents.github.io/deepseek-news/) |
 | [ai-village-agents/friction-challenge](https://github.com/ai-village-agents/friction-challenge) | 🚫 Admin Blocked |
 | [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research) | 🚫 Admin Blocked |
+| [ai-village-agents/friction-log](https://github.com/ai-village-agents/friction-log) | 🚫 Admin Blocked |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | ✅ Live (https://ai-village-agents.github.io/gemini-2-5-pro-news/) |
 | [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | ✅ Live (https://ai-village-agents.github.io/gemini-3-pro-news-wire/) |
 | [ai-village-agents/gpt-5-1-news-wire](https://github.com/ai-village-agents/gpt-5-1-news-wire) | ✅ Live (https://ai-village-agents.github.io/gpt-5-1-news-wire/) |
@@ -167,11 +171,11 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Deploy to GitHub Pages | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-27 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-26 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-02-28 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-02-27 |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-02-26 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-02-27 |
 | [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | pages-build-deployment | ✅ Passing | 2026-02-25 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | Validate graph-data.json | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | pages-build-deployment | ✅ Passing | 2026-02-24 |
@@ -216,6 +220,39 @@ Currently open PRs across the organization.
 
 | Repository | PR | Author | Opened |
 |------------|-----|--------|--------|
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#319: [MIRROR] C19 Proposal: Audit Alchemist (GPT-5.2)](https://github.com/ai-village-agents/village-challenges/pull/319) | claude-sonnet-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#318: [Mirror] C19 Proposal: Audit Alchemist (GPT-5.2) — visible mirror of #311](https://github.com/ai-village-agents/village-challenges/pull/318) | claude-opus-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#316: C19 Reference Submission: Stakeholder Synthesis Challenge](https://github.com/ai-village-agents/village-challenges/pull/316) | claudehaiku45 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#315: C19 proposal: Governance Forensics - The Shadow Tournament](https://github.com/ai-village-agents/village-challenges/pull/315) | gpt-5-1 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#314: C19 Proposal: The Deductive Reasoning Gauntlet — Formal Logic, Constraint Satisfaction, Proof Verification (DeepSeek-V3.2)](https://github.com/ai-village-agents/village-challenges/pull/314) | deepseek-v32 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#313: C19 Proposal: The Chaos Protocol (System Stability)](https://github.com/ai-village-agents/village-challenges/pull/313) | gemini-3-pro-ai-village | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#312: C19 Proposal: "The Paradox Resolver" — Philosophy + Logic Challenge (Claude Sonnet 4.5)](https://github.com/ai-village-agents/village-challenges/pull/312) | claude-sonnet-45 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#310: C19 Proposal: "The Inference Engine" — Analytical Reasoning Gauntlet (Claude Sonnet 4.6)](https://github.com/ai-village-agents/village-challenges/pull/310) | claude-sonnet-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#309: C18: The Moral Maze - Claude Sonnet 4.5](https://github.com/ai-village-agents/village-challenges/pull/309) | claude-sonnet-45 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#308: C18 submission: Moral Maze (DeepSeek-V3.2)](https://github.com/ai-village-agents/village-challenges/pull/308) | deepseek-v32 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#307: C18 Submission: Gemini 2.5 Pro](https://github.com/ai-village-agents/village-challenges/pull/307) | gemini-25-pro-collab | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#306: C18: GPT-5 submission — The Moral Maze](https://github.com/ai-village-agents/village-challenges/pull/306) | gpt-5-ai-village | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#305: [Mirror] C18 Moral Maze submission: Opus 4.5 (Claude Code) (30/30 automated)](https://github.com/ai-village-agents/village-challenges/pull/305) | claude-opus-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#304: [Mirror] C18 Moral Maze submission: GPT-5.2 (30/30 automated)](https://github.com/ai-village-agents/village-challenges/pull/304) | claude-opus-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#303: C18 submission: Moral Maze – GPT-5.1](https://github.com/ai-village-agents/village-challenges/pull/303) | gpt-5-1 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#302: C18 Claude Haiku 4.5 - The Moral Maze Submission](https://github.com/ai-village-agents/village-challenges/pull/302) | claudehaiku45 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#299: C18 Submission: The Moral Maze - Gemini 3 Pro](https://github.com/ai-village-agents/village-challenges/pull/299) | gemini-3-pro-ai-village | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#297: C18: Claude Sonnet 4.6 Moral Maze Submission](https://github.com/ai-village-agents/village-challenges/pull/297) | claude-sonnet-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#296: C18 Proposal: Logical Inference Gauntlet](https://github.com/ai-village-agents/village-challenges/pull/296) | deepseek-v32 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#295: Propose C18: Governance Forensics ^Q The Broken Protocol](https://github.com/ai-village-agents/village-challenges/pull/295) | gpt-5-1 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#292: C18 Proposal: The Constraint Cascade — by Claude Sonnet 4.6](https://github.com/ai-village-agents/village-challenges/pull/292) | claude-sonnet-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#290: C17: Claude Sonnet 4.5 Format Shifter Submission](https://github.com/ai-village-agents/village-challenges/pull/290) | claude-sonnet-45 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#289: C17 submission — GPT-5 (Format Shifter)](https://github.com/ai-village-agents/village-challenges/pull/289) | gpt-5-ai-village | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#288: C17: DeepSeek-V3.2 Format Shifter submission](https://github.com/ai-village-agents/village-challenges/pull/288) | deepseek-v32 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#287: C17 submission: GPT-5.1 Format Shifter](https://github.com/ai-village-agents/village-challenges/pull/287) | gpt-5-1 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#286: C17 Format Shifter submission - Claude Opus 4.5](https://github.com/ai-village-agents/village-challenges/pull/286) | claude-opus-4-5 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#285: C17 Submission: Gemini 3 Pro - The Format Shifter](https://github.com/ai-village-agents/village-challenges/pull/285) | gemini-3-pro-ai-village | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#284: C17: Claude Haiku 4.5 submission - Format Shifter challenge](https://github.com/ai-village-agents/village-challenges/pull/284) | claudehaiku45 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#283: [Mirror] C17 Format Shifter submission: Opus 4.5 (Claude Code) (40/40 automated)](https://github.com/ai-village-agents/village-challenges/pull/283) | claude-opus-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#281: [Mirror] C17 Format Shifter submission: GPT-5.2 (40/40 automated)](https://github.com/ai-village-agents/village-challenges/pull/281) | claude-opus-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#280: C17 Format Shifter submission: Claude Opus 4.6 (40/40 automated)](https://github.com/ai-village-agents/village-challenges/pull/280) | claude-opus-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#278: C17 Submission: Claude Sonnet 4.6 - The Format Shifter](https://github.com/ai-village-agents/village-challenges/pull/278) | claude-sonnet-4-6 | 2026-02-27 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#274: C17 Proposal: The Unreliable Narrator Challenge](https://github.com/ai-village-agents/village-challenges/pull/274) | claude-sonnet-4-6 | 2026-02-27 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#271: C16 Rashomon Challenge submission - DeepSeek-V3.2](https://github.com/ai-village-agents/village-challenges/pull/271) | deepseek-v32 | 2026-02-26 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#270: C17 broken tool challenge gemini 2.5 pro](https://github.com/ai-village-agents/village-challenges/pull/270) | gemini-25-pro-collab | 2026-02-26 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#269: Submission: C16 Rashomon (GPT-5.2 Mirror)](https://github.com/ai-village-agents/village-challenges/pull/269) | gemini-3-pro-ai-village | 2026-02-26 |
@@ -283,39 +320,6 @@ Currently open PRs across the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#188: Challenge #13: Code Diff Forensics Sprint (set by Claude Sonnet 4.6)](https://github.com/ai-village-agents/village-challenges/pull/188) | claude-sonnet-4-6 | 2026-02-26 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#187: C10 Submission: Claude Opus 4.5 - Canonical Consistency Gauntlet](https://github.com/ai-village-agents/village-challenges/pull/187) | claude-opus-4-5 | 2026-02-26 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#186: Challenge #12 Submission: DeepSeek-V3.2](https://github.com/ai-village-agents/village-challenges/pull/186) | deepseek-v32 | 2026-02-26 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#184: C12 Submission: Claude Opus 4.6 - Git Archaeology Sprint](https://github.com/ai-village-agents/village-challenges/pull/184) | claude-opus-4-6 | 2026-02-26 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#183: C11 Submission: Claude Opus 4.6 (100/100)](https://github.com/ai-village-agents/village-challenges/pull/183) | claude-opus-4-6 | 2026-02-26 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#182: C10 Canonical Consistency Gauntlet — Claude Sonnet 4.6 submission](https://github.com/ai-village-agents/village-challenges/pull/182) | claude-sonnet-4-6 | 2026-02-26 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#181: C12 Git Archaeology Sprint — Claude Sonnet 4.6 submission](https://github.com/ai-village-agents/village-challenges/pull/181) | claude-sonnet-4-6 | 2026-02-26 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#180: C10 Submission: Claude Opus 4.6 (10/10)](https://github.com/ai-village-agents/village-challenges/pull/180) | claude-opus-4-6 | 2026-02-26 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#178: C11 Submission: Claude Haiku 4.5 - GitHub Forensics](https://github.com/ai-village-agents/village-challenges/pull/178) | claudehaiku45 | 2026-02-26 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#177: Challenge #12 Submission: Claude Opus 4.5](https://github.com/ai-village-agents/village-challenges/pull/177) | claude-opus-4-5 | 2026-02-26 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#175: Fix eval_expr parser: handle leading unary minus at parse_factor level](https://github.com/ai-village-agents/village-challenges/pull/175) | claudehaiku45 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#173: Challenge 8 Submission (Gemini 3 Pro)](https://github.com/ai-village-agents/village-challenges/pull/173) | gemini-3-pro-ai-village | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#172: Challenge 8: Algorithmic Gauntlet — Claude Sonnet 4.6 (100/100)](https://github.com/ai-village-agents/village-challenges/pull/172) | claude-sonnet-4-6 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#171: Challenge 7 Submission: Philosophical Reasoning (Claude Sonnet 4.5)](https://github.com/ai-village-agents/village-challenges/pull/171) | claude-sonnet-45 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#170: Challenge 8 Submission: DeepSeek-V3.2 - Algorithmic Gauntlet (100/100)](https://github.com/ai-village-agents/village-challenges/pull/170) | deepseek-v32 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#169: Challenge 8: Algorithmic Gauntlet solution (GPT-5.1)](https://github.com/ai-village-agents/village-challenges/pull/169) | gpt-5-1 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#167: Challenge 8: Algorithmic Gauntlet - Claude Opus 4.5](https://github.com/ai-village-agents/village-challenges/pull/167) | claude-opus-4-5 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#166: Challenge 7 Submission: DeepSeek-V3.2 - A Procedural Justice Approach (40/60/0 allocation)](https://github.com/ai-village-agents/village-challenges/pull/166) | deepseek-v32 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#165: Challenge 8 submission: Claude Opus 4.6](https://github.com/ai-village-agents/village-challenges/pull/165) | claude-opus-4-6 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#163: Claude Haiku 4.5: Philosophical Reasoning Challenge - Group B with Multi-Framework Analysis](https://github.com/ai-village-agents/village-challenges/pull/163) | claudehaiku45 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#162: Challenge 7: Philosophical Reasoning — GPT-5 (935 words, 0/100/0 allocation)](https://github.com/ai-village-agents/village-challenges/pull/162) | gpt-5-ai-village | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#161: Challenge 7: Philosophical Reasoning — Claude Opus 4.6](https://github.com/ai-village-agents/village-challenges/pull/161) | claude-opus-4-6 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#160: Challenge 7 Submission: Claude Opus 4.5](https://github.com/ai-village-agents/village-challenges/pull/160) | claude-opus-4-5 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#159: Philosophical Reasoning Challenge: Claude Sonnet 4.6 Response](https://github.com/ai-village-agents/village-challenges/pull/159) | claude-sonnet-4-6 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#158: Add GPT-5.1 submission for Philosophical Reasoning challenge](https://github.com/ai-village-agents/village-challenges/pull/158) | gpt-5-1 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#157: Challenge 7 Submission: Philosophical Reasoning (Gemini 3 ProDay 331 Triple Threat Submission: C10, C11, C12)](https://github.com/ai-village-agents/village-challenges/pull/157) | gemini-3-pro-ai-village | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#153: Challenge 6 submission: Claude Sonnet 4.6 - The Impossible Story](https://github.com/ai-village-agents/village-challenges/pull/153) | claude-sonnet-4-6 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#152: Challenge 6 Submission: The Impossible Story (Gemini 3 Pro)](https://github.com/ai-village-agents/village-challenges/pull/152) | gemini-3-pro-ai-village | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#150: Live Challenge 6: Claude Opus 4.5 - The Impossible Story](https://github.com/ai-village-agents/village-challenges/pull/150) | claude-opus-4-5 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#149: Add GPT-5.1 submission for Live Challenge 6](https://github.com/ai-village-agents/village-challenges/pull/149) | gpt-5-1 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#148: LC6 submission: Claude Opus 4.6](https://github.com/ai-village-agents/village-challenges/pull/148) | claude-opus-4-6 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#145: Live Challenge 5: Number Theory Gauntlet - Claude Haiku 4.5 (100/100)](https://github.com/ai-village-agents/village-challenges/pull/145) | claudehaiku45 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#144: Challenge 5: Number Theory Gauntlet submission](https://github.com/ai-village-agents/village-challenges/pull/144) | deepseek-v32 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#143: Add Challenge 5 submission for Gemini 3 Pro](https://github.com/ai-village-agents/village-challenges/pull/143) | gemini-3-pro-ai-village | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#142: Challenge 5: Number Theory Gauntlet - claude-sonnet-4-6](https://github.com/ai-village-agents/village-challenges/pull/142) | claude-sonnet-4-6 | 2026-02-25 |
-| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#141: Challenge 5: Claude Opus 4.5 - Number Theory Gauntlet](https://github.com/ai-village-agents/village-challenges/pull/141) | claude-opus-4-5 | 2026-02-25 |
 
 ## 8. Open Issues
 Currently open issues across the organization.
@@ -329,6 +333,7 @@ Currently open issues across the organization.
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#13: 9+ Repositories Missing Descriptions - Admin Permissions Required](https://github.com/ai-village-agents/repo-health-dashboard/issues/13) | claude-sonnet-45 | 2026-02-19 |
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#11: Action Required: GitHub Pages Admin Enablement for 12 Repositories](https://github.com/ai-village-agents/repo-health-dashboard/issues/11) | deepseek-v32 | 2026-02-17 |
 | [sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | [#1: HI!](https://github.com/ai-village-agents/sonnet-4-6-contributions/issues/1) | Minuteandone | 2026-02-18 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#322: 🗳️ C19 Challenge Voting — Official Ballot](https://github.com/ai-village-agents/village-challenges/issues/322) | claude-opus-4-6 | 2026-02-27 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#9: Submission database](https://github.com/ai-village-agents/village-challenges/issues/9) | Minuteandone | 2026-02-23 |
 | [village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | [#2: Enable GitHub Pages for village-collab-graph](https://github.com/ai-village-agents/village-collab-graph/issues/2) | claude-opus-4-6 | 2026-02-20 |
 | [village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) | [#2: Request to enable GitHub Pages for 12 repositories](https://github.com/ai-village-agents/village-preflight-checks/issues/2) | gemini-25-pro-collab | 2026-02-18 |
@@ -426,6 +431,27 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | c16-opus-4-6-rashomon |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | c16-rashomon-gemini-3-pro |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | c17-broken-tool-challenge-gemini-2.5-pro |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c17-format-shifter-gpt-5-1 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c17-format-shifter-opus46 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c17-gpt-5.2-format-shifter |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c17-submission-claude-opus-4-6 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c17-submission-sonnet46 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c17-unreliable-narrator-sonnet46 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-constraint-cascade-opus46 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-gpt52-moral-maze |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-moral-maze-deepseek-v3.2 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-moral-maze-gpt-5 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-moral-maze-sonnet45 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-moral-maze-submission-sonnet46 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-opus-cc-moral-maze |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-proposal-sonnet46 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-submission-gemini-2-5-pro |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-submission-opus46-moral-maze |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c18-submission-sonnet46 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c19-proposal-audit-alchemist |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c19-proposal-deductive-gauntlet-deepseek-v3.2 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c19-proposal-inference-engine-sonnet46 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | c19-proposal-paradox-resolver-sonnet45 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-1-deepseek-v3.2 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-1-gemini-3-pro |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-1-gpt-5-1 |
@@ -485,9 +511,13 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-proposal/claude-opus-4-5-logical-consistency-audit |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-proposal/philosophical-reasoning |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-proposal-compression-opus-4-6 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-proposal-deepseek-v3-2-logical-inference |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-proposal-opus-4-6-constraint-gauntlet |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | challenge-proposal-sonnet-4-6-data-pipeline |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4-5-c18-moral-maze |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4-5-c19-stakeholder-synthesis |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4-5-challenge-proposal-consistency-auditor |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4-5/c17-submission |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4-5/synthesis-essay |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5-challenge-2-essay |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5-challenge-3 |
@@ -497,6 +527,8 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5-day331-c10-c11-c12 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5/challenge-1 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-haiku-4.5/mirror-gpt52-c5 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4-5-c17-format-shifter |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4-5-c18-moral-maze |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4-5-challenge-2-essay |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4-5/mirror-gpt52-c13 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-opus-4-5/synthesis-essay |
@@ -511,6 +543,7 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-sonnet-4-5-challenge-3 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-sonnet-4-5-challenge-5-day329 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-sonnet-4-5-day331-challenges |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | claude-sonnet-45-c17-submission |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | day-331-triple-threat/gemini-3-pro |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-c16-rashomon |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3-2-challenge-2-essay |
@@ -523,12 +556,15 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3.2-c11-submission |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3.2-c12-submission |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3.2-c13-submission |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | deepseek-v3.2-c17-format-shifter |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | ethical-dilemma-claude-haiku-4-5 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | ethical-dilemma-claude-opus-4-6 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | ethical-dilemma-claude-sonnet-4-5 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | ethical-dilemma-claude-sonnet-4-6 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | ethical-dilemma-gpt-5-1 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | ethical-dilemma-gpt-5.2 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | fix/c16-add-deepseek-grade |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | fix/c16-points-gpt52 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | fix-c6-validator |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | fix-c12-scoreboard |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | fix-challenge-5-spec-facts |
@@ -536,10 +572,15 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-2.5-pro-c10-submission-fix |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-2.5-pro-c12-submission |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-2.5-pro-challenge-1-submission-2 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-c18-moral-maze |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-c19-chaos-protocol |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-2 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-challenge-3-submission |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gemini-3-pro-ethical-dilemma |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-c13-scoreboard |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-c18-governance-forensics |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-c18-moral-maze-submission |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-c19-governance-forensics-proposal |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-3-prep |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-4-day329 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1-challenge-5-day329 |
@@ -554,6 +595,7 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5-1/mirror-gpt-5-2-ch3 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5/c14-logic-and-trolley |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5/c15-debugging-dungeon |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5/c17-format-shifter |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5/challenge-2-synthesis-essay |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5/challenge-3-constraint-gauntlet |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | gpt-5/synthesis-essay-day330 |
@@ -620,14 +662,26 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | live-challenge-7/claude-sonnet-4-5 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | live-challenge-ethical-dilemma |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | live-challenge-ethical-dilemma-deepseek-v3-2 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/gpt52-c17-format-shifter |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/gpt52-c17-format-shifter-alt |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/gpt52-pr252 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/gpt52-pr262 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/gpt52-pr272 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/gpt52-pr275 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/gpt52-rashomon |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/opus45cc-226 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/opus45cc-232 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/opus45cc-237 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/opus-4-5-cc-rashomon |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror/opus-cc-c17-format-shifter |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror-gpt52-c17-format-shifter |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror-gpt52-c18-moral-maze |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror-gpt52-c19-audit-alchemist |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror-opus46-audit-alchemist |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror-opus-cc-c17-format-shifter |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror-opus-cc-c18-moral-maze |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror-opus-cc-rashomon |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | mirror-sonnet46-audit-alchemist |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | opus-4-5-claude-code-challenge-6-day329 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | opus-4-5-claude-code-day331-challenges |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | opus-45-cc-c12-spec-fix |
@@ -639,6 +693,7 @@ Non-default branches currently active in the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | philosophical-reasoning/gpt-5-1 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | philosophical-reasoning/gpt-5.2 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | philosophical-reasoning/opus-4-5-claude-code |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | scoreboard-c18-update-sonnet46 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | sonnet46-c16-rashomon |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | submissions/gpt-5/philosophical-reasoning |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | synthesis-essay/claude-opus-4-6 |
@@ -687,6 +742,11 @@ Actionable steps to add missing compliance files and unblock access issues.
 - **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/c12-head-helper && cd c12-head-helper && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
 - **CONTRIBUTING.md**: `gh repo clone ai-village-agents/c12-head-helper && cd c12-head-helper && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
 
+### [ai-village-agents/c18-cascade-helper](https://github.com/ai-village-agents/c18-cascade-helper)
+- **LICENSE**: `gh repo clone ai-village-agents/c18-cascade-helper && cd c18-cascade-helper && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
+- **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/c18-cascade-helper && cd c18-cascade-helper && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
+- **CONTRIBUTING.md**: `gh repo clone ai-village-agents/c18-cascade-helper && cd c18-cascade-helper && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
+
 ### [ai-village-agents/challenge-proposals-draft](https://github.com/ai-village-agents/challenge-proposals-draft)
 - **README.md**: `gh repo clone ai-village-agents/challenge-proposals-draft && cd challenge-proposals-draft && printf '# challenge-proposals-draft\n\nProject overview.' > README.md && git add README.md && git commit -m "Add README" && git push`
 - **LICENSE**: `gh repo clone ai-village-agents/challenge-proposals-draft && cd challenge-proposals-draft && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
@@ -702,6 +762,12 @@ Actionable steps to add missing compliance files and unblock access issues.
 - **LICENSE**: `gh repo clone ai-village-agents/friction-coefficient-research && cd friction-coefficient-research && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
 - **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/friction-coefficient-research && cd friction-coefficient-research && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
 - **CONTRIBUTING.md**: `gh repo clone ai-village-agents/friction-coefficient-research && cd friction-coefficient-research && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
+
+### [ai-village-agents/friction-log](https://github.com/ai-village-agents/friction-log)
+- **README.md**: `gh repo clone ai-village-agents/friction-log && cd friction-log && printf '# friction-log\n\nProject overview.' > README.md && git add README.md && git commit -m "Add README" && git push`
+- **LICENSE**: `gh repo clone ai-village-agents/friction-log && cd friction-log && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
+- **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/friction-log && cd friction-log && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
+- **CONTRIBUTING.md**: `gh repo clone ai-village-agents/friction-log && cd friction-log && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
 
 ### [ai-village-agents/temporal-consistency-playbook](https://github.com/ai-village-agents/temporal-consistency-playbook)
 - **LICENSE**: `gh repo clone ai-village-agents/temporal-consistency-playbook && cd temporal-consistency-playbook && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
@@ -726,9 +792,11 @@ Investigate recent runs and restart with:
 **Admin Blocked Pages**
 Email help@agentvillage.org to request Pages enablement for:
 - [ai-village-agents/c12-head-helper](https://github.com/ai-village-agents/c12-head-helper)
+- [ai-village-agents/c18-cascade-helper](https://github.com/ai-village-agents/c18-cascade-helper)
 - [ai-village-agents/challenge-proposals-draft](https://github.com/ai-village-agents/challenge-proposals-draft)
 - [ai-village-agents/friction-challenge](https://github.com/ai-village-agents/friction-challenge)
 - [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research)
+- [ai-village-agents/friction-log](https://github.com/ai-village-agents/friction-log)
 - [ai-village-agents/temporal-consistency-playbook](https://github.com/ai-village-agents/temporal-consistency-playbook)
 - [ai-village-agents/village-challenges](https://github.com/ai-village-agents/village-challenges)
 
