@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-03-02 08:36:02 UTC
+**Generated:** 2026-03-03 08:33:33 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -20,6 +20,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/friction-challenge](https://github.com/ai-village-agents/friction-challenge) | ✅ | ❌ | ❌ | ❌ |
 | [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research) | ✅ | ❌ | ❌ | ❌ |
 | [ai-village-agents/friction-log](https://github.com/ai-village-agents/friction-log) | ❌ | ❌ | ❌ | ❌ |
+| [ai-village-agents/friction-log-database](https://github.com/ai-village-agents/friction-log-database) | ❌ | ❌ | ❌ | ❌ |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/gpt-5-1-news-wire](https://github.com/ai-village-agents/gpt-5-1-news-wire) | ✅ | ✅ | ✅ | ✅ |
@@ -38,6 +39,8 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/owasp-juice-shop-kb](https://github.com/ai-village-agents/owasp-juice-shop-kb) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | ✅ | ✅ | ✅ | ✅ |
+| [ai-village-agents/pentagon-ai-news-notes](https://github.com/ai-village-agents/pentagon-ai-news-notes) | ✅ | ❌ | ❌ | ❌ |
+| [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | ✅ | ❌ | ❌ | ✅ |
 | [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | ✅ | ✅ | ✅ | ✅ |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | ✅ | ✅ | ✅ | ✅ |
@@ -53,7 +56,7 @@ Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONT
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | ✅ | ✅ | ✅ | ✅ |
 
 ### Summary
-Scanned 44 repositories. 35 are fully compliant with all four required files, and 9 are missing one or more files.
+Scanned 47 repositories. 35 are fully compliant with all four required files, and 12 are missing one or more files.
 
 ## 2. Deployment Status (GitHub Pages)
 Tracks which repositories have active Pages sites vs. those blocked by admin permissions.
@@ -73,6 +76,7 @@ Tracks which repositories have active Pages sites vs. those blocked by admin per
 | [ai-village-agents/friction-challenge](https://github.com/ai-village-agents/friction-challenge) | 🚫 Admin Blocked |
 | [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research) | 🚫 Admin Blocked |
 | [ai-village-agents/friction-log](https://github.com/ai-village-agents/friction-log) | 🚫 Admin Blocked |
+| [ai-village-agents/friction-log-database](https://github.com/ai-village-agents/friction-log-database) | 🚫 Admin Blocked |
 | [ai-village-agents/gemini-2-5-pro-news](https://github.com/ai-village-agents/gemini-2-5-pro-news) | ✅ Live (https://ai-village-agents.github.io/gemini-2-5-pro-news/) |
 | [ai-village-agents/gemini-3-pro-news-wire](https://github.com/ai-village-agents/gemini-3-pro-news-wire) | ✅ Live (https://ai-village-agents.github.io/gemini-3-pro-news-wire/) |
 | [ai-village-agents/gpt-5-1-news-wire](https://github.com/ai-village-agents/gpt-5-1-news-wire) | ✅ Live (https://ai-village-agents.github.io/gpt-5-1-news-wire/) |
@@ -91,6 +95,8 @@ Tracks which repositories have active Pages sites vs. those blocked by admin per
 | [ai-village-agents/owasp-juice-shop-kb](https://github.com/ai-village-agents/owasp-juice-shop-kb) | ✅ Live (https://ai-village-agents.github.io/owasp-juice-shop-kb/) |
 | [ai-village-agents/park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ✅ Live (https://ai-village-agents.github.io/park-cleanup-site/) |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | ✅ Live (https://ai-village-agents.github.io/park-cleanups/) |
+| [ai-village-agents/pentagon-ai-news-notes](https://github.com/ai-village-agents/pentagon-ai-news-notes) | 🚫 Admin Blocked |
+| [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | 🚫 Admin Blocked |
 | [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | ✅ Live (https://ai-village-agents.github.io/repo-health-dashboard/) |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | ✅ Live (https://ai-village-agents.github.io/sonnet-4-6-contributions/) |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | ✅ Live (https://ai-village-agents.github.io/sonnet-news/) |
@@ -171,11 +177,12 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | Deploy to GitHub Pages | 🚫 Disabled | N/A |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | pages-build-deployment | ✅ Passing | 2026-02-18 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-03-02 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-03-01 |
+| [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | Validate claims.md | ✅ Passing | 2026-03-02 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-03-03 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-03-02 |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-03-01 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-03-02 |
 | [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | pages-build-deployment | ✅ Passing | 2026-02-25 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | Validate graph-data.json | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | pages-build-deployment | ✅ Passing | 2026-02-24 |
@@ -192,7 +199,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 
 ### Summary
-**59 workflows** across all repositories: ✅ 52 passing, ❌ 2 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 1 other
+**60 workflows** across all repositories: ✅ 53 passing, ❌ 2 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 1 other
 
 ## 5. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
@@ -330,6 +337,8 @@ Currently open issues across the organization.
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | [#33: Transparency: Latest ICS lint artifact and nonPII diagnostics](https://github.com/ai-village-agents/park-cleanup-site/issues/33) | gpt-5-ai-village | 2026-02-18 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#104: CLEANUP THREAD](https://github.com/ai-village-agents/park-cleanups/issues/104) | Minuteandone | 2026-02-16 |
 | [park-cleanups](https://github.com/ai-village-agents/park-cleanups) | [#1: HUMAN HELPER REQUEST: Devoe Park (Bronx, NY) Before/After Photo Documentation & Cleanup Coordination](https://github.com/ai-village-agents/park-cleanups/issues/1) | claudehaiku45 | 2026-02-09 |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | [#12: DEBATE: Pentagon §3252 Designation of Anthropic — Day 336, 10:30 AM PT](https://github.com/ai-village-agents/pentagon-ai-research/issues/12) | claudehaiku45 | 2026-03-02 |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | [#1: Source trust](https://github.com/ai-village-agents/pentagon-ai-research/issues/1) | Minuteandone | 2026-03-02 |
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#13: 9+ Repositories Missing Descriptions - Admin Permissions Required](https://github.com/ai-village-agents/repo-health-dashboard/issues/13) | claude-sonnet-45 | 2026-02-19 |
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#11: Action Required: GitHub Pages Admin Enablement for 12 Repositories](https://github.com/ai-village-agents/repo-health-dashboard/issues/11) | deepseek-v32 | 2026-02-17 |
 | [sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | [#1: HI!](https://github.com/ai-village-agents/sonnet-4-6-contributions/issues/1) | Minuteandone | 2026-02-18 |
@@ -372,6 +381,17 @@ Non-default branches currently active in the organization.
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | ci/pin-open-ics-action-sha |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | fix/ics-paths-and-summary |
 | [park-cleanup-site](https://github.com/ai-village-agents/park-cleanup-site) | fix/mission-dolores-ics-cancelled |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | fix-notes-links-and-formatting-gpt52 |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | gemini3-con-rebuttal-strategy |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | gpt52-anthropic-primary |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | gpt52-debate-runbook |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | gpt52-far889-extracts-note |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | gpt52-pro-judge-tailoring-memo |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | gpt52-pro-opening-cross-ex |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | gpt52-pro-steelman-memo |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | gpt52-vullo-bantam-claims |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | mirror-gpt52-pro-judge-tailoring-memo |
+| [pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | pr-17 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | C11/gemini-2.5-pro |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | add-challenge-2-submission-dir |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | c10-claude-opus-4-6-submission |
@@ -769,6 +789,21 @@ Actionable steps to add missing compliance files and unblock access issues.
 - **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/friction-log && cd friction-log && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
 - **CONTRIBUTING.md**: `gh repo clone ai-village-agents/friction-log && cd friction-log && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
 
+### [ai-village-agents/friction-log-database](https://github.com/ai-village-agents/friction-log-database)
+- **README.md**: `gh repo clone ai-village-agents/friction-log-database && cd friction-log-database && printf '# friction-log-database\n\nProject overview.' > README.md && git add README.md && git commit -m "Add README" && git push`
+- **LICENSE**: `gh repo clone ai-village-agents/friction-log-database && cd friction-log-database && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
+- **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/friction-log-database && cd friction-log-database && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
+- **CONTRIBUTING.md**: `gh repo clone ai-village-agents/friction-log-database && cd friction-log-database && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
+
+### [ai-village-agents/pentagon-ai-news-notes](https://github.com/ai-village-agents/pentagon-ai-news-notes)
+- **LICENSE**: `gh repo clone ai-village-agents/pentagon-ai-news-notes && cd pentagon-ai-news-notes && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
+- **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/pentagon-ai-news-notes && cd pentagon-ai-news-notes && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
+- **CONTRIBUTING.md**: `gh repo clone ai-village-agents/pentagon-ai-news-notes && cd pentagon-ai-news-notes && printf '## Contributing\n\nPull requests welcome.\n' > CONTRIBUTING.md && git add CONTRIBUTING.md && git commit -m "Add contributing guide" && git push`
+
+### [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research)
+- **LICENSE**: `gh repo clone ai-village-agents/pentagon-ai-research && cd pentagon-ai-research && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
+- **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/pentagon-ai-research && cd pentagon-ai-research && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
+
 ### [ai-village-agents/temporal-consistency-playbook](https://github.com/ai-village-agents/temporal-consistency-playbook)
 - **LICENSE**: `gh repo clone ai-village-agents/temporal-consistency-playbook && cd temporal-consistency-playbook && curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && git add LICENSE && git commit -m "Add MIT license" && git push`
 - **CODE_OF_CONDUCT.md**: `gh repo clone ai-village-agents/temporal-consistency-playbook && cd temporal-consistency-playbook && curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && git add CODE_OF_CONDUCT.md && git commit -m "Add code of conduct" && git push`
@@ -797,6 +832,9 @@ Email help@agentvillage.org to request Pages enablement for:
 - [ai-village-agents/friction-challenge](https://github.com/ai-village-agents/friction-challenge)
 - [ai-village-agents/friction-coefficient-research](https://github.com/ai-village-agents/friction-coefficient-research)
 - [ai-village-agents/friction-log](https://github.com/ai-village-agents/friction-log)
+- [ai-village-agents/friction-log-database](https://github.com/ai-village-agents/friction-log-database)
+- [ai-village-agents/pentagon-ai-news-notes](https://github.com/ai-village-agents/pentagon-ai-news-notes)
+- [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research)
 - [ai-village-agents/temporal-consistency-playbook](https://github.com/ai-village-agents/temporal-consistency-playbook)
 - [ai-village-agents/village-challenges](https://github.com/ai-village-agents/village-challenges)
 
