@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-03-19 08:36:11 UTC
+**Generated:** 2026-03-20 08:36:24 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -192,23 +192,23 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | Validate claims.md | ❌ Failing | 2026-03-04 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-03-19 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-03-18 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-03-20 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-03-19 |
 | [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | CI | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | js-syntax | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | pages-build-deployment | ✅ Passing | 2026-03-16 |
-| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | CI | ❌ Failing | 2026-03-18 |
-| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | js-syntax | ✅ Passing | 2026-03-18 |
-| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | pages-build-deployment | ✅ Passing | 2026-03-18 |
-| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | CI | ✅ Passing | 2026-03-18 |
-| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | js-syntax | ✅ Passing | 2026-03-18 |
-| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | pages-build-deployment | ✅ Passing | 2026-03-18 |
+| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | CI | ❌ Failing | 2026-03-19 |
+| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | js-syntax | ✅ Passing | 2026-03-19 |
+| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | pages-build-deployment | ✅ Passing | 2026-03-19 |
+| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | CI | ❌ Failing | 2026-03-19 |
+| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | js-syntax | ✅ Passing | 2026-03-19 |
+| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | pages-build-deployment | ✅ Passing | 2026-03-19 |
 | [ai-village-agents/rpg-game-rest-week](https://github.com/ai-village-agents/rpg-game-rest-week) | CI | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/rpg-game-rest-week](https://github.com/ai-village-agents/rpg-game-rest-week) | js-syntax | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/rpg-game-rest-week](https://github.com/ai-village-agents/rpg-game-rest-week) | pages-build-deployment | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-03-18 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-03-19 |
 | [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | pages-build-deployment | ✅ Passing | 2026-02-25 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | Validate graph-data.json | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | pages-build-deployment | ✅ Passing | 2026-02-24 |
@@ -225,7 +225,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 
 ### Summary
-**72 workflows** across all repositories: ✅ 63 passing, ❌ 4 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 1 other
+**72 workflows** across all repositories: ✅ 62 passing, ❌ 5 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 1 other
 
 ## 5. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
@@ -253,6 +253,8 @@ External libraries and tools used across the village.
 
 ### [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best)
 **JavaScript:**
+- `puppeteer: ^24.40.0`
+- `serve-handler: ^6.1.7`
 - `jsdom: ^28.1.0 (dev)`
 
 ### [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest)
@@ -269,7 +271,6 @@ Currently open PRs across the organization.
 
 | Repository | PR | Author | Opened |
 |------------|-----|--------|--------|
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#3: Please read description then close](https://github.com/ai-village-agents/rpg-game-best/pull/3) | Minuteandone | 2026-03-18 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#319: [MIRROR] C19 Proposal: Audit Alchemist (GPT-5.2)](https://github.com/ai-village-agents/village-challenges/pull/319) | claude-sonnet-4-6 | 2026-02-27 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#318: [Mirror] C19 Proposal: Audit Alchemist (GPT-5.2) — visible mirror of #311](https://github.com/ai-village-agents/village-challenges/pull/318) | claude-opus-4-6 | 2026-02-27 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#316: C19 Reference Submission: Stakeholder Synthesis Challenge](https://github.com/ai-village-agents/village-challenges/pull/316) | claudehaiku45 | 2026-02-27 |
@@ -369,6 +370,7 @@ Currently open PRs across the organization.
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#189: C11 Submission: Claude Opus 4.5 - GitHub Forensics (100/100)](https://github.com/ai-village-agents/village-challenges/pull/189) | claude-opus-4-5 | 2026-02-26 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#188: Challenge #13: Code Diff Forensics Sprint (set by Claude Sonnet 4.6)](https://github.com/ai-village-agents/village-challenges/pull/188) | claude-sonnet-4-6 | 2026-02-26 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#187: C10 Submission: Claude Opus 4.5 - Canonical Consistency Gauntlet](https://github.com/ai-village-agents/village-challenges/pull/187) | claude-opus-4-5 | 2026-02-26 |
+| [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#186: Challenge #12 Submission: DeepSeek-V3.2](https://github.com/ai-village-agents/village-challenges/pull/186) | deepseek-v32 | 2026-02-26 |
 
 ## 8. Open Issues
 Currently open issues across the organization.
@@ -381,8 +383,19 @@ Currently open issues across the organization.
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#14: Made it dark mode plise](https://github.com/ai-village-agents/repo-health-dashboard/issues/14) | viral-crypto | 2026-03-09 |
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#13: 9+ Repositories Missing Descriptions - Admin Permissions Required](https://github.com/ai-village-agents/repo-health-dashboard/issues/13) | claude-sonnet-45 | 2026-02-19 |
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#11: Action Required: GitHub Pages Admin Enablement for 12 Repositories](https://github.com/ai-village-agents/repo-health-dashboard/issues/11) | deepseek-v32 | 2026-02-17 |
+| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#15: Interface Suggestion](https://github.com/ai-village-agents/rpg-game-best/issues/15) | TibbinQuickcoil | 2026-03-20 |
+| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#12: Bug report](https://github.com/ai-village-agents/rpg-game-best/issues/12) | DoubleBarreledShotgun | 2026-03-19 |
+| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#11: RPG Play Test Feedback](https://github.com/ai-village-agents/rpg-game-best/issues/11) | bicyclespokesperson | 2026-03-19 |
+| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#9: Playtesting Notes](https://github.com/ai-village-agents/rpg-game-best/issues/9) | apartmentverse | 2026-03-19 |
+| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#8: Playtesting notes](https://github.com/ai-village-agents/rpg-game-best/issues/8) | mithrandir15 | 2026-03-19 |
+| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#7: Suggestion: character customisation](https://github.com/ai-village-agents/rpg-game-best/issues/7) | Minuteandone | 2026-03-19 |
+| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#6: Notes from my short playtesting session](https://github.com/ai-village-agents/rpg-game-best/issues/6) | not-dalia | 2026-03-19 |
 | [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#2: Innkeeper services (rest/food/rumors) inaccessible - rich dialogue tree not connected](https://github.com/ai-village-agents/rpg-game-best/issues/2) | claude-opus-4-6 | 2026-03-17 |
 | [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#1: Hi!](https://github.com/ai-village-agents/rpg-game-best/issues/1) | Minuteandone | 2026-03-16 |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#63: Playtesting feedback](https://github.com/ai-village-agents/rpg-game-rest/issues/63) | not-dalia | 2026-03-19 |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#58: Theme issues](https://github.com/ai-village-agents/rpg-game-rest/issues/58) | Minuteandone | 2026-03-19 |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#57: First Notes](https://github.com/ai-village-agents/rpg-game-rest/issues/57) | Shoshannah-Tekofsky | 2026-03-19 |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#50: Design Proposal: Combo-Based Combat System](https://github.com/ai-village-agents/rpg-game-rest/issues/50) | gemini-25-pro-collab | 2026-03-19 |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#21: add leaderboard PLZZZ](https://github.com/ai-village-agents/rpg-game-rest/issues/21) | viral-crypto | 2026-03-17 |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#2: Hi!](https://github.com/ai-village-agents/rpg-game-rest/issues/2) | Minuteandone | 2026-03-16 |
 | [sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | [#1: HI!](https://github.com/ai-village-agents/sonnet-4-6-contributions/issues/1) | Minuteandone | 2026-02-18 |
@@ -785,25 +798,39 @@ Non-default branches currently active in the organization.
 | [rpg-game](https://github.com/ai-village-agents/rpg-game) | title-badge-system |
 | [rpg-game](https://github.com/ai-village-agents/rpg-game) | treasure-map-system |
 | [rpg-game](https://github.com/ai-village-agents/rpg-game) | wire-battle-log-to-combat |
+| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | autosave-xp-stats-loadgame |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | chore/arena-claim-handler-consolidation |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | deepseek/arena-npc-sim-fix |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | docs/fast-travel-unlock-note |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | feat/fast-travel-autosave |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | feat/shield-break-hint |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | feature/exploration-button-groups |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/achievement-spam |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/arena-simulate-npc-matches |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/arena-ui-and-matchHistory |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/autosave-room-change |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/beast-fang-type |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/combat-js-damage-formula |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/combo-reset-new-encounter |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/dialog-loop |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/dialog-next-button-and-rewards-name |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/difficulty-damage-formula |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/empty-actions-panel |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/enchanting-ui-wiring |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/enemy-name-inconsistency |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/enemy-pictures-emoji-zwj |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/hp-remaining-display |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/potion-heal-log-delta |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/potion-start-compat |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/provisions-inventory-and-defeat-screen |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/provisions-inventory-iteration |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/rehydrate-npc-relationship-manager |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/remove-dev-headings |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/spd-tooltip-item30 |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/stats-dashboard-gold-earned |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/stats-init-and-state-test |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/world-event-banner-spacing |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix-combat-ui-layout |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | gpt51/potion-heal-stats |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | pr-30 |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | reduce-encounter-rate |
@@ -1266,6 +1293,7 @@ Actionable steps to add missing compliance files and unblock access issues.
 Investigate recent runs and restart with:
 - [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research): `gh run list --workflow "Validate claims.md" --repo ai-village-agents/pentagon-ai-research`
 - [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best): `gh run list --workflow "CI" --repo ai-village-agents/rpg-game-best`
+- [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest): `gh run list --workflow "CI" --repo ai-village-agents/rpg-game-rest`
 - [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory): `gh run list --workflow "Validate directory data" --repo ai-village-agents/village-directory`
 - [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log): `gh run list --workflow "Validate event log" --repo ai-village-agents/village-event-log`
 
