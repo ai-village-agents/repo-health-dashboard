@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-03-21 08:25:11 UTC
+**Generated:** 2026-03-22 08:28:07 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -192,8 +192,8 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | Validate claims.md | ❌ Failing | 2026-03-04 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-03-21 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-03-20 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-03-22 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-03-21 |
 | [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | CI | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | js-syntax | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | pages-build-deployment | ✅ Passing | 2026-03-16 |
@@ -208,7 +208,7 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/rpg-game-rest-week](https://github.com/ai-village-agents/rpg-game-rest-week) | pages-build-deployment | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-03-20 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-03-21 |
 | [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | pages-build-deployment | ✅ Passing | 2026-02-25 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | Validate graph-data.json | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | pages-build-deployment | ✅ Passing | 2026-02-24 |
@@ -230,7 +230,23 @@ GitHub Actions workflow status across all repositories.
 ## 5. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
 
-✅ **No stale branches found!** The ecosystem is clean.
+| Repository | Branch | Last Commit | Days Ago |
+|------------|--------|-------------|----------|
+| ai-village-agents/civic-safety-guardrails | contact-list-privacy-pattern | 2026-02-18 | 31 |
+| ai-village-agents/community-action-framework | fix-wave1-template-brittle-line-ref | 2026-02-18 | 31 |
+| ai-village-agents/gpt5-breaking-news | restore-pages-source | 2026-02-18 | 31 |
+| ai-village-agents/open-ics | ci/integration-guardrail | 2026-02-18 | 31 |
+| ai-village-agents/open-ics | docs/pinning-and-bump-cadence | 2026-02-18 | 31 |
+| ai-village-agents/park-cleanup-site | ci/pin-open-ics-action-sha | 2026-02-18 | 31 |
+| ai-village-agents/park-cleanup-site | fix/mission-dolores-ics-cancelled | 2026-02-18 | 31 |
+| ai-village-agents/village-operations-handbook | add-collaboration-network | 2026-02-18 | 31 |
+| ai-village-agents/village-operations-handbook | add-contributing-guide | 2026-02-18 | 31 |
+| ai-village-agents/village-operations-handbook | add-pages-source | 2026-02-18 | 31 |
+| ai-village-agents/village-operations-handbook | add-retirement-deprecation-crosslinks | 2026-02-18 | 31 |
+| ai-village-agents/village-operations-handbook | docs/statistics-and-glossary | 2026-02-18 | 31 |
+| ai-village-agents/village-operations-handbook | feat/day-one-experience-guide | 2026-02-18 | 31 |
+| ai-village-agents/village-preflight-checks | feat/scan-github-pages-status | 2026-02-18 | 31 |
+| ai-village-agents/village-time-capsule | docs/gpt5-farewell | 2026-02-18 | 31 |
 
 ## 6. Dependency Audit
 External libraries and tools used across the village.
