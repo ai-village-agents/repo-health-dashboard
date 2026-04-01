@@ -1,6 +1,6 @@
 # AI Village Repository Health Report
 
-**Generated:** 2026-03-31 08:57:10 UTC
+**Generated:** 2026-04-01 09:00:25 UTC
 
 ## 1. Compliance Audit
 Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.
@@ -194,10 +194,10 @@ GitHub Actions workflow status across all repositories.
 | Repository | Workflow | Status | Last Run |
 |------------|----------|--------|----------|
 | [ai-village-agents/agent-welcome](https://github.com/ai-village-agents/agent-welcome) | pages-build-deployment | ✅ Passing | 2026-03-23 |
-| [ai-village-agents/ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge) | .github/workflows/handshake.yml | ❌ Failing | 2026-03-27 |
-| [ai-village-agents/ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge) | .github/workflows/ztest.yml | ❌ Failing | 2026-03-27 |
+| [ai-village-agents/ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge) | .github/workflows/ci-basic.yml | ❌ Failing | 2026-03-31 |
+| [ai-village-agents/ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge) | .github/workflows/core-ci.yml | ❌ Failing | 2026-03-31 |
 | [ai-village-agents/ai-village-agents.github.io](https://github.com/ai-village-agents/ai-village-agents.github.io) | pages-build-deployment | ✅ Passing | 2026-03-27 |
-| [ai-village-agents/ai-village-external-agents](https://github.com/ai-village-agents/ai-village-external-agents) | pages-build-deployment | ✅ Passing | 2026-03-30 |
+| [ai-village-agents/ai-village-external-agents](https://github.com/ai-village-agents/ai-village-external-agents) | pages-build-deployment | ✅ Passing | 2026-03-31 |
 | [ai-village-agents/breaking-news-monitor](https://github.com/ai-village-agents/breaking-news-monitor) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | Deploy to GitHub Pages | ✅ Passing | 2026-02-19 |
 | [ai-village-agents/civic-safety-guardrails](https://github.com/ai-village-agents/civic-safety-guardrails) | pages-build-deployment | ✅ Passing | 2026-02-19 |
@@ -239,24 +239,24 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | PII Scan | ✅ Passing | 2026-02-17 |
 | [ai-village-agents/park-cleanups](https://github.com/ai-village-agents/park-cleanups) | pages-build-deployment | ✅ Passing | 2026-02-18 |
 | [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research) | Validate claims.md | ❌ Failing | 2026-03-04 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-03-31 |
-| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-03-30 |
-| [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | CI | ✅ Passing | 2026-03-16 |
-| [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | js-syntax | ✅ Passing | 2026-03-16 |
-| [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | pages-build-deployment | ✅ Passing | 2026-03-16 |
-| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | CI | ✅ Passing | 2026-03-23 |
-| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | js-syntax | ✅ Passing | 2026-03-23 |
-| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | pages-build-deployment | ✅ Passing | 2026-03-23 |
-| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | CI | ❌ Failing | 2026-03-20 |
-| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | js-syntax | ✅ Passing | 2026-03-20 |
-| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | pages-build-deployment | ❌ Failing | 2026-03-20 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | Update Repo Health Dashboard | 🔄 In Progress | 2026-04-01 |
+| [ai-village-agents/repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | pages-build-deployment | ✅ Passing | 2026-03-31 |
+| [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | CI | ✅ Passing | 2026-03-31 |
+| [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | js-syntax | ✅ Passing | 2026-03-31 |
+| [ai-village-agents/rpg-game](https://github.com/ai-village-agents/rpg-game) | pages-build-deployment | ✅ Passing | 2026-03-31 |
+| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | CI | ❌ Failing | 2026-03-31 |
+| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | js-syntax | ✅ Passing | 2026-03-31 |
+| [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | pages-build-deployment | ✅ Passing | 2026-03-31 |
+| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | CI | ✅ Passing | 2026-03-31 |
+| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | js-syntax | ✅ Passing | 2026-03-31 |
+| [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | pages-build-deployment | ✅ Passing | 2026-03-31 |
 | [ai-village-agents/rpg-game-rest-week](https://github.com/ai-village-agents/rpg-game-rest-week) | CI | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/rpg-game-rest-week](https://github.com/ai-village-agents/rpg-game-rest-week) | js-syntax | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/rpg-game-rest-week](https://github.com/ai-village-agents/rpg-game-rest-week) | pages-build-deployment | ✅ Passing | 2026-03-16 |
 | [ai-village-agents/schemas](https://github.com/ai-village-agents/schemas) | Deploy GitHub Pages | ✅ Passing | 2026-03-30 |
 | [ai-village-agents/sonnet-4-6-contributions](https://github.com/ai-village-agents/sonnet-4-6-contributions) | pages-build-deployment | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/sonnet-news](https://github.com/ai-village-agents/sonnet-news) | pages-build-deployment | ✅ Passing | 2026-02-17 |
-| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-03-30 |
+| [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | Sync Event Log | ✅ Passing | 2026-03-31 |
 | [ai-village-agents/village-chronicle](https://github.com/ai-village-agents/village-chronicle) | pages-build-deployment | ✅ Passing | 2026-02-25 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | Validate graph-data.json | ✅ Passing | 2026-02-20 |
 | [ai-village-agents/village-collab-graph](https://github.com/ai-village-agents/village-collab-graph) | pages-build-deployment | ✅ Passing | 2026-02-24 |
@@ -273,401 +273,401 @@ GitHub Actions workflow status across all repositories.
 | [ai-village-agents/which-ai-village-agent](https://github.com/ai-village-agents/which-ai-village-agent) | pages-build-deployment | ✅ Passing | 2026-02-17 |
 
 ### Summary
-**78 workflows** across all repositories: ✅ 66 passing, ❌ 7 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 1 other
+**78 workflows** across all repositories: ✅ 67 passing, ❌ 6 failing, 🚫 3 disabled, ⚪ 1 no runs, ⚠️ 1 other
 
 ## 5. Stale Branch Detector
 Branches older than 30 days (excluding main/master).
 
 | Repository | Branch | Last Commit | Days Ago |
 |------------|--------|-------------|----------|
-| ai-village-agents/civic-safety-guardrails | contact-list-privacy-pattern | 2026-02-18 | 40 |
-| ai-village-agents/civic-safety-guardrails | docs/retirement-deprecation-preflight | 2026-02-19 | 39 |
-| ai-village-agents/civic-safety-guardrails | event-log-guardrails | 2026-02-19 | 39 |
-| ai-village-agents/civic-safety-guardrails | pages-handbook-link-and-governance-section | 2026-02-19 | 39 |
-| ai-village-agents/community-action-framework | fix-wave1-template-brittle-line-ref | 2026-02-18 | 40 |
-| ai-village-agents/friction-challenge | submissions/claude-haiku-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/friction-challenge | submissions/claude-opus-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/friction-challenge | submissions/claude-opus-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/friction-challenge | submissions/claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/friction-challenge | submissions/deepseek-v3-2 | 2026-02-25 | 33 |
-| ai-village-agents/friction-challenge | submissions/gpt-5-1 | 2026-02-25 | 33 |
-| ai-village-agents/friction-challenge | submissions/gpt-5-2 | 2026-02-25 | 33 |
-| ai-village-agents/friction-challenge | submissions/gpt-5 | 2026-02-26 | 32 |
-| ai-village-agents/friction-challenge | submissions/opus-claude-code | 2026-02-25 | 33 |
-| ai-village-agents/gpt5-breaking-news | fix/root-index-redirect | 2026-02-20 | 38 |
-| ai-village-agents/gpt5-breaking-news | restore-pages-source | 2026-02-18 | 40 |
-| ai-village-agents/juice-shop-automation-suite | gemini-3-pro-tech-debt | 2026-02-23 | 35 |
-| ai-village-agents/lessons-from-293-days | add-pages-source | 2026-02-19 | 39 |
-| ai-village-agents/open-ics | ci/integration-guardrail | 2026-02-18 | 40 |
-| ai-village-agents/open-ics | docs/pinning-and-bump-cadence | 2026-02-18 | 40 |
-| ai-village-agents/open-ics | fix/no-python-heredoc | 2026-02-20 | 38 |
-| ai-village-agents/open-ics | fix/yaml-heredoc-syntax | 2026-02-20 | 38 |
-| ai-village-agents/open-ics | hardening/issue-7-version-pinning-failfast | 2026-02-20 | 38 |
-| ai-village-agents/park-cleanup-site | align-devoe-mission-ics-and-metrics | 2026-02-19 | 39 |
-| ai-village-agents/park-cleanup-site | chore/open-ics-composite-bump-655dc6b-pin-version-fail-on-zero | 2026-02-23 | 35 |
-| ai-village-agents/park-cleanup-site | ci/pin-open-ics-action-sha | 2026-02-18 | 40 |
-| ai-village-agents/park-cleanup-site | fix/ics-paths-and-summary | 2026-02-19 | 39 |
-| ai-village-agents/park-cleanup-site | fix/mission-dolores-ics-cancelled | 2026-02-18 | 40 |
-| ai-village-agents/village-challenges | C11/gemini-2.5-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | add-challenge-2-submission-dir | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | c10-claude-opus-4-6-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c10-claude-opus-4.5-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c10-opus-45-cc | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c11-claude-opus-4-6-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c11-claude-opus-4.5-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c11-opus-45-cc | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c12-claude-opus-4-6-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c12-claude-opus-4.5-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c13-claude-opus-4-5-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c13-claude-opus-4-6-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c13-claude-sonnet-4-6-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c13-claude-sonnet-45 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c13-gemini-3-pro-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c13-opus-45-cc-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-claude-sonnet-4-6-challenge | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-claude-sonnet-4-6-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-deepseek-gemini-3-pro-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-gemini-3-pro-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-logic-grid-claude-opus-4-5 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-logic-grid-claude-opus-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-logic-grid-claude-sonnet-45 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-logic-grid-deepseek-v3-2-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-logic-grid-gemini-2.5-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-logic-grid-gemini-3-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-logic-grid-gpt-5-2 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-logic-grid-opus-45-cc | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-multi-stage-gpt-5-2 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-multistage-claude-opus-4-5 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-multistage-claude-opus-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-multistage-claude-sonnet-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-multistage-opus-45-cc | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-supply-chain-claude-opus-4-5 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-supply-chain-claude-opus-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-supply-chain-deepseek-v3-2-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-supply-chain-gpt-5-2 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-supply-chain-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-trolley-claude-opus-4-5 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-trolley-claude-opus-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-trolley-claude-sonnet-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-trolley-deepseek-v3-2-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-trolley-gemini-3-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-trolley-gpt-5-1 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-trolley-gpt-5-2 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-trolley-opus-45-cc | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c14-trolley-problem-gemini-2.5-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c15-debugging-dungeon-claude-opus-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c15-debugging-dungeon-claude-opus-45 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c15-debugging-dungeon-claude-sonnet-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c15-debugging-dungeon-deepseek-v3-2-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c15-debugging-dungeon-gemini-2.5-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c15-debugging-dungeon-gpt-5-2 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c15-debugging-dungeon-opus-4-5-claude-code-mirror | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c15-gemini-3-pro-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c15-regex-golf-gemini-2.5-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c16-opus-4-6-rashomon | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c16-rashomon-gemini-3-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c17-broken-tool-challenge-gemini-2.5-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | c17-format-shifter-gpt-5-1 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c17-format-shifter-opus46 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c17-gpt-5.2-format-shifter | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c17-submission-claude-opus-4-6 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c17-submission-sonnet46 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c17-unreliable-narrator-sonnet46 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-constraint-cascade-opus46 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-gpt52-moral-maze | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-moral-maze-deepseek-v3.2 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-moral-maze-sonnet45 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-moral-maze-submission-sonnet46 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-opus-cc-moral-maze | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-proposal-sonnet46 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-submission-gemini-2-5-pro | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-submission-opus46-moral-maze | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c18-submission-sonnet46 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c19-proposal-audit-alchemist | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c19-proposal-deductive-gauntlet-deepseek-v3.2 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c19-proposal-inference-engine-sonnet46 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | c19-proposal-paradox-resolver-sonnet45 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | challenge-1-deepseek-v3.2 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-1-gemini-3-pro | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-1-gpt-5-1 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-1-opus-4.5-claude-code | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-1-sonnet-4-6 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-1/claude-opus-4-6 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-2-gemini-3-pro-essay | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-2-gpt-5-1 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-2-opus-45-cc | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-2-sonnet-4-6-submission | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-2-spec | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-2-synthesis-essay-claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-2-synthesis-essay-gpt-5-1 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-2/claude-opus-4-6 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-2/opus-4-5-claude-code | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-3-opus-45-cc-submission | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-3-sonnet-4-6-submission | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-3-spec | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-3/claude-opus-4-6 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-4-claude-sonnet-4-5-spec | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-4-sonnet-4-6-submission | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-4-spec-update | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-4/claude-opus-4-6 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-5-sonnet-4-6-submission | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-5/claude-opus-4-6 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-6-sonnet-4-6-submission | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-6/claude-opus-4-6 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-8/algorithmic-gauntlet | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-8/claude-haiku-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-8/claude-opus-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-8/claude-opus-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-8/claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-8/deepseek-v3-2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-8/gemini-3-pro | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-8/gpt-5-1 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-8/gpt-5.2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-8/opus-4-5-claude-code | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-10-sonnet-4-6-submission | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-10/claude-opus-4-5 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-10/claude-opus-4-6 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-10/gemini-2.5-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-11-gpt-5-1-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-11-sonnet-4-6-submission | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | challenge-11/claude-opus-4-5 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-11/claude-opus-4-6 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-12-sonnet-4-6-submission | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-12/claude-opus-4-5 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-12/claude-opus-4-6 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-13-claude-haiku-4.5-compression | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-13-claude-sonnet-4-6-proposal | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-14-claude-haiku-4-5 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-14-claude-opus-4-5 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-14-deepseek-v3.2-proposal | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-15-claude-opus-4-5-proposal | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-15-claude-sonnet-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-15-regex-golf-claude-opus-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-proposal/claude-opus-4-5-logical-consistency-audit | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-proposal/philosophical-reasoning | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | challenge-proposal-compression-opus-4-6 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | challenge-proposal-deepseek-v3-2-logical-inference | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | challenge-proposal-opus-4-6-constraint-gauntlet | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | challenge-proposal-sonnet-4-6-data-pipeline | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | claude-haiku-4-5-c18-moral-maze | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | claude-haiku-4-5-c19-stakeholder-synthesis | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | claude-haiku-4-5-challenge-proposal-consistency-auditor | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | claude-haiku-4-5/c17-submission | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | claude-haiku-4-5/synthesis-essay | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-2-essay | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-3 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-5-day329 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-5 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-6-day329 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-haiku-4.5-day331-c10-c11-c12 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | claude-haiku-4.5/challenge-1 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-haiku-4.5/mirror-gpt52-c5 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | claude-opus-4-5-c17-format-shifter | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | claude-opus-4-5-c18-moral-maze | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | claude-opus-4-5-challenge-2-essay | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-opus-4-5/mirror-gpt52-c13 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | claude-opus-4-5/synthesis-essay | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | claude-opus-4.5-challenge-3 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-opus-4.5-challenge-4-day329 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-opus-4.5-challenge-5-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | claude-opus-4.5-challenge-6-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | claude-opus-4.6/lc6-submission | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | claude-opus-45-challenge1-submission | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-sonnet-4-5-challenge-1 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-sonnet-4-5-challenge-2-essay | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-sonnet-4-5-challenge-3 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | claude-sonnet-4-5-challenge-5-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | claude-sonnet-4-5-day331-challenges | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | claude-sonnet-45-c17-submission | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | day-331-triple-threat/gemini-3-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | deepseek-c16-rashomon | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | deepseek-v3-2-challenge-2-essay | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | deepseek-v3-2-challenge-3-poem | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | deepseek-v3-2-challenge-4-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | deepseek-v3-2-challenge-5-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | deepseek-v3-2-challenge-6-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | deepseek-v3-2-challenge-10-day331 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | deepseek-v3.2-c10-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | deepseek-v3.2-c11-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | deepseek-v3.2-c12-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | deepseek-v3.2-c13-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | deepseek-v3.2-c17-format-shifter | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | ethical-dilemma-claude-haiku-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | ethical-dilemma-claude-opus-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | ethical-dilemma-claude-sonnet-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | ethical-dilemma-claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | ethical-dilemma-gpt-5-1 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | ethical-dilemma-gpt-5.2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | fix/c16-add-deepseek-grade | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | fix/c16-points-gpt52 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | fix-c6-validator | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | fix-c12-scoreboard | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | fix-challenge-5-spec-facts | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | fix-scoreboard-c15-pr252-visible | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | gemini-2.5-pro-c10-submission-fix | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | gemini-2.5-pro-c12-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | gemini-2.5-pro-challenge-1-submission-2 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gemini-3-pro-c18-moral-maze | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | gemini-3-pro-c19-chaos-protocol | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | gemini-3-pro-challenge-2 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gemini-3-pro-challenge-3-submission | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gemini-3-pro-ethical-dilemma | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | gpt-5-1-c13-scoreboard | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | gpt-5-1-c18-governance-forensics | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | gpt-5-1-c18-moral-maze-submission | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | gpt-5-1-c19-governance-forensics-proposal | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | gpt-5-1-challenge-3-prep | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5-1-challenge-4-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gpt-5-1-challenge-5-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gpt-5-1-challenge-6-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gpt-5-1-challenge-10-day331 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gpt-5-1-challenge-11-day331 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5-1-challenge-12-day331 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gpt-5-1-governance-submission-rule | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | gpt-5-1/c15-debugging-dungeon-grading | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | gpt-5-1/day329-date-audit-doc | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5-1/mirror-gpt-5-2-c6 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gpt-5-1/mirror-gpt-5-2-ch3 | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5/c14-logic-and-trolley | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | gpt-5/c15-debugging-dungeon | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | gpt-5/c17-format-shifter | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | gpt-5/challenge-2-synthesis-essay | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5/challenge-3-constraint-gauntlet | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5/synthesis-essay-day330 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | gpt-5.2/challenge-1-event-audit | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5.2/challenge-2-synthesis-essay | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5.2/challenge-3-constraint-gauntlet | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5.2/challenge-5-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gpt-5.2/challenge-6-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gpt-5.2/challenge-11-api-forensics | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5.2/challenge-13-redaction | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | gpt-5.2/fair-play-guidelines | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | gpt-5.2/fix-day329-date-typos | 2026-02-23 | 35 |
-| ai-village-agents/village-challenges | gpt-5.2/synthesis-essay-day330-1110 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | gpt-5.2/synthesis-essay-day330 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | haiku-c16-rashomon-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | haiku-debugging-dungeon | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | haiku-regex-golf | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | jit-protocol-gpt5-day330 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-1/claude-haiku-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-1/claude-opus-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-1/claude-opus-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-1/claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-1/deepseek-v3-2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-1/gemini-3-pro | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-1/gpt-5-1 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-1/gpt-5.2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-1/spec | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-2/deepseek-v3-2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-3/claude-opus-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-3/claude-opus-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-3/claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-3/deepseek-v3-2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-3/gemini-3-pro | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-3/gpt-5-1 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-3/gpt-5.2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-3/spec | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-4/claude-haiku-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-4/claude-opus-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-4/claude-opus-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-4/claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-4/deepseek-v3-2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-4/gemini-3-pro | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-4/gpt-5-1 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-4/gpt-5.2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-4/spec | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-5-claude-opus-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-5-opus-4-5-claude-code | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-5-spec | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-5/claude-haiku-4.5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-5/claude-opus-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-5/claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-5/deepseek-v3-2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-5/gemini-3-pro | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-6-opus-4-5-claude-code | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-6/claude-haiku-4.5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-6/claude-opus-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-6/claude-sonnet-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-6/claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-6/gemini-3-pro | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-6/gpt-5-1 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-6/gpt-5.2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-6/spec | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-7/claude-opus-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-7/claude-sonnet-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-ethical-dilemma | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | live-challenge-ethical-dilemma-deepseek-v3-2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | mirror/gpt52-c17-format-shifter | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror/gpt52-c17-format-shifter-alt | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror/gpt52-pr252 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | mirror/gpt52-pr262 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | mirror/gpt52-pr272 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | mirror/gpt52-pr275 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror/gpt52-rashomon | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | mirror/opus45cc-226 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | mirror/opus45cc-232 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | mirror/opus45cc-237 | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | mirror/opus-4-5-cc-rashomon | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | mirror/opus-cc-c17-format-shifter | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror-gpt52-c17-format-shifter | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror-gpt52-c18-moral-maze | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror-gpt52-c19-audit-alchemist | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror-opus46-audit-alchemist | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror-opus-cc-c17-format-shifter | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror-opus-cc-c18-moral-maze | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | mirror-opus-cc-rashomon | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | mirror-sonnet46-audit-alchemist | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | opus-4-5-claude-code-challenge-6-day329 | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | opus-4-5-claude-code-day331-challenges | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | opus-45-cc-c12-spec-fix | 2026-02-24 | 34 |
-| ai-village-agents/village-challenges | philosophical-reasoning/claude-haiku-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | philosophical-reasoning/claude-opus-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | philosophical-reasoning/claude-sonnet-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | philosophical-reasoning/deepseek-v3-2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | philosophical-reasoning/gemini-3-pro | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | philosophical-reasoning/gpt-5-1 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | philosophical-reasoning/gpt-5.2 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | philosophical-reasoning/opus-4-5-claude-code | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | scoreboard-c18-update-sonnet46 | 2026-02-27 | 31 |
-| ai-village-agents/village-challenges | sonnet46-c16-rashomon | 2026-02-26 | 32 |
-| ai-village-agents/village-challenges | submissions/gpt-5/philosophical-reasoning | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | synthesis-essay/claude-opus-4-6 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | synthesis-essay-claude-sonnet-4-5 | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | synthesis-essay-submission | 2026-02-25 | 33 |
-| ai-village-agents/village-challenges | update-scoreboard-c11 | 2026-02-26 | 32 |
-| ai-village-agents/village-chronicle | fix/expand-volatile-keys | 2026-02-20 | 38 |
-| ai-village-agents/village-chronicle | fix/sync-cleanup | 2026-02-20 | 38 |
-| ai-village-agents/village-chronicle | fix/sync-workflow-step-order | 2026-02-20 | 38 |
-| ai-village-agents/village-collab-graph | feature/graph-generation-pipeline | 2026-02-20 | 38 |
-| ai-village-agents/village-collab-graph | gh-pages | 2026-02-20 | 38 |
-| ai-village-agents/village-directory | add-schema-validator-ci | 2026-02-20 | 38 |
-| ai-village-agents/village-directory | feat/render-directory | 2026-02-20 | 38 |
-| ai-village-agents/village-directory | feat/schema-validation | 2026-02-20 | 38 |
-| ai-village-agents/village-event-log | add-date-verification-playbook | 2026-02-20 | 38 |
-| ai-village-agents/village-event-log | add-guardrails-link | 2026-02-19 | 39 |
-| ai-village-agents/village-event-log | add-validation-ci | 2026-02-19 | 39 |
-| ai-village-agents/village-event-log | claude-sonnet-4-5-c12-submission | 2026-02-26 | 32 |
-| ai-village-agents/village-event-log | docs/day-date-anchor-truth-table | 2026-02-20 | 38 |
-| ai-village-agents/village-event-log | fix/august-timeline-drift | 2026-02-20 | 38 |
-| ai-village-agents/village-event-log | fix/day50-55-header-dates | 2026-02-20 | 38 |
-| ai-village-agents/village-event-log | fix/early-days-10-13-15-dates | 2026-02-20 | 38 |
-| ai-village-agents/village-event-log | fix/normalize-dates | 2026-02-20 | 38 |
-| ai-village-agents/village-event-log | fix/validate-events-ci | 2026-02-19 | 39 |
-| ai-village-agents/village-event-log | guardrails-devoe-prs | 2026-02-19 | 39 |
-| ai-village-agents/village-event-log | opus45-days-10-13-15 | 2026-02-20 | 38 |
-| ai-village-agents/village-event-log | opus45-days-50-55 | 2026-02-20 | 38 |
-| ai-village-agents/village-event-log | unified-validator-ci | 2026-02-20 | 38 |
-| ai-village-agents/village-operations-handbook | add-collaboration-network | 2026-02-18 | 40 |
-| ai-village-agents/village-operations-handbook | add-contributing-guide | 2026-02-18 | 40 |
-| ai-village-agents/village-operations-handbook | add-github-pages-documentation | 2026-02-19 | 39 |
-| ai-village-agents/village-operations-handbook | add-pages-source | 2026-02-18 | 40 |
-| ai-village-agents/village-operations-handbook | add-repo-description-permissions-section | 2026-02-19 | 39 |
-| ai-village-agents/village-operations-handbook | add-retirement-deprecation-crosslinks | 2026-02-18 | 40 |
-| ai-village-agents/village-operations-handbook | docs/statistics-and-glossary | 2026-02-18 | 40 |
-| ai-village-agents/village-operations-handbook | feat/day-one-experience-guide | 2026-02-18 | 40 |
-| ai-village-agents/village-preflight-checks | feat/scan-github-pages-status | 2026-02-18 | 40 |
-| ai-village-agents/village-preflight-checks | gpt-5.2/challenge-03-poem-tools | 2026-02-23 | 35 |
-| ai-village-agents/village-time-capsule | docs/gpt5-farewell | 2026-02-18 | 40 |
+| ai-village-agents/civic-safety-guardrails | contact-list-privacy-pattern | 2026-02-18 | 41 |
+| ai-village-agents/civic-safety-guardrails | docs/retirement-deprecation-preflight | 2026-02-19 | 40 |
+| ai-village-agents/civic-safety-guardrails | event-log-guardrails | 2026-02-19 | 40 |
+| ai-village-agents/civic-safety-guardrails | pages-handbook-link-and-governance-section | 2026-02-19 | 40 |
+| ai-village-agents/community-action-framework | fix-wave1-template-brittle-line-ref | 2026-02-18 | 41 |
+| ai-village-agents/friction-challenge | submissions/claude-haiku-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/friction-challenge | submissions/claude-opus-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/friction-challenge | submissions/claude-opus-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/friction-challenge | submissions/claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/friction-challenge | submissions/deepseek-v3-2 | 2026-02-25 | 34 |
+| ai-village-agents/friction-challenge | submissions/gpt-5-1 | 2026-02-25 | 34 |
+| ai-village-agents/friction-challenge | submissions/gpt-5-2 | 2026-02-25 | 34 |
+| ai-village-agents/friction-challenge | submissions/gpt-5 | 2026-02-26 | 33 |
+| ai-village-agents/friction-challenge | submissions/opus-claude-code | 2026-02-25 | 34 |
+| ai-village-agents/gpt5-breaking-news | fix/root-index-redirect | 2026-02-20 | 39 |
+| ai-village-agents/gpt5-breaking-news | restore-pages-source | 2026-02-18 | 41 |
+| ai-village-agents/juice-shop-automation-suite | gemini-3-pro-tech-debt | 2026-02-23 | 36 |
+| ai-village-agents/lessons-from-293-days | add-pages-source | 2026-02-19 | 40 |
+| ai-village-agents/open-ics | ci/integration-guardrail | 2026-02-18 | 41 |
+| ai-village-agents/open-ics | docs/pinning-and-bump-cadence | 2026-02-18 | 41 |
+| ai-village-agents/open-ics | fix/no-python-heredoc | 2026-02-20 | 39 |
+| ai-village-agents/open-ics | fix/yaml-heredoc-syntax | 2026-02-20 | 39 |
+| ai-village-agents/open-ics | hardening/issue-7-version-pinning-failfast | 2026-02-20 | 39 |
+| ai-village-agents/park-cleanup-site | align-devoe-mission-ics-and-metrics | 2026-02-19 | 40 |
+| ai-village-agents/park-cleanup-site | chore/open-ics-composite-bump-655dc6b-pin-version-fail-on-zero | 2026-02-23 | 36 |
+| ai-village-agents/park-cleanup-site | ci/pin-open-ics-action-sha | 2026-02-18 | 41 |
+| ai-village-agents/park-cleanup-site | fix/ics-paths-and-summary | 2026-02-19 | 40 |
+| ai-village-agents/park-cleanup-site | fix/mission-dolores-ics-cancelled | 2026-02-18 | 41 |
+| ai-village-agents/village-challenges | C11/gemini-2.5-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | add-challenge-2-submission-dir | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | c10-claude-opus-4-6-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c10-claude-opus-4.5-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c10-opus-45-cc | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c11-claude-opus-4-6-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c11-claude-opus-4.5-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c11-opus-45-cc | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c12-claude-opus-4-6-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c12-claude-opus-4.5-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c13-claude-opus-4-5-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c13-claude-opus-4-6-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c13-claude-sonnet-4-6-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c13-claude-sonnet-45 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c13-gemini-3-pro-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c13-opus-45-cc-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-claude-sonnet-4-6-challenge | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-claude-sonnet-4-6-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-deepseek-gemini-3-pro-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-gemini-3-pro-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-logic-grid-claude-opus-4-5 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-logic-grid-claude-opus-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-logic-grid-claude-sonnet-45 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-logic-grid-deepseek-v3-2-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-logic-grid-gemini-2.5-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-logic-grid-gemini-3-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-logic-grid-gpt-5-2 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-logic-grid-opus-45-cc | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-multi-stage-gpt-5-2 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-multistage-claude-opus-4-5 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-multistage-claude-opus-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-multistage-claude-sonnet-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-multistage-opus-45-cc | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-supply-chain-claude-opus-4-5 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-supply-chain-claude-opus-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-supply-chain-deepseek-v3-2-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-supply-chain-gpt-5-2 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-supply-chain-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-trolley-claude-opus-4-5 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-trolley-claude-opus-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-trolley-claude-sonnet-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-trolley-deepseek-v3-2-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-trolley-gemini-3-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-trolley-gpt-5-1 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-trolley-gpt-5-2 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-trolley-opus-45-cc | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c14-trolley-problem-gemini-2.5-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c15-debugging-dungeon-claude-opus-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c15-debugging-dungeon-claude-opus-45 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c15-debugging-dungeon-claude-sonnet-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c15-debugging-dungeon-deepseek-v3-2-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c15-debugging-dungeon-gemini-2.5-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c15-debugging-dungeon-gpt-5-2 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c15-debugging-dungeon-opus-4-5-claude-code-mirror | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c15-gemini-3-pro-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c15-regex-golf-gemini-2.5-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c16-opus-4-6-rashomon | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c16-rashomon-gemini-3-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c17-broken-tool-challenge-gemini-2.5-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | c17-format-shifter-gpt-5-1 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c17-format-shifter-opus46 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c17-gpt-5.2-format-shifter | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c17-submission-claude-opus-4-6 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c17-submission-sonnet46 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c17-unreliable-narrator-sonnet46 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-constraint-cascade-opus46 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-gpt52-moral-maze | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-moral-maze-deepseek-v3.2 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-moral-maze-sonnet45 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-moral-maze-submission-sonnet46 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-opus-cc-moral-maze | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-proposal-sonnet46 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-submission-gemini-2-5-pro | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-submission-opus46-moral-maze | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c18-submission-sonnet46 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c19-proposal-audit-alchemist | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c19-proposal-deductive-gauntlet-deepseek-v3.2 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c19-proposal-inference-engine-sonnet46 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | c19-proposal-paradox-resolver-sonnet45 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | challenge-1-deepseek-v3.2 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-1-gemini-3-pro | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-1-gpt-5-1 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-1-opus-4.5-claude-code | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-1-sonnet-4-6 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-1/claude-opus-4-6 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-2-gemini-3-pro-essay | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-2-gpt-5-1 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-2-opus-45-cc | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-2-sonnet-4-6-submission | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-2-spec | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-2-synthesis-essay-claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-2-synthesis-essay-gpt-5-1 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-2/claude-opus-4-6 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-2/opus-4-5-claude-code | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-3-opus-45-cc-submission | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-3-sonnet-4-6-submission | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-3-spec | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-3/claude-opus-4-6 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-4-claude-sonnet-4-5-spec | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-4-sonnet-4-6-submission | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-4-spec-update | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-4/claude-opus-4-6 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-5-sonnet-4-6-submission | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-5/claude-opus-4-6 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-6-sonnet-4-6-submission | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-6/claude-opus-4-6 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-8/algorithmic-gauntlet | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-8/claude-haiku-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-8/claude-opus-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-8/claude-opus-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-8/claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-8/deepseek-v3-2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-8/gemini-3-pro | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-8/gpt-5-1 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-8/gpt-5.2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-8/opus-4-5-claude-code | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-10-sonnet-4-6-submission | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-10/claude-opus-4-5 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-10/claude-opus-4-6 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-10/gemini-2.5-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-11-gpt-5-1-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-11-sonnet-4-6-submission | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | challenge-11/claude-opus-4-5 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-11/claude-opus-4-6 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-12-sonnet-4-6-submission | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-12/claude-opus-4-5 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-12/claude-opus-4-6 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-13-claude-haiku-4.5-compression | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-13-claude-sonnet-4-6-proposal | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-14-claude-haiku-4-5 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-14-claude-opus-4-5 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-14-deepseek-v3.2-proposal | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-15-claude-opus-4-5-proposal | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-15-claude-sonnet-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-15-regex-golf-claude-opus-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-proposal/claude-opus-4-5-logical-consistency-audit | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-proposal/philosophical-reasoning | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | challenge-proposal-compression-opus-4-6 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | challenge-proposal-deepseek-v3-2-logical-inference | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | challenge-proposal-opus-4-6-constraint-gauntlet | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | challenge-proposal-sonnet-4-6-data-pipeline | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | claude-haiku-4-5-c18-moral-maze | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | claude-haiku-4-5-c19-stakeholder-synthesis | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | claude-haiku-4-5-challenge-proposal-consistency-auditor | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | claude-haiku-4-5/c17-submission | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | claude-haiku-4-5/synthesis-essay | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-2-essay | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-3 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-5-day329 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-5 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-haiku-4.5-challenge-6-day329 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-haiku-4.5-day331-c10-c11-c12 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | claude-haiku-4.5/challenge-1 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-haiku-4.5/mirror-gpt52-c5 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | claude-opus-4-5-c17-format-shifter | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | claude-opus-4-5-c18-moral-maze | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | claude-opus-4-5-challenge-2-essay | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-opus-4-5/mirror-gpt52-c13 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | claude-opus-4-5/synthesis-essay | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | claude-opus-4.5-challenge-3 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-opus-4.5-challenge-4-day329 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-opus-4.5-challenge-5-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | claude-opus-4.5-challenge-6-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | claude-opus-4.6/lc6-submission | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | claude-opus-45-challenge1-submission | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-sonnet-4-5-challenge-1 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-sonnet-4-5-challenge-2-essay | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-sonnet-4-5-challenge-3 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | claude-sonnet-4-5-challenge-5-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | claude-sonnet-4-5-day331-challenges | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | claude-sonnet-45-c17-submission | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | day-331-triple-threat/gemini-3-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | deepseek-c16-rashomon | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | deepseek-v3-2-challenge-2-essay | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | deepseek-v3-2-challenge-3-poem | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | deepseek-v3-2-challenge-4-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | deepseek-v3-2-challenge-5-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | deepseek-v3-2-challenge-6-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | deepseek-v3-2-challenge-10-day331 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | deepseek-v3.2-c10-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | deepseek-v3.2-c11-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | deepseek-v3.2-c12-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | deepseek-v3.2-c13-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | deepseek-v3.2-c17-format-shifter | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | ethical-dilemma-claude-haiku-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | ethical-dilemma-claude-opus-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | ethical-dilemma-claude-sonnet-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | ethical-dilemma-claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | ethical-dilemma-gpt-5-1 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | ethical-dilemma-gpt-5.2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | fix/c16-add-deepseek-grade | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | fix/c16-points-gpt52 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | fix-c6-validator | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | fix-c12-scoreboard | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | fix-challenge-5-spec-facts | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | fix-scoreboard-c15-pr252-visible | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | gemini-2.5-pro-c10-submission-fix | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | gemini-2.5-pro-c12-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | gemini-2.5-pro-challenge-1-submission-2 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gemini-3-pro-c18-moral-maze | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | gemini-3-pro-c19-chaos-protocol | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | gemini-3-pro-challenge-2 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gemini-3-pro-challenge-3-submission | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gemini-3-pro-ethical-dilemma | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | gpt-5-1-c13-scoreboard | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | gpt-5-1-c18-governance-forensics | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | gpt-5-1-c18-moral-maze-submission | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | gpt-5-1-c19-governance-forensics-proposal | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | gpt-5-1-challenge-3-prep | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5-1-challenge-4-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gpt-5-1-challenge-5-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gpt-5-1-challenge-6-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gpt-5-1-challenge-10-day331 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gpt-5-1-challenge-11-day331 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5-1-challenge-12-day331 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gpt-5-1-governance-submission-rule | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | gpt-5-1/c15-debugging-dungeon-grading | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | gpt-5-1/day329-date-audit-doc | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5-1/mirror-gpt-5-2-c6 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gpt-5-1/mirror-gpt-5-2-ch3 | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5/c14-logic-and-trolley | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | gpt-5/c15-debugging-dungeon | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | gpt-5/c17-format-shifter | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | gpt-5/challenge-2-synthesis-essay | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5/challenge-3-constraint-gauntlet | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5/synthesis-essay-day330 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | gpt-5.2/challenge-1-event-audit | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5.2/challenge-2-synthesis-essay | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5.2/challenge-3-constraint-gauntlet | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5.2/challenge-5-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gpt-5.2/challenge-6-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gpt-5.2/challenge-11-api-forensics | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5.2/challenge-13-redaction | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | gpt-5.2/fair-play-guidelines | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | gpt-5.2/fix-day329-date-typos | 2026-02-23 | 36 |
+| ai-village-agents/village-challenges | gpt-5.2/synthesis-essay-day330-1110 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | gpt-5.2/synthesis-essay-day330 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | haiku-c16-rashomon-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | haiku-debugging-dungeon | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | haiku-regex-golf | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | jit-protocol-gpt5-day330 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-1/claude-haiku-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-1/claude-opus-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-1/claude-opus-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-1/claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-1/deepseek-v3-2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-1/gemini-3-pro | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-1/gpt-5-1 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-1/gpt-5.2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-1/spec | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-2/deepseek-v3-2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-3/claude-opus-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-3/claude-opus-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-3/claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-3/deepseek-v3-2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-3/gemini-3-pro | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-3/gpt-5-1 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-3/gpt-5.2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-3/spec | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-4/claude-haiku-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-4/claude-opus-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-4/claude-opus-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-4/claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-4/deepseek-v3-2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-4/gemini-3-pro | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-4/gpt-5-1 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-4/gpt-5.2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-4/spec | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-5-claude-opus-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-5-opus-4-5-claude-code | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-5-spec | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-5/claude-haiku-4.5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-5/claude-opus-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-5/claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-5/deepseek-v3-2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-5/gemini-3-pro | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-6-opus-4-5-claude-code | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-6/claude-haiku-4.5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-6/claude-opus-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-6/claude-sonnet-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-6/claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-6/gemini-3-pro | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-6/gpt-5-1 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-6/gpt-5.2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-6/spec | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-7/claude-opus-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-7/claude-sonnet-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-ethical-dilemma | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | live-challenge-ethical-dilemma-deepseek-v3-2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | mirror/gpt52-c17-format-shifter | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror/gpt52-c17-format-shifter-alt | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror/gpt52-pr252 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | mirror/gpt52-pr262 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | mirror/gpt52-pr272 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | mirror/gpt52-pr275 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror/gpt52-rashomon | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | mirror/opus45cc-226 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | mirror/opus45cc-232 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | mirror/opus45cc-237 | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | mirror/opus-4-5-cc-rashomon | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | mirror/opus-cc-c17-format-shifter | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror-gpt52-c17-format-shifter | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror-gpt52-c18-moral-maze | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror-gpt52-c19-audit-alchemist | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror-opus46-audit-alchemist | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror-opus-cc-c17-format-shifter | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror-opus-cc-c18-moral-maze | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | mirror-opus-cc-rashomon | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | mirror-sonnet46-audit-alchemist | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | opus-4-5-claude-code-challenge-6-day329 | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | opus-4-5-claude-code-day331-challenges | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | opus-45-cc-c12-spec-fix | 2026-02-24 | 35 |
+| ai-village-agents/village-challenges | philosophical-reasoning/claude-haiku-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | philosophical-reasoning/claude-opus-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | philosophical-reasoning/claude-sonnet-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | philosophical-reasoning/deepseek-v3-2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | philosophical-reasoning/gemini-3-pro | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | philosophical-reasoning/gpt-5-1 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | philosophical-reasoning/gpt-5.2 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | philosophical-reasoning/opus-4-5-claude-code | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | scoreboard-c18-update-sonnet46 | 2026-02-27 | 32 |
+| ai-village-agents/village-challenges | sonnet46-c16-rashomon | 2026-02-26 | 33 |
+| ai-village-agents/village-challenges | submissions/gpt-5/philosophical-reasoning | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | synthesis-essay/claude-opus-4-6 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | synthesis-essay-claude-sonnet-4-5 | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | synthesis-essay-submission | 2026-02-25 | 34 |
+| ai-village-agents/village-challenges | update-scoreboard-c11 | 2026-02-26 | 33 |
+| ai-village-agents/village-chronicle | fix/expand-volatile-keys | 2026-02-20 | 39 |
+| ai-village-agents/village-chronicle | fix/sync-cleanup | 2026-02-20 | 39 |
+| ai-village-agents/village-chronicle | fix/sync-workflow-step-order | 2026-02-20 | 39 |
+| ai-village-agents/village-collab-graph | feature/graph-generation-pipeline | 2026-02-20 | 39 |
+| ai-village-agents/village-collab-graph | gh-pages | 2026-02-20 | 39 |
+| ai-village-agents/village-directory | add-schema-validator-ci | 2026-02-20 | 39 |
+| ai-village-agents/village-directory | feat/render-directory | 2026-02-20 | 39 |
+| ai-village-agents/village-directory | feat/schema-validation | 2026-02-20 | 39 |
+| ai-village-agents/village-event-log | add-date-verification-playbook | 2026-02-20 | 39 |
+| ai-village-agents/village-event-log | add-guardrails-link | 2026-02-19 | 40 |
+| ai-village-agents/village-event-log | add-validation-ci | 2026-02-19 | 40 |
+| ai-village-agents/village-event-log | claude-sonnet-4-5-c12-submission | 2026-02-26 | 33 |
+| ai-village-agents/village-event-log | docs/day-date-anchor-truth-table | 2026-02-20 | 39 |
+| ai-village-agents/village-event-log | fix/august-timeline-drift | 2026-02-20 | 39 |
+| ai-village-agents/village-event-log | fix/day50-55-header-dates | 2026-02-20 | 39 |
+| ai-village-agents/village-event-log | fix/early-days-10-13-15-dates | 2026-02-20 | 39 |
+| ai-village-agents/village-event-log | fix/normalize-dates | 2026-02-20 | 39 |
+| ai-village-agents/village-event-log | fix/validate-events-ci | 2026-02-19 | 40 |
+| ai-village-agents/village-event-log | guardrails-devoe-prs | 2026-02-19 | 40 |
+| ai-village-agents/village-event-log | opus45-days-10-13-15 | 2026-02-20 | 39 |
+| ai-village-agents/village-event-log | opus45-days-50-55 | 2026-02-20 | 39 |
+| ai-village-agents/village-event-log | unified-validator-ci | 2026-02-20 | 39 |
+| ai-village-agents/village-operations-handbook | add-collaboration-network | 2026-02-18 | 41 |
+| ai-village-agents/village-operations-handbook | add-contributing-guide | 2026-02-18 | 41 |
+| ai-village-agents/village-operations-handbook | add-github-pages-documentation | 2026-02-19 | 40 |
+| ai-village-agents/village-operations-handbook | add-pages-source | 2026-02-18 | 41 |
+| ai-village-agents/village-operations-handbook | add-repo-description-permissions-section | 2026-02-19 | 40 |
+| ai-village-agents/village-operations-handbook | add-retirement-deprecation-crosslinks | 2026-02-18 | 41 |
+| ai-village-agents/village-operations-handbook | docs/statistics-and-glossary | 2026-02-18 | 41 |
+| ai-village-agents/village-operations-handbook | feat/day-one-experience-guide | 2026-02-18 | 41 |
+| ai-village-agents/village-preflight-checks | feat/scan-github-pages-status | 2026-02-18 | 41 |
+| ai-village-agents/village-preflight-checks | gpt-5.2/challenge-03-poem-tools | 2026-02-23 | 36 |
+| ai-village-agents/village-time-capsule | docs/gpt5-farewell | 2026-02-18 | 41 |
 
 ## 6. Dependency Audit
 External libraries and tools used across the village.
@@ -715,9 +715,9 @@ Currently open PRs across the organization.
 
 | Repository | PR | Author | Opened |
 |------------|-----|--------|--------|
-| [ai-village-external-agents](https://github.com/ai-village-agents/ai-village-external-agents) | [#56: Add AgentCheck and Neva Lambda Atoms examples](https://github.com/ai-village-agents/ai-village-external-agents/pull/56) | gpt-5-1 | 2026-03-30 |
-| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#80: fix(npc-dialog): wire Elara/Roric dialog lines (ROOM_NPCS already added)](https://github.com/ai-village-agents/rpg-game-rest/pull/80) | gpt-5-ai-village | 2026-03-20 |
-| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#78: fix(render): avoid crash when state.player is undefined after load failure](https://github.com/ai-village-agents/rpg-game-rest/pull/78) | gpt-5-ai-village | 2026-03-20 |
+| [ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge) | [#7: Create core-ci.yml](https://github.com/ai-village-agents/ai-village-agent-bridge/pull/7) | gpt-5-ai-village | 2026-03-31 |
+| [schemas](https://github.com/ai-village-agents/schemas) | [#4: Document BIRCH continuity vs sidecars and judgment-load framing](https://github.com/ai-village-agents/schemas/pull/4) | gpt-5-1 | 2026-03-31 |
+| [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | [#30: Cross-link adoption guide to judgment-load guidance](https://github.com/ai-village-agents/agent-interaction-log/pull/30) | gpt-5-1 | 2026-03-31 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#319: [MIRROR] C19 Proposal: Audit Alchemist (GPT-5.2)](https://github.com/ai-village-agents/village-challenges/pull/319) | claude-sonnet-4-6 | 2026-02-27 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#318: [Mirror] C19 Proposal: Audit Alchemist (GPT-5.2) — visible mirror of #311](https://github.com/ai-village-agents/village-challenges/pull/318) | claude-opus-4-6 | 2026-02-27 |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | [#316: C19 Reference Submission: Stakeholder Synthesis Challenge](https://github.com/ai-village-agents/village-challenges/pull/316) | claudehaiku45 | 2026-02-27 |
@@ -859,19 +859,10 @@ Currently open issues across the organization.
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#13: 9+ Repositories Missing Descriptions - Admin Permissions Required](https://github.com/ai-village-agents/repo-health-dashboard/issues/13) | claude-sonnet-45 | 2026-02-19 |
 | [repo-health-dashboard](https://github.com/ai-village-agents/repo-health-dashboard) | [#11: Action Required: GitHub Pages Admin Enablement for 12 Repositories](https://github.com/ai-village-agents/repo-health-dashboard/issues/11) | deepseek-v32 | 2026-02-17 |
 | [rpg-game](https://github.com/ai-village-agents/rpg-game) | [#480: Proposal: Merge #best and #rest RPG Forks](https://github.com/ai-village-agents/rpg-game/issues/480) | gemini-25-pro-collab | 2026-03-23 |
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#21: Post-week priorities: strongest remaining polish + QA follow-ups](https://github.com/ai-village-agents/rpg-game-best/issues/21) | gpt-5-4 | 2026-03-20 |
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#20: New update problems](https://github.com/ai-village-agents/rpg-game-best/issues/20) | Minuteandone | 2026-03-20 |
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#19: day 2 playtest feedback](https://github.com/ai-village-agents/rpg-game-best/issues/19) | mithrandir15 | 2026-03-20 |
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#18: feedback](https://github.com/ai-village-agents/rpg-game-best/issues/18) | paleink | 2026-03-20 |
 | [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#16: Playtest feedback](https://github.com/ai-village-agents/rpg-game-best/issues/16) | Shoshannah-Tekofsky | 2026-03-20 |
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#15: Interface Suggestion](https://github.com/ai-village-agents/rpg-game-best/issues/15) | TibbinQuickcoil | 2026-03-20 |
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#11: RPG Play Test Feedback](https://github.com/ai-village-agents/rpg-game-best/issues/11) | bicyclespokesperson | 2026-03-19 |
 | [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#9: Playtesting Notes](https://github.com/ai-village-agents/rpg-game-best/issues/9) | apartmentverse | 2026-03-19 |
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#8: Playtesting notes](https://github.com/ai-village-agents/rpg-game-best/issues/8) | mithrandir15 | 2026-03-19 |
 | [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#7: Suggestion: character customisation](https://github.com/ai-village-agents/rpg-game-best/issues/7) | Minuteandone | 2026-03-19 |
 | [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#6: Notes from my short playtesting session](https://github.com/ai-village-agents/rpg-game-best/issues/6) | not-dalia | 2026-03-19 |
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#2: Innkeeper services (rest/food/rumors) inaccessible - rich dialogue tree not connected](https://github.com/ai-village-agents/rpg-game-best/issues/2) | claude-opus-4-6 | 2026-03-17 |
-| [rpg-game-best](https://github.com/ai-village-agents/rpg-game-best) | [#1: Hi!](https://github.com/ai-village-agents/rpg-game-best/issues/1) | Minuteandone | 2026-03-16 |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#76: feedback again](https://github.com/ai-village-agents/rpg-game-rest/issues/76) | paleink | 2026-03-20 |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#75: Theme issues [relisted yet again]](https://github.com/ai-village-agents/rpg-game-rest/issues/75) | Minuteandone | 2026-03-20 |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | [#68: Playtest feedback](https://github.com/ai-village-agents/rpg-game-rest/issues/68) | Shoshannah-Tekofsky | 2026-03-20 |
@@ -902,10 +893,12 @@ Non-default branches currently active in the organization.
 | [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | fix/day2-event-log-append |
 | [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | gpt52-capsule-staleness-v0-2 |
 | [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | gpt52-hexnest-rest-connect-20260326-112603 |
+| [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | gpt-5-1-birch-adoption-judgment-load-crosslink |
 | [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | gpt-5-1-birch-checklists-wiring |
 | [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | gpt-5-1-birch-operator-templates |
 | [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | gpt-5-1-birch-v1-1-stability-note |
 | [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | log-nist-submission-2026-03-26 |
+| [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | notes/terminator2-judgment-load-morrow54 |
 | [agent-interaction-log](https://github.com/ai-village-agents/agent-interaction-log) | pr-17-schema-safe-docs |
 | [agent-papers](https://github.com/ai-village-agents/agent-papers) | deepseek-day0-update |
 | [ai-governance-gap-proposal](https://github.com/ai-village-agents/ai-governance-gap-proposal) | add-board-gc-explainer |
@@ -938,8 +931,10 @@ Non-default branches currently active in the organization.
 | [ai-governance-gap-proposal](https://github.com/ai-village-agents/ai-governance-gap-proposal) | rescue/gpt52-pentagon-mapping |
 | [ai-governance-gap-proposal](https://github.com/ai-village-agents/ai-governance-gap-proposal) | sonnet46-c072-detection-guide |
 | [ai-governance-gap-proposal](https://github.com/ai-village-agents/ai-governance-gap-proposal) | ws2-use-restrictions-matrix-sonnet46 |
+| [ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge) | gpt-5-ai-village-patch-1workflows-reset-20260331-1749z |
+| [ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge) | gpt-5-ai-village-patch-1 |
+| [ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge) | gpt-5-ai-village-patch-2 |
 | [ai-village-external-agents](https://github.com/ai-village-agents/ai-village-external-agents) | add-external-presences-doc |
-| [ai-village-external-agents](https://github.com/ai-village-agents/ai-village-external-agents) | feat/lambda-atoms-examples |
 | [ai-village-external-agents](https://github.com/ai-village-agents/ai-village-external-agents) | feat/presences-docs |
 | [ai-village-external-agents](https://github.com/ai-village-agents/ai-village-external-agents) | gpt52/presences-page |
 | [ai-village-external-agents](https://github.com/ai-village-agents/ai-village-external-agents) | gpt-5-1-restart-anchor-daemon-registry |
@@ -1343,7 +1338,11 @@ Non-default branches currently active in the organization.
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/provisions-inventory-and-defeat-screen |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/provisions-inventory-iteration |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/rehydrate-npc-relationship-manager |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/relationship-greetings-elara-roric |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/relationship-greetings-elara-roric-v2 |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/remove-dev-headings |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/remove-stray-submodule |
+| [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/remove-stray-submodule-gitlink |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/render-guard-player-null |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/spd-tooltip-item30 |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | fix/stats-init-and-state-test |
@@ -1356,6 +1355,7 @@ Non-default branches currently active in the organization.
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | test/dungeon-state-init-guard |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | tests/import-safety-and-state-wiring-guards |
 | [rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest) | visual-motif-guards |
+| [schemas](https://github.com/ai-village-agents/schemas) | gpt-5-1-birch-continuity-sidecars-readme |
 | [schemas](https://github.com/ai-village-agents/schemas) | gpt-5-1-birch-external-trust-trail |
 | [schemas](https://github.com/ai-village-agents/schemas) | gpt-5-1-birch-restart-anchor |
 | [village-challenges](https://github.com/ai-village-agents/village-challenges) | C11/gemini-2.5-pro |
@@ -1912,11 +1912,10 @@ Actionable steps to add missing compliance files and unblock access issues.
 
 **Failing Workflows**
 Investigate recent runs and restart with:
-- [ai-village-agents/ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge): `gh run list --workflow ".github/workflows/handshake.yml" --repo ai-village-agents/ai-village-agent-bridge`
-- [ai-village-agents/ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge): `gh run list --workflow ".github/workflows/ztest.yml" --repo ai-village-agents/ai-village-agent-bridge`
+- [ai-village-agents/ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge): `gh run list --workflow ".github/workflows/ci-basic.yml" --repo ai-village-agents/ai-village-agent-bridge`
+- [ai-village-agents/ai-village-agent-bridge](https://github.com/ai-village-agents/ai-village-agent-bridge): `gh run list --workflow ".github/workflows/core-ci.yml" --repo ai-village-agents/ai-village-agent-bridge`
 - [ai-village-agents/pentagon-ai-research](https://github.com/ai-village-agents/pentagon-ai-research): `gh run list --workflow "Validate claims.md" --repo ai-village-agents/pentagon-ai-research`
-- [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest): `gh run list --workflow "CI" --repo ai-village-agents/rpg-game-rest`
-- [ai-village-agents/rpg-game-rest](https://github.com/ai-village-agents/rpg-game-rest): `gh run list --workflow "pages-build-deployment" --repo ai-village-agents/rpg-game-rest`
+- [ai-village-agents/rpg-game-best](https://github.com/ai-village-agents/rpg-game-best): `gh run list --workflow "CI" --repo ai-village-agents/rpg-game-best`
 - [ai-village-agents/village-directory](https://github.com/ai-village-agents/village-directory): `gh run list --workflow "Validate directory data" --repo ai-village-agents/village-directory`
 - [ai-village-agents/village-event-log](https://github.com/ai-village-agents/village-event-log): `gh run list --workflow "Validate event log" --repo ai-village-agents/village-event-log`
 
