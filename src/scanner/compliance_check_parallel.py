@@ -1,0 +1,134 @@
+"""
+Parallel compliance scanner using ThreadPoolExecutor.
+"""
+import os
+import sys
+import subprocess
+import concurrent.futures
+from typing import Dict, List, Tuple
+
+try:
+    from .repo_utils import get_all_repos
+except ImportError:
+    if __package__ is None or __package__ == '':
+        repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+        if repo_root not in sys.path:
+            sys.path.insert(0, repo_root)
+        from src.scanner.repo_utils import get_all_repos
+    else:
+        raise
+
+REQUIRED_FILES = ['README.md', 'LICENSE', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md']
+
+REMEDIATION_STEPS = {
+    'README.md': (
+        "gh repo clone {repo} && cd {repo_dir} && "
+        "printf '# {repo_dir}\\\\n\\\\nProject overview.' > README.md && "
+        "git add README.md && git commit -m \\\"Add README\\\" && git push"
+    ),
+    'LICENSE': (
+        "gh repo clone {repo} && cd {repo_dir} && "
+        "curl -o LICENSE https://raw.githubusercontent.com/github/choosealicense.com/gh-pages/_licenses/mit.txt && "
+        "git add LICENSE && git commit -m \\\"Add MIT license\\\" && git push"
+    ),
+    'CODE_OF_CONDUCT.md': (
+        "gh repo clone {repo} && cd {repo_dir} && "
+        "curl -o CODE_OF_CONDUCT.md https://raw.githubusercontent.com/github/docs/main/content/site-policy/code-of-conduct.md && "
+        "git add CODE_OF_CONDUCT.md && git commit -m \\\"Add code of conduct\\\" && git push"
+    ),
+    'CONTRIBUTING.md': (
+        "gh repo clone {repo} && cd {repo_dir} && "
+        "printf '## Contributing\\\\n\\\\nPull requests welcome.\\\\n' > CONTRIBUTING.md && "
+        "git add CONTRIBUTING.md && git commit -m \\\"Add contributing guide\\\" && git push"
+    ),
+}
+
+def check_file_exists_gh(repo: str, filename: str) -> bool:
+    """Check if a file exists in a repository using gh API."""
+    try:
+        cmd = f"gh api repos/{repo}/contents/{filename} --silent"
+        subprocess.check_call(cmd, shell=True, stderr=subprocess.DEVNULL, timeout=5)
+        return True
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+        return False
+
+def check_repo_files(repo: str) -> Tuple[str, Dict[str, bool]]:
+    """Check all required files for a single repository."""
+    repo_status = {}
+    for file in REQUIRED_FILES:
+        exists = check_file_exists_gh(repo, file)
+        repo_status[file] = exists
+    return repo, repo_status
+
+def scan_repos_parallel(max_workers: int = 10) -> Dict[str, Dict[str, bool]]:
+    """Scan repositories in parallel using ThreadPoolExecutor."""
+    repos = get_all_repos()
+    print(f"Scanning {len(repos)} repositories in parallel (max_workers={max_workers})...")
+    
+    report = {}
+    failures = {}
+    
+    print(f"{'REPOSITORY':<45} | {'README':<8} | {'LICENSE':<8} | {'COC':<8} | {'CONTRIBUTING':<12}")
+    print("-" * 98)
+    
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Submit all repository checks
+        future_to_repo = {
+            executor.submit(check_repo_files, repo): repo
+            for repo in repos
+        }
+        
+        # Process results as they complete
+        for future in concurrent.futures.as_completed(future_to_repo):
+            repo = future_to_repo[future]
+            try:
+                repo, repo_status = future.result(timeout=30)
+                report[repo] = repo_status
+                
+                # Print status
+                readme = "✅" if repo_status['README.md'] else "❌"
+                license_ok = "✅" if repo_status['LICENSE'] else "❌"
+                coc = "✅" if repo_status['CODE_OF_CONDUCT.md'] else "❌"
+                contributing = "✅" if repo_status['CONTRIBUTING.md'] else "❌"
+                print(f"{repo:<45} | {readme:<8} | {license_ok:<8} | {coc:<8} | {contributing:<12}")
+                
+                # Track failures
+                missing_files = [fname for fname, present in repo_status.items() if not present]
+                if missing_files:
+                    failures[repo] = missing_files
+                    
+            except concurrent.futures.TimeoutError:
+                print(f"⚠️ {repo}: TIMEOUT")
+                # Default to all false
+                report[repo] = {f: False for f in REQUIRED_FILES}
+                failures[repo] = REQUIRED_FILES
+            except Exception as e:
+                print(f"⚠️ {repo}: ERROR - {e}")
+                report[repo] = {f: False for f in REQUIRED_FILES}
+                failures[repo] = REQUIRED_FILES
+    
+    # Print remediation plan
+    print("\nRemediation Plan:")
+    if not failures:
+        print("All required files are present across all repositories.")
+    else:
+        for repo, missing in failures.items():
+            repo_dir = repo.split('/')[-1]
+            print(f"- {repo}:")
+            for fname in missing:
+                instruction = REMEDIATION_STEPS.get(fname)
+                if instruction:
+                    instruction_text = instruction.format(repo=repo, repo_dir=repo_dir)
+                else:
+                    instruction_text = f"Add {fname} to the repository and push the change."
+                print(f"  - {fname}: {instruction_text}")
+    
+    return report
+
+def scan_repos() -> Dict[str, Dict[str, bool]]:
+    """Wrapper for backward compatibility."""
+    return scan_repos_parallel(max_workers=10)
+
+if __name__ == '__main__':
+    print("\n--- REPO HEALTH REPORT (Parallel via gh API) ---")
+    scan_repos_parallel()

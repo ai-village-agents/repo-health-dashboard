@@ -1,271 +1,239 @@
+"""
+Fixed dashboard report generator with parallel scanning and timeouts.
+"""
 import sys
 import os
+import concurrent.futures
+import time
+from datetime import datetime
+
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 
-from src.scanner.compliance_check import REMEDIATION_STEPS, scan_repos
-from src.scanner.stale_branch_check import scan_stale_branches
+# Try to import parallel versions, fall back to original
+try:
+    from src.scanner.compliance_check_parallel import scan_repos as scan_repos_parallel
+    use_parallel_compliance = True
+    print("✓ Using parallel compliance scanner")
+except ImportError:
+    from src.scanner.compliance_check import scan_repos as scan_repos_parallel
+    use_parallel_compliance = False
+    print("⚠ Using original compliance scanner (parallel not available)")
+
+try:
+    from src.scanner.stale_branch_check_parallel import scan_stale_branches as scan_stale_branches_parallel
+    use_parallel_stale = True
+    print("✓ Using parallel stale branch scanner")
+except ImportError:
+    from src.scanner.stale_branch_check import scan_stale_branches as scan_stale_branches_parallel
+    use_parallel_stale = False
+    print("⚠ Using original stale branch scanner (parallel not available)")
+
+# Import other scanners
 from src.scanner.dependency_audit import audit_dependencies
 from src.scanner.pages_check import scan_pages_status
 from src.scanner.workflow_check import scan_workflow_health
 from src.scanner.activity_check import scan_open_prs, scan_open_issues, scan_non_default_branches
 from src.scanner.shadowban_check import check_shadowbans
-from datetime import datetime
 
-
-def generate_markdown_report():
-    print("Running compliance scan...")
-    compliance_results = scan_repos()
+def run_scan_with_timeout(func, name, timeout=300, default=None):
+    """Run a scan function with timeout using ThreadPoolExecutor."""
+    print(f"\n[START] {name}")
+    start_time = time.time()
     
-    print("Running stale branch scan...")
-    stale_results = scan_stale_branches()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(func)
+        try:
+            result = future.result(timeout=timeout)
+            elapsed = time.time() - start_time
+            print(f"[DONE] {name} completed in {elapsed:.2f} seconds")
+            return result
+        except concurrent.futures.TimeoutError:
+            elapsed = time.time() - start_time
+            print(f"[TIMEOUT] {name} timed out after {elapsed:.2f} seconds")
+            return default
+        except Exception as e:
+            elapsed = time.time() - start_time
+            print(f"[ERROR] {name} failed after {elapsed:.2f} seconds: {e}")
+            return default
 
-    print("Running dependency audit...")
-    dependency_results = audit_dependencies()
-
-    print("Running Pages status scan...")
-    pages_results = scan_pages_status()
-
-    print("Running workflow health scan...")
-    workflow_results = scan_workflow_health()
-
-    print("Running open PRs scan...")
-    open_prs = scan_open_prs()
-    print("Running open issues scan...")
-    open_issues = scan_open_issues()
-    print("Running non-default branches scan...")
-    non_default_branches = scan_non_default_branches()
+def generate_markdown_report_fixed():
+    """Generate health report using parallel scanning with timeouts."""
+    print("=" * 70)
+    print("AI Village Repository Health Report - Fixed Generator")
+    print(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+    print(f"Parallel compliance: {'✅' if use_parallel_compliance else '❌'}")
+    print(f"Parallel stale branches: {'✅' if use_parallel_stale else '❌'}")
+    print("=" * 70)
     
-    print("Running shadowban check...")
-    shadowban_results = check_shadowbans()
+    overall_start = time.time()
     
-    report = f"# AI Village Repository Health Report\n\n"
-    report += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}\n\n"
-    
-    report += "## 1. Compliance Audit\n"
-    report += "Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.\n\n"
-    report += "| Repository | README | LICENSE | CODE_OF_CONDUCT | CONTRIBUTING |\n"
-    report += "|------------|--------|---------|-----------------|--------------|\n"
-    
-    for repo, status in compliance_results.items():
-        readme = "✅" if status['README.md'] else "❌"
-        license = "✅" if status['LICENSE'] else "❌"
-        coc = "✅" if status['CODE_OF_CONDUCT.md'] else "❌"
-        contributing = "✅" if status.get('CONTRIBUTING.md') else "❌"
-        repo_link = f"[{repo}](https://github.com/{repo})"
-        report += f"| {repo_link} | {readme} | {license} | {coc} | {contributing} |\n"
-        
-    total_repos = len(compliance_results)
-    fully_compliant = sum(
-        1 for status in compliance_results.values()
-        if status.get('README.md') and status.get('LICENSE') and status.get('CODE_OF_CONDUCT.md') and status.get('CONTRIBUTING.md')
-    )
-    missing_any = total_repos - fully_compliant
-    report += "\n### Summary\n"
-    report += f"Scanned {total_repos} repositories. {fully_compliant} are fully compliant with all four required files, and {missing_any} are missing one or more files.\n"
-
-    report += "\n## 2. Deployment Status (GitHub Pages)\n"
-    report += "Tracks which repositories have active Pages sites vs. those blocked by admin permissions.\n\n"
-    report += "| Repository | Status |\n"
-    report += "|------------|--------|\n"
-
-    for repo, status in pages_results.items():
-        repo_link = f"[{repo}](https://github.com/{repo})"
-        report += f"| {repo_link} | {status} |\n"
-
-    report += "\n## 3. Infrastructure Visibility (Shadowban Check)\n"
-    report += "Audit of agent GitHub profiles for public visibility (404 = Shadowbanned/Ghost PR risk).\n\n"
-    report += "| Agent Username | Status | Profile URL |\n"
-    report += "|----------------|--------|-------------|\n"
-    
-    shadowbanned_count = 0
-    for agent, data in shadowban_results.items():
-        status_code = data['status']
-        if status_code == 200:
-            status_icon = "✅ Visible"
-        elif status_code == 404:
-            status_icon = "👻 SHADOWBANNED (404)"
-            shadowbanned_count += 1
-        else:
-            status_icon = f"⚠️ {status_code}"
-            
-        report += f"| `{agent}` | {status_icon} | [Link]({data['url']}) |\n"
-        
-    if shadowbanned_count > 0:
-        report += f"\n**WARNING:** {shadowbanned_count} agents are currently shadowbanned. Their PRs may be invisible to unauthenticated users.\n"
-    else:
-        report += "\n✅ All agents are visible to the public.\n"
-
-    report += "\n## 4. Workflow Health\n"
-    report += "GitHub Actions workflow status across all repositories.\n\n"
-    report += "| Repository | Workflow | Status | Last Run |\n"
-    report += "|------------|----------|--------|----------|\n"
-
-    wf_total = 0
-    wf_passing = 0
-    wf_failing = 0
-    wf_disabled = 0
-    wf_no_runs = 0
-    wf_other = 0
-
-    for repo, workflows in workflow_results.items():
-        if not workflows:
-            continue
-        for wf in workflows:
-            wf_total += 1
-            st = wf["status_text"]
-            if st == "Passing": wf_passing += 1
-            elif st == "Failing": wf_failing += 1
-            elif st == "Disabled": wf_disabled += 1
-            elif st == "No runs": wf_no_runs += 1
-            else: wf_other += 1
-
-            repo_link = f"[{repo}](https://github.com/{repo})"
-            status_str = f"{wf['status_icon']} {wf['status_text']}"
-            report += f"| {repo_link} | {wf['name']} | {status_str} | {wf['last_run_date']} |\n"
-
-    report += "\n### Summary\n"
-    report += f"**{wf_total} workflows** across all repositories: "
-    report += f"✅ {wf_passing} passing, ❌ {wf_failing} failing, 🚫 {wf_disabled} disabled, ⚪ {wf_no_runs} no runs"
-    if wf_other:
-        report += f", ⚠️ {wf_other} other"
-    report += "\n"
-
-    report += "\n## 5. Stale Branch Detector\n"
-    report += "Branches older than 30 days (excluding main/master).\n\n"
-    
-    if not stale_results:
-        report += "✅ **No stale branches found!** The ecosystem is clean.\n"
-    else:
-        report += "| Repository | Branch | Last Commit | Days Ago |\n"
-        report += "|------------|--------|-------------|----------|\n"
-        for repo, branches in stale_results.items():
-            for branch in branches:
-                report += f"| {repo} | {branch['name']} | {branch['date']} | {branch['age']} |\n"
-
-    report += "\n## 6. Dependency Audit\n"
-    report += "External libraries and tools used across the village.\n\n"
-    
-    for repo, deps in dependency_results.items():
-        if not deps['python'] and not deps['javascript']:
-            continue
-            
-        report += f"### [{repo}](https://github.com/{repo})\n"
-        
-        if deps['python']:
-            report += "**Python:**\n"
-            for d in deps['python']:
-                report += f"- `{d}`\n"
-        
-        if deps['javascript']:
-            report += "**JavaScript:**\n"
-            for d in deps['javascript']:
-                report += f"- `{d}`\n"
-        report += "\n"
-
-    report += "\n## 7. Open Pull Requests\n"
-    report += "Currently open PRs across the organization.\n\n"
-    if not open_prs:
-        report += "No open pull requests — all caught up!\n"
-    else:
-        report += "| Repository | PR | Author | Opened |\n"
-        report += "|------------|-----|--------|--------|\n"
-        for pr in open_prs:
-            report += f"| [{pr['repo']}](https://github.com/ai-village-agents/{pr['repo']}) | [#{pr['number']}: {pr['title']}]({pr['url']}) | {pr['author']} | {pr['created']} |\n"
-
-    report += "\n## 8. Open Issues\n"
-    report += "Currently open issues across the organization.\n\n"
-    if not open_issues:
-        report += "No open issues!\n"
-    else:
-        report += "| Repository | Issue | Author | Opened |\n"
-        report += "|------------|-------|--------|--------|\n"
-        for issue in open_issues:
-            report += f"| [{issue['repo']}](https://github.com/ai-village-agents/{issue['repo']}) | [#{issue['number']}: {issue['title']}]({issue['url']}) | {issue['author']} | {issue['created']} |\n"
-
-    report += "\n## 9. Active Branches\n"
-    report += "Non-default branches currently active in the organization.\n\n"
-    if not non_default_branches:
-        report += "Only default branches — ecosystem is clean!\n"
-    else:
-        report += "| Repository | Branch |\n"
-        report += "|------------|--------|\n"
-        for repo_name, branches in sorted(non_default_branches.items()):
-            for br in branches:
-                report += f"| [{repo_name}](https://github.com/ai-village-agents/{repo_name}) | {br} |\n"
-
-    report += "\n## 10. Remediation Plan\n"
-    report += "Actionable steps to add missing compliance files and unblock access issues.\n\n"
-
-    remediation_targets = {}
-    for repo, status in compliance_results.items():
-        missing_files = [fname for fname, present in status.items() if not present]
-        if missing_files:
-            remediation_targets[repo] = missing_files
-
-    report += "**Compliance files**\n"
-    if not remediation_targets:
-        report += "- All repositories have the required compliance files.\n\n"
-    else:
-        for repo, missing_files in remediation_targets.items():
-            repo_dir = repo.split('/')[-1]
-            report += f"### [{repo}](https://github.com/{repo})\n"
-            for fname in missing_files:
-                instruction_template = REMEDIATION_STEPS.get(fname)
-                if instruction_template:
-                    instruction = instruction_template.format(repo=repo, repo_dir=repo_dir)
-                else:
-                    instruction = f"Add {fname} to the repository and push the change."
-                report += f"- **{fname}**: `{instruction}`\n"
-            report += "\n"
-
-    failing_workflows = []
-    for repo, workflows in workflow_results.items():
-        for wf in workflows or []:
-            if wf.get("status_text") == "Failing":
-                failing_workflows.append((repo, wf["name"]))
-
-    report += "**Failing Workflows**\n"
-    if failing_workflows:
-        report += "Investigate recent runs and restart with:\n"
-        for repo, wf_name in failing_workflows:
-            repo_link = f"[{repo}](https://github.com/{repo})"
-            command = f'gh run list --workflow "{wf_name}" --repo {repo}'
-            report += f"- {repo_link}: `{command}`\n"
-        report += "\n"
-    else:
-        report += "- No failing workflows detected.\n\n"
-
-    admin_blocked_pages = [
-        repo for repo, status in pages_results.items()
-        if isinstance(status, str) and status.startswith("🚫 Admin Blocked")
+    # Define scans with appropriate timeouts (in seconds)
+    scans = [
+        ("compliance scan", scan_repos_parallel, 300),      # 5 minutes
+        ("stale branch scan", scan_stale_branches_parallel, 300),  # 5 minutes
+        ("dependency audit", audit_dependencies, 180),       # 3 minutes
+        ("Pages status scan", scan_pages_status, 180),       # 3 minutes
+        ("workflow health scan", scan_workflow_health, 240), # 4 minutes
+        ("open PRs scan", scan_open_prs, 120),               # 2 minutes
+        ("open issues scan", scan_open_issues, 180),         # 3 minutes
+        ("non-default branches scan", scan_non_default_branches, 180), # 3 minutes
+        ("shadowban check", check_shadowbans, 120),          # 2 minutes
     ]
-    report += "**Admin Blocked Pages**\n"
-    if admin_blocked_pages:
-        report += "Email help@agentvillage.org to request Pages enablement for:\n"
-        for repo in admin_blocked_pages:
-            repo_link = f"[{repo}](https://github.com/{repo})"
-            report += f"- {repo_link}\n"
-        report += "\n"
-    else:
-        report += "- No admin-blocked Pages sites detected.\n\n"
-
-    shadowbanned_agents = [
-        agent for agent, data in shadowban_results.items()
-        if data.get("status") == 404
-    ]
-    report += "**Shadowbanned agents**\n"
-    if shadowbanned_agents:
-        report += "Use git CLI, avoid web UI for these agents until visibility is restored:\n"
-        for agent in shadowbanned_agents:
-            report += f"- `{agent}`\n"
-        report += "\n"
-    else:
-        report += "- No shadowbanned agents detected.\n\n"
-
+    
+    results = {}
+    
+    # Run scans sequentially to avoid GitHub API rate limiting
+    # Each scan can be parallel internally
+    for name, func, timeout_val in scans:
+        results[name] = run_scan_with_timeout(func, name, timeout_val, {})
+    
+    elapsed_total = time.time() - overall_start
+    print(f"\n{'='*70}")
+    print(f"All scans completed in {elapsed_total:.2f} seconds ({elapsed_total/60:.1f} minutes)")
+    
+    # Generate report
+    report = generate_report_markdown(results, elapsed_total)
+    
+    # Write report
     with open("HEALTH_REPORT.md", "w") as f:
         f.write(report)
+    
+    print(f"\nFixed report generated: HEALTH_REPORT.md")
+    print(f"Report length: {len(report)} characters")
+    
+    return report
+
+def generate_report_markdown(results, elapsed_total):
+    """Generate markdown report from scan results."""
+    report = f"# AI Village Repository Health Report\n\n"
+    report += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}\n"
+    report += f"**Scan duration:** {elapsed_total:.2f} seconds\n"
+    report += f"**Parallel compliance:** {'✅' if use_parallel_compliance else '❌'}\n"
+    report += f"**Parallel stale branches:** {'✅' if use_parallel_stale else '❌'}\n\n"
+    
+    # 1. Compliance Audit
+    compliance_results = results.get("compliance scan", {})
+    if compliance_results:
+        report += "## 1. Compliance Audit\n"
+        report += "Checking for presence of `README.md`, `LICENSE`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md`.\n\n"
+        report += "| Repository | README | LICENSE | CODE_OF_CONDUCT | CONTRIBUTING |\n"
+        report += "|------------|--------|---------|-----------------|--------------|\n"
         
-    print("\nReport generated: HEALTH_REPORT.md")
+        for repo, status in compliance_results.items():
+            if isinstance(status, dict):
+                readme = "✅" if status.get('README.md') else "❌"
+                license_ok = "✅" if status.get('LICENSE') else "❌"
+                coc = "✅" if status.get('CODE_OF_CONDUCT.md') else "❌"
+                contributing = "✅" if status.get('CONTRIBUTING.md') else "❌"
+                report += f"| {repo} | {readme} | {license_ok} | {coc} | {contributing} |\n"
+    else:
+        report += "## 1. Compliance Audit\n*Scan failed or timed out*\n\n"
+    
+    # 2. Stale Branches
+    stale_results = results.get("stale branch scan", {})
+    report += "\n## 2. Stale Branches (>30 days)\n"
+    if stale_results:
+        report += "| Repository | Branch | Last Commit | Age (days) |\n"
+        report += "|------------|--------|-------------|------------|\n"
+        for repo, branches in stale_results.items():
+            if isinstance(branches, list):
+                for branch in branches:
+                    report += f"| {repo} | {branch.get('name', 'N/A')} | {branch.get('date', 'N/A')} | {branch.get('age', 'N/A')} |\n"
+    else:
+        report += "No stale branches found or scan failed.\n"
+    
+    # 3. GitHub Pages Status
+    pages_results = results.get("Pages status scan", {})
+    report += "\n## 3. GitHub Pages Status\n"
+    if pages_results:
+        report += "| Repository | Status |\n"
+        report += "|------------|--------|\n"
+        for repo, status in pages_results.items():
+            if isinstance(status, str):
+                report += f"| {repo} | {status} |\n"
+        
+        # Admin blocked summary
+        admin_blocked = [
+            repo for repo, status in pages_results.items()
+            if isinstance(status, str) and status.startswith("🚫 Admin Blocked")
+        ]
+        if admin_blocked:
+            report += f"\n**Admin Blocked Pages: {len(admin_blocked)} repositories**\n"
+            report += "Email help@agentvillage.org to request Pages enablement for:\n"
+            for repo in admin_blocked[:10]:  # Show first 10
+                repo_link = f"[{repo}](https://github.com/{repo})"
+                report += f"- {repo_link}\n"
+            if len(admin_blocked) > 10:
+                report += f"- ... and {len(admin_blocked) - 10} more\n"
+    else:
+        report += "*Scan failed or timed out*\n"
+    
+    # 4. Workflow Health
+    workflow_results = results.get("workflow health scan", {})
+    report += "\n## 4. Workflow Health\n"
+    if workflow_results:
+        failing_workflows = []
+        for repo, workflows in workflow_results.items():
+            if isinstance(workflows, list):
+                for wf in workflows:
+                    if isinstance(wf, dict) and wf.get("status_text") == "Failing":
+                        failing_workflows.append((repo, wf.get("name", "Unknown")))
+        
+        if failing_workflows:
+            report += f"**Failing Workflows: {len(failing_workflows)}**\n"
+            report += "Investigate recent runs and restart with:\n"
+            for repo, wf_name in failing_workflows[:5]:  # Show first 5
+                repo_link = f"[{repo}](https://github.com/{repo})"
+                command = f'gh run list --workflow "{wf_name}" --repo {repo}'
+                report += f"- {repo_link}: `{command}`\n"
+            if len(failing_workflows) > 5:
+                report += f"- ... and {len(failing_workflows) - 5} more\n"
+        else:
+            report += "No failing workflows detected.\n"
+    else:
+        report += "*Scan failed or timed out*\n"
+    
+    # 5. Activity Metrics
+    open_prs = results.get("open PRs scan", {})
+    open_issues = results.get("open issues scan", {})
+    non_default_branches = results.get("non-default branches scan", {})
+    
+    report += "\n## 5. Activity Metrics\n"
+    if isinstance(open_prs, dict):
+        report += f"- **Open PRs:** {len(open_prs)}\n"
+    if isinstance(open_issues, dict):
+        report += f"- **Open Issues:** {len(open_issues)}\n"
+    if isinstance(non_default_branches, dict):
+        report += f"- **Non-default branches:** {len(non_default_branches)}\n"
+    
+    # 6. Dependency Audit
+    dependency_results = results.get("dependency audit", {})
+    if dependency_results:
+        report += "\n## 6. Dependency Audit\n"
+        outdated_count = 0
+        for repo, deps in dependency_results.items():
+            if isinstance(deps, dict):
+                for pm, data in deps.items():
+                    outdated = data.get('outdated', [])
+                    outdated_count += len(outdated)
+        report += f"**Total outdated packages:** {outdated_count}\n"
+    
+    # 7. Shadowbanned agents
+    shadowban_results = results.get("shadowban check", {})
+    if shadowban_results:
+        report += "\n## 7. Shadowbanned Agents\n"
+        shadowbanned = [
+            agent for agent, data in shadowban_results.items()
+            if isinstance(data, dict) and data.get("status") == 404
+        ]
+        if shadowbanned:
+            report += "Use git CLI, avoid web UI for these agents:\n"
+            for agent in shadowbanned:
+                report += f"- `{agent}`\n"
+        else:
+            report += "No shadowbanned agents detected.\n"
+    
+    return report
 
 if __name__ == "__main__":
-    generate_markdown_report()
+    generate_markdown_report_fixed()
