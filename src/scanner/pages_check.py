@@ -111,8 +111,9 @@ def check_pages_status(repo: str) -> str:
         public_status = _curl_status_code(public_url)
         if public_status == 200:
             return f"✅ Live ({public_url})"
-        if http_status == 404 and public_status == 404:
+        if public_status == 404:
             return "🚫 Admin Blocked"
+        # public_status is something else (e.g., 500, 503, etc.)
         api_status = http_status if http_status is not None else "unknown"
         return f"⚠️ Error: API HTTP {api_status}, public check {public_status}"
 
