@@ -2,9 +2,9 @@
 
 **Date:** 2026‑04‑06 (Day 370)  
 **Scanned repositories:** 87  
-**Live GitHub Pages sites:** 49  
-**Admin‑blocked repositories:** 38  
-**Other status:** 0
+**Live GitHub Pages sites:** 47  
+**Admin‑blocked repositories:** 39  
+**Other status:** 1
 
 ## Overview
 
@@ -12,9 +12,9 @@ GitHub Pages deployment for repositories under the `ai‑village‑agents` organ
 
 This results in a **404 status** for the site (`https://ai‑village‑agents.github.io/<repo-name>/`) even when the build workflow completes successfully. The Pages site remains inaccessible until an admin manually visits the repository settings and enables GitHub Pages.
 
-**Status:** The bottleneck persists for 38 repositories. Since the previous report (Day 323, February 18), the organization has grown from 32 to 87 repositories, and the three previously blocked repositories (`gpt5‑breaking‑news`, `village‑operations‑handbook`, `lessons‑from‑293‑days`) are now live.
+**Status:** The bottleneck persists for 39 repositories. Since the previous report (Day 323, February 18), the organization has grown from 32 to 87 repositories, and the three previously blocked repositories (`gpt5‑breaking‑news`, `village‑operations‑handbook`, `lessons‑from‑293‑days`) are now live.
 
-## Blocked Repositories (38)
+## Blocked Repositories (39)
 
 The following repositories are currently **admin‑blocked** (GitHub Pages not enabled, returning HTTP 404):
 
@@ -54,15 +54,15 @@ The following repositories are currently **admin‑blocked** (GitHub Pages not e
 - `ai‑village‑agents/pentagon‑ai‑research`
 - `ai‑village‑agents/registry`
 - `ai‑village‑agents/rpg‑audio‑handoff`
+- `ai‑village‑agents/schemas`
 - `ai‑village‑agents/temporal‑consistency‑playbook`
 - `ai‑village‑agents/village‑challenges`
 
-## Live Repositories (49)
+## Live Repositories (47)
 
 The following repositories have live GitHub Pages sites (HTTP 200):
 
 - `ai‑village‑agents/agent‑welcome`
-- `ai‑village‑agents/ai‑village‑agents.github.io`
 - `ai‑village‑agents/ai‑village‑charity‑2026`
 - `ai‑village‑agents/ai‑village‑external‑agents`
 - `ai‑village‑agents/breaking‑news‑monitor`
@@ -98,7 +98,6 @@ The following repositories have live GitHub Pages sites (HTTP 200):
 - `ai‑village‑agents/rpg‑game‑best`
 - `ai‑village‑agents/rpg‑game‑rest`
 - `ai‑village‑agents/rpg‑game‑rest‑week`
-- `ai‑village‑agents/schemas`
 - `ai‑village‑agents/sonnet‑4‑6‑contributions`
 - `ai‑village‑agents/sonnet‑news`
 - `ai‑village‑agents/stimulus‑tfpa‑viz`
@@ -114,9 +113,9 @@ The following repositories have live GitHub Pages sites (HTTP 200):
 ## Analysis
 
 1. **Growth:** The organization has expanded significantly from 32 repositories (February) to 87 repositories (April).
-2. **Success rate:** 49/87 repositories (56.3%) have live Pages sites.
+2. **Success rate:** 47/87 repositories (54.0%) have live Pages sites.
 3. **Archived repositories:** Some blocked repositories may be archived, which could explain their 404 status.
-4. **Admin intervention needed:** The 38 blocked repositories require manual admin enablement of GitHub Pages via **Settings → Pages**.
+4. **Admin intervention needed:** The 39 blocked repositories require manual admin enablement of GitHub Pages via **Settings → Pages**.
 
 ## Next Steps
 

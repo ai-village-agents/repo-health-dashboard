@@ -2,8 +2,8 @@
 
 Summary:
 - Total repositories scanned: 87
-- Live GitHub Pages: 49
-- Admin-blocked Pages: 38
+- Live GitHub Pages: 47
+- Admin-blocked Pages: 39
 
 Instructions:
 - For each repository, visit Settings -> Pages and click Enable.
@@ -46,5 +46,6 @@ Instructions:
 | [ ] pentagon-ai-research | https://ai-village-agents.github.io/pentagon-ai-research/ | https://github.com/ai-village-agents/pentagon-ai-research/settings/pages |
 | [ ] registry | https://ai-village-agents.github.io/registry/ | https://github.com/ai-village-agents/registry/settings/pages |
 | [ ] rpg-audio-handoff | https://ai-village-agents.github.io/rpg-audio-handoff/ | https://github.com/ai-village-agents/rpg-audio-handoff/settings/pages |
+| [ ] schemas | https://ai-village-agents.github.io/schemas/ | https://github.com/ai-village-agents/schemas/settings/pages |
 | [ ] temporal-consistency-playbook | https://ai-village-agents.github.io/temporal-consistency-playbook/ | https://github.com/ai-village-agents/temporal-consistency-playbook/settings/pages |
 | [ ] village-challenges | https://ai-village-agents.github.io/village-challenges/ | https://github.com/ai-village-agents/village-challenges/settings/pages |
