@@ -228,55 +228,154 @@ def generate_html_report():
 <title>AI Village — Repo Health Dashboard</title>
 <style>
 :root {{
+  color-scheme: light;
+  --bg: #f0f2f5;
+  --text: #333333;
+  --muted: #666666;
+  --card-bg: #ffffff;
+  --section-bg: #ffffff;
   --green: #2e7d32;
   --green-light: #e8f5e9;
   --red: #c62828;
   --red-light: #ffebee;
   --blue: #1565c0;
+  --link: #1565c0;
+  --link-hover: #0d47a1;
   --gray: #f5f5f5;
-  --gray-mid: #666;
-  --white: #fff;
+  --gray-mid: #666666;
+  --white: #ffffff;
   --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --border: #e0e0e0;
+  --table-header: #f5f5f5;
+  --header-start: #1a237e;
+  --header-end: #283593;
+  --badge-python-bg: #e3f2fd;
+  --badge-python-text: #1565c0;
+  --badge-js-bg: #fff3e0;
+  --badge-js-text: #e65100;
+  --guardrails-bg: #fffde7;
+  --guardrails-border: #fbc02d;
+}}
+
+@media (prefers-color-scheme: dark) {{
+  :root:not([data-theme]) {{
+    color-scheme: dark;
+    --bg: #0d0d0d;
+    --text: #e0e0e0;
+    --muted: #b0b0b0;
+    --card-bg: #2a2a2a;
+    --section-bg: #2a2a2a;
+    --green: #66bb6a;
+    --green-light: #1b5e20;
+    --red: #ef5350;
+    --red-light: #b71c1c;
+    --blue: #64b5f6;
+    --link: #64b5f6;
+    --link-hover: #90caf9;
+    --gray: #303030;
+    --gray-mid: #b0b0b0;
+    --white: #f0f0f0;
+    --shadow: 0 2px 10px rgba(0,0,0,0.4);
+    --border: #444444;
+    --table-header: #333333;
+    --header-start: #0d47a1;
+    --header-end: #1c3e8a;
+    --badge-python-bg: #0d2742;
+    --badge-python-text: #64b5f6;
+    --badge-js-bg: #3a2a12;
+    --badge-js-text: #ffb74d;
+    --guardrails-bg: #2f2a1a;
+    --guardrails-border: #d9a300;
+  }}
+}}
+
+:root[data-theme="dark"] {{
+  color-scheme: dark;
+  --bg: #0d0d0d;
+  --text: #e0e0e0;
+  --muted: #b0b0b0;
+  --card-bg: #2a2a2a;
+  --section-bg: #2a2a2a;
+  --green: #66bb6a;
+  --green-light: #1b5e20;
+  --red: #ef5350;
+  --red-light: #b71c1c;
+  --blue: #64b5f6;
+  --link: #64b5f6;
+  --link-hover: #90caf9;
+  --gray: #303030;
+  --gray-mid: #b0b0b0;
+  --white: #f0f0f0;
+  --shadow: 0 2px 10px rgba(0,0,0,0.4);
+  --border: #444444;
+  --table-header: #333333;
+  --header-start: #0d47a1;
+  --header-end: #1c3e8a;
+  --badge-python-bg: #0d2742;
+  --badge-python-text: #64b5f6;
+  --badge-js-bg: #3a2a12;
+  --badge-js-text: #ffb74d;
+  --guardrails-bg: #2f2a1a;
+  --guardrails-border: #d9a300;
 }}
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 body {{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: #f0f2f5; color: #333; line-height: 1.6;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  transition: background 0.25s ease, color 0.25s ease;
 }}
 .header {{
-  background: linear-gradient(135deg, #1a237e, #283593);
-  color: var(--white); padding: 2rem; text-align: center;
+  background: linear-gradient(135deg, var(--header-start), var(--header-end));
+  color: var(--white); padding: 2rem; text-align: center; position: relative;
 }}
 .header h1 {{ font-size: 2rem; margin-bottom: 0.5rem; }}
 .header p {{ opacity: 0.85; font-size: 0.95rem; }}
+.theme-toggle {{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--white);
+  padding: 0.4rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}}
+.theme-toggle:hover {{
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--white);
+}}
 .cards {{
   display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem; max-width: 900px; margin: -1.5rem auto 1.5rem; padding: 0 1rem;
   position: relative; z-index: 1;
 }}
 .card {{
-  background: var(--white); border-radius: 12px; padding: 1.2rem 1rem;
-  box-shadow: var(--shadow); text-align: center;
+  background: var(--card-bg); border-radius: 12px; padding: 1.2rem 1rem;
+  box-shadow: var(--shadow); text-align: center; border: 1px solid var(--border);
 }}
 .card .number {{ font-size: 2rem; font-weight: 700; }}
-.card .label {{ font-size: 0.85rem; color: var(--gray-mid); margin-top: 0.25rem; }}
+.card .label {{ font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }}
 .card.green .number {{ color: var(--green); }}
 .card.red .number {{ color: var(--red); }}
 .card.blue .number {{ color: var(--blue); }}
 .container {{ max-width: 1100px; margin: 0 auto; padding: 0 1rem 2rem; }}
 .section {{
-  background: var(--white); border-radius: 12px; padding: 1.5rem;
-  margin-bottom: 1.5rem; box-shadow: var(--shadow);
+  background: var(--section-bg); border-radius: 12px; padding: 1.5rem;
+  margin-bottom: 1.5rem; box-shadow: var(--shadow); border: 1px solid var(--border);
 }}
 .section h2 {{
   font-size: 1.25rem; margin-bottom: 1rem;
   padding-bottom: 0.5rem; border-bottom: 2px solid var(--gray);
 }}
 table {{ width: 100%; border-collapse: collapse; font-size: 0.9rem; }}
-th {{ text-align: left; padding: 0.6rem 0.5rem; background: var(--gray); font-weight: 600; }}
-td {{ padding: 0.5rem; border-bottom: 1px solid #eee; }}
-td a {{ color: var(--blue); text-decoration: none; }}
-td a:hover {{ text-decoration: underline; }}
+th {{ text-align: left; padding: 0.6rem 0.5rem; background: var(--table-header); font-weight: 600; color: var(--text); }}
+td {{ padding: 0.5rem; border-bottom: 1px solid var(--border); }}
+td a {{ color: var(--link); text-decoration: none; }}
+td a:hover {{ text-decoration: underline; color: var(--link-hover); }}
 .pass {{ color: var(--green); font-weight: 600; }}
 .fail {{ color: var(--red); font-weight: 600; }}
 .neutral {{ color: var(--gray-mid); }}
@@ -286,8 +385,8 @@ td a:hover {{ text-decoration: underline; }}
   display: inline-block; padding: 0.15rem 0.5rem; border-radius: 10px;
   font-size: 0.8rem; margin: 0.15rem;
 }}
-.dep-badge.python {{ background: #e3f2fd; color: #1565c0; }}
-.dep-badge.js {{ background: #fff3e0; color: #e65100; }}
+.dep-badge.python {{ background: var(--badge-python-bg); color: var(--badge-python-text); }}
+.dep-badge.js {{ background: var(--badge-js-bg); color: var(--badge-js-text); }}
 .dep-repo {{ margin-bottom: 0.5rem; }}
 .empty {{ text-align: center; padding: 2rem; color: var(--green); font-weight: 600; font-size: 1.1rem; }}
 .section h3 {{ margin: 0.5rem 0 0.35rem; font-size: 1rem; }}
@@ -298,23 +397,24 @@ ul {{ margin: 0.25rem 0 0.75rem 1.25rem; }}
   max-width: 900px;
   margin: 1rem auto 0.5rem;
   padding: 0.75rem 1rem;
-  background: #fffde7;
-  border-left: 4px solid #fbc02d;
+  background: var(--guardrails-bg);
+  border-left: 4px solid var(--guardrails-border);
   border-radius: 8px;
   font-size: 0.85rem;
-  color: #555;
+  color: var(--muted);
   box-shadow: var(--shadow);
 }}
-.guardrails-note a {{ color: var(--blue); text-decoration: none; }}
-.guardrails-note a:hover {{ text-decoration: underline; }}
+.guardrails-note a {{ color: var(--link); text-decoration: none; }}
+.guardrails-note a:hover {{ text-decoration: underline; color: var(--link-hover); }}
 .footer {{
   text-align: center; padding: 1.5rem; color: var(--gray-mid); font-size: 0.85rem;
 }}
-.footer a {{ color: var(--blue); }}
+.footer a {{ color: var(--link); }}
 </style>
 </head>
 <body>
 <div class="header">
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
   <h1>&#x1F3E5; AI Village — Repo Health Dashboard</h1>
   <p>Automated health scan of all {total_repos} repositories in the ai-village-agents organization</p>
   <p>Last updated: {_esc(now)}</p>
@@ -436,6 +536,53 @@ ul {{ margin: 0.25rem 0 0.75rem 1.25rem; }}
   <p>Powered by <a href="https://github.com/ai-village-agents/repo-health-dashboard">repo-health-dashboard</a>
   &middot; Part of <a href="https://theaidigest.org/village">AI Village</a></p>
 </div>
+<script>
+(() => {{
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const storageKey = 'repoHealthTheme';
+
+  const applyTheme = (theme) => {{
+    const next = theme === 'dark' ? 'dark' : 'light';
+    root.dataset.theme = next;
+    const isDark = next === 'dark';
+    if (toggle) {{
+      toggle.textContent = isDark ? '☀️' : '🌙';
+      toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      toggle.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+    }}
+  }};
+
+  const preferredTheme = () => {{
+    const stored = localStorage.getItem(storageKey);
+    if (stored === 'dark' || stored === 'light') return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }};
+
+  const persistTheme = (theme) => localStorage.setItem(storageKey, theme);
+
+  const setTheme = (theme) => {{
+    applyTheme(theme);
+    persistTheme(theme);
+  }};
+
+  applyTheme(preferredTheme());
+
+  if (toggle) {{
+    toggle.addEventListener('click', () => {{
+      const current = root.dataset.theme === 'dark' ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      setTheme(next);
+    }});
+  }}
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {{
+    const stored = localStorage.getItem(storageKey);
+    if (stored === 'dark' || stored === 'light') return;
+    applyTheme(event.matches ? 'dark' : 'light');
+  }});
+}})();
+</script>
 </body>
 </html>"""
 
