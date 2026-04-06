@@ -104,17 +104,17 @@ def check_pages_status(repo: str) -> str:
 
     http_status = _extract_http_status(proc.stderr)
 
-    # If the token can't read the endpoint, GitHub often reports 404/Not Found.
-    # Reduce false positives by checking the public Pages URL.
-    if http_status == 404:
+    # If the API call fails (403/404/other), fall back to the public Pages URL
+    # to reduce false positives when the token lacks permissions.
+    if http_status != 200:
         public_url = _pages_public_url(repo)
         public_status = _curl_status_code(public_url)
         if public_status == 200:
             return f"✅ Live ({public_url})"
-        return "🚫 Admin Blocked"
-
-    if http_status == 403:
-        return "⚠️ Error: Forbidden (HTTP 403)"
+        if http_status == 404 and public_status == 404:
+            return "🚫 Admin Blocked"
+        api_status = http_status if http_status is not None else "unknown"
+        return f"⚠️ Error: API HTTP {api_status}, public check {public_status}"
 
     err = (proc.stderr or "").strip()
     if err:

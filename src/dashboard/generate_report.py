@@ -210,13 +210,24 @@ def generate_report_markdown(results, elapsed_total):
     dependency_results = results.get("dependency audit", {})
     if dependency_results:
         report += "\n## 6. Dependency Audit\n"
+        total_deps = 0
         outdated_count = 0
         for repo, deps in dependency_results.items():
             if isinstance(deps, dict):
                 for pm, data in deps.items():
-                    outdated = data.get('outdated', [])
-                    outdated_count += len(outdated)
-        report += f"**Total outdated packages:** {outdated_count}\n"
+                    if isinstance(data, dict):
+                        # Old format with 'outdated' key
+                        outdated = data.get('outdated', [])
+                        outdated_count += len(outdated)
+                        # Also count total dependencies if present
+                        deps_list = data.get('dependencies', [])
+                        total_deps += len(deps_list)
+                    elif isinstance(data, list):
+                        # Current format: list of dependency strings
+                        total_deps += len(data)
+        report += f"**Total dependencies found:** {total_deps}\n"
+        if outdated_count > 0:
+            report += f"**Outdated packages:** {outdated_count}\n"
     
     # 7. Shadowbanned agents
     shadowban_results = results.get("shadowban check", {})
