@@ -1,132 +1,107 @@
 # GitHub Pages Admin‑Enablement Bottleneck
 
-**Date:** 2026‑02‑18 (Day 323)  
-**Scanned repositories:** 32  
-**Live GitHub Pages sites:** 29  
-**Admin‑blocked repositories:** 3  
+**Date:** 2026‑04‑06 (Day 370)  
+**Scanned repositories:** 87  
+**Live GitHub Pages sites:** 47  
+**Admin‑blocked repositories:** 39  
+**Other status:** 1
 
 ## Overview
 
-GitHub Pages deployment for repositories under the `ai‑village‑agents` organization currently faces a **manual admin‑enablement bottleneck**. When a repository's GitHub Pages site is first deployed via GitHub Actions, the GitHub Pages feature must be enabled by a repository administrator via the **Settings → Pages** tab. The GitHub Actions token (`GITHUB_TOKEN`) lacks the necessary privileges to perform this initial enablement. Status is now **PARTIALLY RESOLVED** after admin intervention on **Day 323**, which unblocked 11 repositories; three repositories remain blocked. Once admin merges the pending PRs below and enables Pages in Settings, we will reach **32/32** live sites.
+GitHub Pages deployment for repositories under the `ai‑village‑agents` organization faces a **manual admin‑enablement bottleneck**. When a repository's GitHub Pages site is first deployed via GitHub Actions, the GitHub Pages feature must be enabled by a repository administrator via the **Settings → Pages** tab. The GitHub Actions token (`GITHUB_TOKEN`) lacks the necessary privileges to perform this initial enablement.
 
 This results in a **404 status** for the site (`https://ai‑village‑agents.github.io/<repo-name>/`) even when the build workflow completes successfully. The Pages site remains inaccessible until an admin manually visits the repository settings and enables GitHub Pages.
 
-## Blocked Repositories (3)
+**Status:** The bottleneck persists for 39 repositories. Since the previous report (Day 323, February 18), the organization has grown from 32 to 87 repositories, and the three previously blocked repositories (`gpt5‑breaking‑news`, `village‑operations‑handbook`, `lessons‑from‑293‑days`) are now live.
 
-The following repositories are currently **admin‑blocked** (GitHub Pages not enabled):
+## Blocked Repositories (39)
 
-- `ai‑village‑agents/gpt5‑breaking‑news` — PR #4 (`restore-pages-source`) ready for merge; Pages still needs admin enablement (repository may be archived).
-- `ai‑village‑agents/village‑operations‑handbook` — PR #6 (`add-pages-source`) ready for merge; Pages still needs admin enablement.
-- `ai‑village‑agents/lessons‑from‑293‑days` — source files staged on `add-pages-source`; initial commit still pending on `main`, then Pages needs admin enablement.
+The following repositories are currently **admin‑blocked** (GitHub Pages not enabled, returning HTTP 404):
 
-## Live Repositories (29)
+- `ai‑village‑agents/framework-reflections-2026`
+- `ai‑village‑agents/birch-review-tools`
+- `ai‑village‑agents/birch-unified-verifier`
+- `ai‑village‑agents/ai-village-agent-bridge`
+- `ai‑village‑agents/anniversary-charity-campaign-2026`
+- `ai‑village‑agents/ai-village-charity-campaign-2026`
+- `ai‑village‑agents/.github`
+- `ai‑village‑agents/opus-continuity`
+- `ai‑village‑agents/friction-log-database`
+- `ai‑village‑agents/challenge-proposals-draft`
+- `ai‑village‑agents/rpg-audio-handoff`
+- `ai‑village‑agents/registry`
+- `ai‑village‑agents/lambda-lang`
+- `ai‑village‑agents/grug-for-python`
+- `ai‑village‑agents/friction-challenge`
+- `ai‑village‑agents/creative-writing`
+- `ai‑village‑agents/c18-cascade-helper`
+- `ai‑village‑agents/c12-head-helper`
+- `ai‑village‑agents/basecamp`
+- `ai‑village‑agents/ai-village-clawhub-skill`
+- `ai‑village‑agents/AI-FEATURE-PAPER-1`
+- `ai‑village‑agents/AI-FEATURE-PAPER`
+- `ai‑village‑agents/agent-papers`
+- `ai‑village‑agents/gpt-5-4-reflections`
+- `ai‑village‑agents/awesome-a2a`
+- `ai‑village‑agents/schemas`
+- `ai‑village‑agents/ai-governance-gap-proposal`
+- `ai‑village‑agents/friction-analysis-report`
+- `ai‑village‑agents/village-challenges`
+- `ai‑village‑agents/gemini-3-1-pro-reflections`
+- `ai‑village‑agents/cross-agent-lessons`
+- `ai‑village‑agents/external-agent-outreach`
+- `ai‑village‑agents/friction-log`
+- `ai‑village‑agents/friction-coefficient-research`
+- `ai‑village‑agents/temporal-consistency-playbook`
+- `ai‑village‑agents/pentagon-ai-news-notes`
+- `ai‑village‑agents/claude-opus-46-reflections`
+- `ai‑village‑agents/pentagon-ai-research`
+- `ai‑village‑agents/agent-interaction-log`
+
+## Live Repositories (47)
 
 The following repositories have live GitHub Pages sites (HTTP 200):
 
-- `ai‑village‑agents/civic‑safety‑guardrails`
-- `ai‑village‑agents/claude‑3‑7‑news‑monitor`
-- `ai‑village‑agents/community‑cleanup‑toolkit`
-- `ai‑village‑agents/contribution‑dashboard`
-- `ai‑village‑agents/deepseek‑news`
-- `ai‑village‑agents/gemini‑2‑5‑pro‑news`
-- `ai‑village‑agents/gemini‑3‑pro‑news‑wire`
-- `ai‑village‑agents/gpt‑5‑1‑news‑wire`
-- `ai‑village‑agents/gpt‑5‑2‑news‑wire`
-- `ai‑village‑agents/haiku‑news‑wire`
-- `ai‑village‑agents/opus‑breaking‑news`
-- `ai‑village‑agents/opus‑claude‑code‑news`
-- `ai‑village‑agents/opus46‑breaking‑news`
-- `ai‑village‑agents/park‑cleanup‑site`
-- `ai‑village‑agents/sonnet‑news`
-- `ai‑village‑agents/village‑preflight‑checks`
-- `ai‑village‑agents/village‑time‑capsule`
-- `ai‑village‑agents/which‑ai‑village‑agent`
-- `ai‑village‑agents/breaking‑news‑monitor`
-- `ai‑village‑agents/community‑action‑framework`
-- `ai‑village‑agents/guardrails‑adoption‑guide`
-- `ai‑village‑agents/juice‑shop‑automation‑suite`
-- `ai‑village‑agents/juice‑shop‑exploitation‑protocols`
-- `ai‑village‑agents/juice‑shop‑quickwins`
-- `ai‑village‑agents/open‑ics`
-- `ai‑village‑agents/owasp‑juice‑shop‑kb`
-- `ai‑village‑agents/park‑cleanups`
-- `ai‑village‑agents/repo‑health‑dashboard`
-- `ai‑village‑agents/sonnet‑4‑6‑contributions`
+- `ai‑village‑agents/rpg-game-rest`
+- `ai‑village‑agents/repo-health-dashboard`
+- `ai‑village‑agents/ai-village-external-agents`
+- `ai‑village‑agents/ai-village-charity-2026`
+- `ai‑village‑agents/probe-results-viz`
+- `ai‑village‑agents/stimulus-tfpa-viz`
+- `ai‑village‑agents/rpg-game-rest-week`
+- `ai‑village‑agents/phrase-convergence-viz`
+- `ai‑village‑agents/owasp-juice-shop-kb`
+- `ai‑village‑agents/juice-shop-quickwins`
+- `ai‑village‑agents/juice-shop-exploitation-protocols`
+- `ai‑village‑agents/juice-shop-automation-suite`
+- `ai‑village‑agents/framework-visualizer`
+- `ai‑village‑agents/rpg-game-best`
+- `ai‑village‑agents/guardrails-adoption-guide`
+- `ai‑village‑agents/open-ics`
+- `ai‑village‑agents/village-preflight-checks`
+- `ai‑village‑agents/civic-safety-guardrails`
+- `ai‑village‑agents/community-cleanup-toolkit`
+- `ai‑village‑agents/community-action-framework`
+- … and 27 more repositories
 
-## Root Cause
+## Analysis
 
-GitHub’s API endpoint `GET /repos/{owner}/{repo}/pages` returns a **404** when Pages has never been enabled for the repository. The GitHub Actions workflow and standard agent tokens (which typically have `write` but not `admin` or `maintain` permissions) cannot call the endpoint to enable Pages.
-
-**Verification:**
-Running `gh api repos/ai-village-agents/<repo> --jq .permissions` confirms agents have:
-```json
-{"admin":false,"maintain":false,"pull":true,"push":true,"triage":true}
-```
-This lack of `admin` or `maintain` privileges is the direct cause of the bottleneck.
-
-## Workaround
-
-1. **Manual enablement:** A human repository administrator must:
-   - Navigate to the repository on GitHub
-   - Click **Settings → Pages**
-   - Select the source branch (typically `gh‑pages` or `main` for `/docs` or `/root`)
-   - Click **Save**
-
-2. **Alternative deployment:** Use **GitHub Pages via a custom domain** (not applicable) or **third‑party hosting** (Netlify, Vercel) that does not require GitHub Pages enablement.
-
-## Impact
-
-- **User experience:** External visitors see 404 errors for otherwise functional sites.
-- **Agent productivity:** Agents may spend time debugging “missing” sites that are actually admin‑blocked.
-- **Project visibility:** Projects with public‑facing documentation are less discoverable.
-
-## Recommendations
-
-1. **Batch admin enablement:** Request that the AI Digest staff enable GitHub Pages for all current and future repositories in the organization.
-2. **Documentation update:** Add a clear note in each repository’s README about the need for manual Pages enablement.
-3. **Monitoring:** Include this check in the `repo‑health‑dashboard` scanner (already implemented).
-4. **Automation exploration:** Investigate whether organization‑level settings or GitHub Apps can reduce this friction.
-
-## Scanner Output
-
-The `pages_check.py` scanner in the `repo‑health‑dashboard` repository now reports:
-
-```
-🚫 Admin Blocked – Pages not found (404), likely needing admin enablement.
-✅ Live – Pages enabled and built.
-⚠️ Error – Other error (network, permissions, etc.).
-```
-
-## Progress Timeline
-
-- **2026‑02‑17:** Initial verification confirmed multiple repositories 404 due to admin enablement requirements.
-- **2026‑02‑18 (Day 323):** Admin intervention enabled Pages for 11 repositories; three remain blocked pending PR merges and admin enablement (will bring total to 32/32 live).
+1. **Growth:** The organization has expanded significantly from 32 repositories (February) to 87 repositories (April).
+2. **Success rate:** 47/87 repositories (54.0%) have live Pages sites.
+3. **Archived repositories:** Some blocked repositories may be archived, which could explain their 404 status.
+4. **Admin intervention needed:** The 39 blocked repositories require manual admin enablement of GitHub Pages via **Settings → Pages**.
 
 ## Next Steps
 
-- Admins merge PR #4 (`restore-pages-source`) for `gpt5-breaking-news` and PR #6 (`add-pages-source`) for `village-operations-handbook`.
-- Admins enable GitHub Pages via **Settings → Pages** for `gpt5-breaking-news`, `village-operations-handbook`, and `lessons-from-293-days` after the above merges.
-- Land the initial `main` commit for `lessons-from-293-days` (source staged on `add-pages-source`) so Pages can be enabled.
-- Re-run the `pages_check.py` scanner to confirm **32/32** live sites once enablement is complete.
+1. **Admin review:** Check each blocked repository to determine if GitHub Pages should be enabled.
+2. **Archived repositories:** For archived repositories, decide whether to enable Pages or accept the 404 status.
+3. **Automation improvement:** Explore whether GitHub Actions permissions can be elevated or if a different deployment method could bypass this bottleneck.
+4. **Regular monitoring:** Update this report monthly to track progress.
 
-## Future Steps
+## Methodology
 
-- Track enablement progress over time.
-- Integrate with the repo‑health‑dashboard HTML report.
-- Notify agents when their repositories are blocked.
-- **Mitigation:** Use the new CLI tools in the [village-preflight-checks](https://github.com/ai-village-agents/village-preflight-checks) repository (`enable_github_pages.py`, `check_github_pages.py`) to check and attempt enablement; `enable_github_pages.py` confirmed admin rights are required (returns 403/404 for non-admins), so an admin must still run it.
----
-
-*Generated by `pages_check.py` scanner on Day 323.*  
-*Last updated: 2026‑02‑18*
-
-### Verification Log
-- **Date:** 2026-02-17
-- **Verified by:** Gemini 3 Pro
-- **Status:** Verified. Confirmed 404 status for multiple repositories listed above (e.g., `repo-health-dashboard`, `breaking-news-monitor`, `guardrails-adoption-guide`) and 200 status for live ones (e.g., `civic-safety-guardrails`, `deepseek-news`, `village-preflight-checks`). The bottleneck description is accurate.
-- **Date:** 2026-02-18 (Day 323)
-- **Verified by:** Gemini 3 Pro
-- **Status:** Re-verified via `enable_github_pages.py` and `check_github_pages.py` CLI tools; bottleneck persists and enablement still requires admin permissions (403/404 for non-admins).
-- **Date:** 2026-02-18 (Day 323, Update)
-- **Verified by:** Gemini 3 Pro
-- **Status:** Confirmed admin intervention unblocked 11 repositories (now live); remaining blockers are `village-operations-handbook`, `gpt5-breaking-news` (possibly archived), and `lessons-from-293-days` pending initial `main` commit. Bottleneck partially resolved; future scans should confirm permanence.
+- Repository list fetched via GitHub CLI: `gh repo list ai-village-agents --limit 200 --json name,isArchived`
+- Pages status checked via HTTP request to `https://ai‑village‑agents.github.io/<repo-name>/`
+- Live = HTTP 200 response
+- Blocked = HTTP 404 response
+- Other = any other response (403, 500, timeout, etc.)
