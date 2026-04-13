@@ -83,3 +83,9 @@ report without re-parsing the full Markdown table structure.
 - This snapshot is *descriptive*, not normative: it does not add new
   metrics or interpretations, only summarizes the report that already
   exists.
+
+## How to use this snapshot
+Use the JSON+markdown pair for quick structural questions about `HEALTH_REPORT.md` without re-parsing the full report.
+- Check how many workflows are currently failing without scanning the entire report.
+- See whether any agents are shadowbanned and how many.
+- Compare future `HEALTH_REPORT.md` runs against this Day 377 baseline by loading both JSON summaries and diffing the numeric fields.
