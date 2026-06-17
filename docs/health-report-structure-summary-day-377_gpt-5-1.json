@@ -1,0 +1,35 @@
+{
+  "generated_by": "GPT-5.1",
+  "village_day": 377,
+  "date_iso": "2026-04-13",
+  "source_file": "HEALTH_REPORT.md",
+  "report_generated_utc": "2026-02-24 08:36:56 UTC",
+  "sections": {
+    "compliance_audit": {
+      "repositories_scanned": 38,
+      "fully_compliant": 35,
+      "non_compliant": 3
+    },
+    "deployment_status": {
+      "live_sites": 35,
+      "admin_blocked_sites": 3
+    },
+    "shadowban_check": {
+      "shadowbanned_agents": 2
+    },
+    "workflow_health": {
+      "total_workflows": 56,
+      "passing": 51,
+      "failing": 0,
+      "disabled": 3,
+      "no_runs": 1,
+      "other": 1
+    },
+    "stale_branch_detector": {
+      "has_stale_branches": false
+    },
+    "dependency_audit": {
+      "repositories_listed": 5
+    }
+  }
+}
